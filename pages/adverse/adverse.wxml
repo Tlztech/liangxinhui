@@ -1,0 +1,41 @@
+<!--adverse.wxml-->
+<view class="index-contain">
+  <view class="bottom">
+    <view class="tab">
+
+      <view class="navi-list">
+        <view id="0" class="{{ showList[0] ? 'navis-show' : 'navis' }}" bindtap="showList">最新</view>
+        <view id="1" class="{{ showList[1] ? 'navis-show' : 'navis' }}" bindtap="showList" style="margin-left:20rpx;">畅销</view>
+        <view id="2" class="{{ showList[2] ? 'navis-show' : 'navis' }}" bindtap="showList" style="margin-left:20rpx;">好评</view>
+        <view id="3" class="{{ showList[3] ? 'navis-show' : 'navis' }}" bindtap="showList" style="margin-left:20rpx;">补贴</view>
+      </view>
+
+    </view>
+    <view class="items" wx:for="{{ list }}" wx:key="list">
+      <view class="left">
+        <image class="image" src="/images/1.jpg"></image>
+      </view>
+      <view class="right">
+        <view class="star">
+          <image wx:for="{{ item.starImages }}" wx:for-item="image" class="starImages" src="/images/{{ image ? 'star1.jpg' : 'star2.jpg' }}" wx:key="image"></image>
+        </view>
+        <view class="title">{{ item.title }}</view>
+        <view class="list-flex area-line">
+          <view>{{ item.area }}</view>
+          <view class="price">￥{{ item.price }}</view>
+        </view>
+        <view class="list-flex old-line">
+          <view></view>
+          <view class="old">￥{{ item.old }}</view>
+        </view>
+        <view class="list-flex adverse-line">
+          <view>推广：{{ item.adverse }}</view>
+          <view class="money">赚 ￥{{ item.money }}</view>
+        </view>
+      </view>
+    </view>
+    <view class="items" style="height:300rpx;"></view>
+  </view>
+
+
+</view>

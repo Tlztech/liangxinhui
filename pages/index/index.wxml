@@ -1,23 +1,203 @@
 <!--index.wxml-->
-
-<view class="weui-search-bar">
-  <view class="weui-search-bar__form">
-    <view class="weui-search-bar__box">
-      <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
-      <input type="text" class="weui-search-bar__input" placeholder="搜索" value="{{inputVal}}" focus="{{inputShowed}}" bindinput="inputTyping" />
-      <view class="weui-icon-clear" wx:if="{{inputVal.length > 0}}" bindtap="clearInput">
-        <icon type="clear" size="14"></icon>
+<view class="index-contain">
+  <view class="weui-search-bar" style="background:#fff;">
+    <view class="weui-search-bar__form form-border height6">
+      <view class="weui-search-bar__box">
+        <icon class="weui-icon-search_in-box" type="search" size="18"></icon>
+        <input type="text" class="weui-search-bar__input height6" placeholder="搜索" value="{{inputVal}}" focus="{{inputShowed}}" bindinput="inputTyping" />
+        <view class="weui-icon-clear" wx:if="{{inputVal.length > 0}}" bindtap="clearInput">
+          <icon type="clear" size="18"></icon>
+        </view>
       </view>
     </view>
-    <label class="weui-search-bar__label" hidden="{{inputShowed}}" bindtap="showInput">
-      <icon class="weui-icon-search" type="search" size="14"></icon>
-      <view class="weui-search-bar__text">搜索1</view>
-    </label>
+    <view class="weui-search-bar__cancel-btn" bindtap="doScan">
+      <image src="/images/scan.jpg" style="width:50rpx;height:50rpx;margin-top:20rpx;"></image>
+    </view>
   </view>
-  <view class="weui-search-bar__cancel-btn" style="border:1rpx solid blue;"><icon type="success"></icon>
-  </view>
-</view>
 
+  <view class="navi">
+    <view id="0" class="{{ showNavi[0] ? 'items-show' : 'items' }}" bindtap="showNavi">限时抢购</view>
+    <view id="1" class="{{ showNavi[1] ? 'items-show' : 'items' }}" bindtap="showNavi">美食推广</view>
+    <view id="2" class="{{ showNavi[2] ? 'items-show' : 'items' }}" bindtap="showNavi">餐企直聘</view>
+    <view id="3" class="{{ showNavi[3] ? 'items-show' : 'items' }}" bindtap="showNavi">饮食培训</view>
+    <view id="4" class="{{ showNavi[4] ? 'items-show' : 'items' }}" bindtap="showNavi">广而告之</view>
+  </view>
+
+  <!-- 餐企直聘&&美食推广 -->
+  <view class="promote" wx:if="{{ showNavi[0] || showNavi[1] }}">
+    <swiper class="swiper" indicator-color="#fff" indicator-dots="true" interval="4000" autoplay="true">
+      <block wx:for="{{showNavi[0] ? swipers0 : swipers1}}" wx:key="*this">
+        <swiper-item style="height:100%">
+          <image class="image" src="/images/{{ item }}"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+    <view class="tab">
+      <view class="item">
+        <image class="hand" src="/images/hand.jpg"></image>
+        <view class="content">今日必推</view>
+      </view>
+      <view class="all" bindtap="goAdverse">全部 ></view>
+    </view>
+    <view class="today">
+      <scroll-view style="width:100%;" scroll-x="true">
+        <view id="0" bindtap="goDetail" class="scroll-view">
+          <view class="image-border">
+            <image class="image" src="/images/1.jpg"></image>
+          </view>
+          <view class="content">
+            <view class="pad title" style="height:88rpx;">【增荔】香软丝苗米 10 kg装</view>
+            <view class="pad adress">南宁</view>
+            <view class="pad money">
+              <view class="price">￥85</view>
+              <view class="get">赚0.8</view>
+            </view>
+            <view class="pad money">
+              <view class="old">￥108</view>
+              <view>120人推广</view>
+            </view>
+          </view>
+        </view>
+        <view id="1" bindtap="goDetail" class="scroll-view" style="margin-left:20rpx;">
+          <view class="image-border">
+            <image class="image" src="/images/1.jpg"></image>
+          </view>
+          <view class="content">
+            <view class="pad title" style="height:88rpx;">【增荔】香软丝苗米 10 kg装</view>
+            <view class="pad adress">南宁</view>
+            <view class="pad money">
+              <view class="price">￥85</view>
+              <view class="get">赚0.8</view>
+            </view>
+            <view class="pad money">
+              <view class="old">￥108</view>
+              <view>120人推广</view>
+            </view>
+          </view>
+        </view>
+        <view id="2" bindtap="goDetail" class="scroll-view" style="margin-left:20rpx;">
+          <view class="image-border">
+            <image class="image" src="/images/1.jpg"></image>
+          </view>
+          <view class="content">
+            <view class="pad title" style="height:88rpx;">【增荔】香软丝苗米 10 kg装</view>
+            <view class="pad adress">南宁</view>
+            <view class="pad money">
+              <view class="price">￥85</view>
+              <view class="get">赚0.8</view>
+            </view>
+            <view class="pad money">
+              <view class="old">￥108</view>
+              <view>120人推广</view>
+            </view>
+          </view>
+        </view>
+        <view id="3" bindtap="goDetail" class="scroll-view" style="margin-left:20rpx;">
+          <view class="image-border">
+            <image class="image" src="/images/1.jpg"></image>
+          </view>
+          <view class="content">
+            <view class="pad title" style="height:88rpx;">【增荔】香软丝苗米 10 kg装</view>
+            <view class="pad adress">南宁</view>
+            <view class="pad money">
+              <view class="price">￥85</view>
+              <view class="get">赚0.8</view>
+            </view>
+            <view class="pad money">
+              <view class="old">￥108</view>
+              <view>120人推广</view>
+            </view>
+          </view>
+        </view>
+      </scroll-view>
+    </view>
+    <scroll-view class="bottom" scroll-y="true">
+      <view class="tab">
+        <view class="where" wx:if="{{ showNavi[1] }}">
+          <view class='list-msg'>
+            <!--下拉框  -->
+            <view class='list-msg2' bindtap='bindShowMsg'>
+              <text>{{areas[area].name}}</text>
+              <image style='height:20rpx;width:20rpx;' src='/images/down.jpg'></image>
+            </view>
+            <!-- 下拉需要显示的列表 -->
+            <view class="select_box" wx:if="{{select}}">
+              <view id="{{index}}" wx:for="{{ areas }}" class="select_one" bindtap="mySelect" wx:key="select">{{ item.name }}</view>
+            </view>
+          </view>
+        </view>
+
+        <view class="navi-list">
+          <view id="0" class="{{ showList[0] ? 'navis-show' : 'navis' }}" bindtap="showList">最新</view>
+          <view id="1" class="{{ showList[1] ? 'navis-show' : 'navis' }}" bindtap="showList" style="margin-left:20rpx;">畅销</view>
+          <view id="2" class="{{ showList[2] ? 'navis-show' : 'navis' }}" bindtap="showList" style="margin-left:20rpx;">好评</view>
+          <view id="3" class="{{ showList[3] ? 'navis-show' : 'navis' }}" bindtap="showList" style="margin-left:20rpx;">补贴</view>
+          <view wx:if="{{ showNavi[0] }}" id="4" class="{{ showList[4] ? 'navis-show' : 'navis' }}" bindtap="showList" style="margin-left:20rpx;">星级</view>
+        </view>
+
+      </view>
+      <view id="{{ index }}" bindtap="goDetail" class="items" wx:for="{{ list }}" wx:key="list">
+        <view class="left">
+          <image class="image" src="/images/1.jpg"></image>
+        </view>
+        <view class="right">
+          <view class="star">
+            <image wx:for="{{ item.starImages }}" wx:for-item="image" class="starImages" src="/images/{{ image ? 'star1.jpg' : 'star2.jpg' }}" wx:key="image"></image>
+          </view>
+          <view class="title">{{ item.title }}</view>
+          <view class="list-flex area-line">
+            <view>{{ item.area }}</view>
+            <view class="price">￥{{ item.price }}</view>
+          </view>
+          <view class="list-flex old-line">
+            <view></view>
+            <view class="old">￥{{ item.old }}</view>
+          </view>
+          <view class="list-flex adverse-line">
+            <view>推广：{{ item.adverse }}</view>
+            <view class="money">赚 ￥{{ item.money }}</view>
+          </view>
+        </view>
+      </view>
+      <view class="items" style="height:300rpx;"></view>
+    </scroll-view>
+
+  </view>
+  <!-- 餐企直聘 -->
+  <view class="restaurant" wx:if="{{ showNavi[2] }}">
+      <view class="tab">
+        <view class="text">全部 ></view>
+
+        <view class="recruitment">我要招聘</view>
+
+      </view>
+      <view style="width:100%;height:60rpx;"></view>
+      <block wx:for="{{ restaurants }}" wx:key="restaurants">
+      <view class="position">{{ item.position }}</view>
+      <view class="long">{{ item.long }} | {{ item.school }}</view>
+      <view class="items">
+        <view class="left">
+          <image class="image" src="/images/{{ item.image }}"></image>
+        </view>
+        <view class="right">
+          <view class="title">{{ item.title }}</view>
+          <view class="area-line">{{ item.city }} | {{ item.area }} | {{ item.adverse }}人以上</view>
+          <view class="">岗位要求：</view>
+          <view class="message">{{ item.message }}</view>
+          <view class="list-flex want-line">
+            <view class="want">正在热招：{{ item.want }}人</view>
+            <view class="money">{{ item.money }}</view>
+          </view>
+        </view>
+      </view>
+      </block>
+      <view class="items" style="height:150rpx;"></view>
+  </view>
+  <!-- 饮食培训 -->
+  <view class="training" wx:if="{{ showNavi[3] }}">饮食培训</view>
+  <!-- 广而告之 -->
+  <view class="advertising" wx:if="{{ showNavi[4] }}">广而告之</view>
+</view>
 
 
 

@@ -1,17 +1,47 @@
 {
   "pages":[
     "pages/index/index",
+    "pages/adverse/adverse",
+    "pages/detail/detail",
+    "pages/message/message",
+    "pages/talent/talent",
+    "pages/merchant/merchant",
+    "pages/self/self",
     "pages/logs/logs"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "良心会",
     "navigationBarTextStyle":"black"
   },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#f60",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/message/message",
+        "text": "消息"
+      },
+      {
+        "pagePath": "pages/talent/talent",
+        "text": "达人中心"
+      },
+      {
+        "pagePath": "pages/merchant/merchant",
+        "text": "商户中心"
+      },
+      {
+        "pagePath": "pages/self/self",
+        "text": "我的"
+      }
+    ]
+  }, 
   "style": "v2",
-  "sitemapLocation": "sitemap.json",
-  "usingComponents": {
-    "mp-dialog": "/weui-miniprogram/dialog/dialog"
-  }
+  "sitemapLocation": "sitemap.json"
 }

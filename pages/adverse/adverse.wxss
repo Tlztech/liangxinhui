@@ -1,0 +1,97 @@
+/**adverse.wxss**/
+.index-contain {
+  width: 710rpx;
+  font-size: 28rpx;
+  color: #999;
+  margin: 0 auto;
+}
+
+/* 导航部分 */
+.navi-list {
+  height: 50rpx;
+  line-height: 50rpx;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.navi-list .navis {
+  width: 70rpx;
+  height: 100%;
+}
+
+.navi-list .navis-show {
+  width: 70rpx;
+  height: 100%;
+  font-size: 30rpx;
+  color: orange;
+  border-bottom: 6rpx solid orange;
+}
+
+/* 底部商品列表 */
+.bottom {
+  width: 100%;
+}
+
+.bottom .items{
+  width: 100%;
+  height: 260rpx;
+  margin-top: 30rpx;
+  display: flex;
+  flex-direction: row;
+}
+.bottom .items .left{
+  width: 280rpx;
+  height: 260rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.bottom .items .left .image{
+  width: 240rpx;
+  height: 170rpx;
+  margin-top: 45rpx;
+  margin-left: 20rpx;
+}
+.bottom .items .right{
+  width: 410rpx;
+  height: 260rpx;
+  border-bottom: 2rpx solid #ccc;
+}
+
+.bottom .items .right .star{
+  height: 50rpx;
+  padding-top: 10rpx;
+  display: flex;
+  flex-direction: row;
+}
+.bottom .items .right .star .starImages{
+  width: 40rpx;
+  height: 40rpx;
+}
+.list-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.bottom .items .right .title{
+  height: 90rpx;
+  font-size: 30rpx;
+  overflow: hidden;
+  color: #444;
+}
+.bottom .items .right .area-line{
+  height: 35rpx;
+  line-height: 35rpx;
+}
+.bottom .items .right .area-line .price{
+  font-size: 35rpx;
+  overflow: hidden;
+  color: orange;
+}
+.bottom .items .right .old-line .old{
+  text-decoration-line: line-through;
+}
+.bottom .items .right .adverse-line .money{
+  color: #ecec0a;
+}

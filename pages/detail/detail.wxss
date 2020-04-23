@@ -21,12 +21,14 @@
   font-size: 13px;
   margin-left: 10rpx;
 }
-.product-detail-text .starImages{
-  display: block;
+.product-detail-text .star{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.product-detail-text .star .starImages{
   width: 40rpx;
   height: 40rpx;
-  float: inline-start;
-  margin: 0 auto;
 }
 .product-detail-text .product-detail-price{
   font-size: 36rpx;
@@ -174,20 +176,20 @@
   font-size: 26rpx;
   text-align: left;
 }
-.detail-text{
-  margin-left: 60rpx;
-}
 .detail-s .detail{
   display: flex;
   text-align: left;
   margin-top: 8rpx;
 }
-.detail-s .detail text{
+.detail-s .detail .left-text{
   color: #aaa;
+  font-size: 28rpx;
+  width: 120rpx;
 }
 .detail-s .detail .detail-text{
   flex: 1;
   color: black;
+  font-size: 28rpx;
 }
 
 /* 观赏图 */

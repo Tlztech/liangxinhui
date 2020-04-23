@@ -165,14 +165,14 @@
   </view>
   <!-- 餐企直聘 -->
   <view class="restaurant" wx:if="{{ showNavi[2] }}">
-      <view class="tab">
-        <view class="text">全部 ></view>
+    <view class="tab">
+      <view class="text">全部 ></view>
 
-        <view class="recruitment">我要招聘</view>
+      <view class="recruitment">我要招聘</view>
 
-      </view>
-      <view style="width:100%;height:60rpx;"></view>
-      <block wx:for="{{ restaurants }}" wx:key="restaurants">
+    </view>
+    <view style="width:100%;height:60rpx;"></view>
+    <block wx:for="{{ restaurants }}" wx:key="restaurants">
       <view class="position">{{ item.position }}</view>
       <view class="long">{{ item.long }} | {{ item.school }}</view>
       <view class="items">
@@ -190,13 +190,62 @@
           </view>
         </view>
       </view>
-      </block>
-      <view class="items" style="height:150rpx;"></view>
+    </block>
+    <view class="items" style="height:150rpx;"></view>
   </view>
   <!-- 饮食培训 -->
-  <view class="training" wx:if="{{ showNavi[3] }}">饮食培训</view>
+  <view class="training" wx:if="{{ showNavi[3] }}">
+    <view class="tab">
+      <view class="text">全部 ></view>
+    </view>
+    <view style="width:100%;height:75rpx;"></view>
+      <view wx:for="{{ trainings }}" wx:key="trainings" class="items">
+        <view class="left">
+          <image class="image" src="/images/{{ item.image }}"></image>
+        </view>
+        <view class="right">
+          <view class="title">{{ item.title }}</view>
+          <view class="list-flex type-line">
+            <view class="type">{{ item.type }}|{{ item.level }}</view>
+            <view class="money">赚￥{{ item.money }}</view>
+          </view>
+          <view class="city">{{ item.city }}</view>
+          <view class="list-flex price-line">
+            <view class="old">￥{{ item.old }}</view>
+            <view class="price">￥{{ item.price }}</view>
+          </view>
+        </view>
+      </view>
+    <view class="items" style="height:150rpx;"></view>
+  </view>
   <!-- 广而告之 -->
-  <view class="advertising" wx:if="{{ showNavi[4] }}">广而告之</view>
+  <view class="advertising" wx:if="{{ showNavi[4] }}">
+    <view class="tab">
+      <view class="text">全部 ></view>
+      <view class="recruitment">我要发布</view>
+    </view>
+    <view style="width:100%;height:65rpx;"></view>
+    <block wx:for="{{ advertisings }}" wx:key="advertising">
+      <view class="title">{{ item.title }}</view>
+      <view class="items">
+        <view class="left">
+          <image class="image" src="/images/{{ item.image }}"></image>
+        </view>
+        <view class="right">
+          <view class="user">
+            <image src="/images/{{ item.photo }}" class="photo"></image>
+            <view class="name">{{ item.name }}</view>
+          </view>
+          <view class="list-flex area-line">
+            <view class="city">{{ item.city }}</view>
+            <view class="heart"><text style="color:#f33">❤</text> {{ item.heart }}</view>
+          </view>
+          <view class="message">{{ item.message }}</view>
+        </view>
+      </view>
+    </block>
+    <view class="items" style="height:150rpx;"></view>
+  </view>
 </view>
 
 

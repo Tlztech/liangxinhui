@@ -2,6 +2,7 @@
 Page({
   data: {
     id:'',
+    starImages: [],
     list:
       { 'brand': '大米', 'title': '【增荔】香软丝苗米 2 kg装', 'expiration_date': '2020年5月20日', 'area': '沈阳和平区', 'star': 4, 'phone': 13912345678, 'introduction': '奥ID和嫂ID哈死的还是大海哦点好的哈啥大事', 'yprice': 288, 'xprice': '188', 'zprice': 30, 'limited':100,'buy': 3000, 'praise': 3404, 'promote': 3233, 'pic': '/images/food/5.jpeg', 'pic1': '/images/food/1.jpeg',  'pic2': '/images/food/2.jpeg',  'pic3': '/images/food/3.jpeg'},
     commects: [
@@ -56,19 +57,20 @@ Page({
       title: '商品详情',
     })
     //星级
-    let list = this.data.list;
-    for (var i=0; i<list.length; i++) {
-      var star = list[i].star;
-      var starImages = [];
-      for (var j = 0; j < 5; j++) {
-        if (j < star) {
-          starImages[j] = true;
-        } else {
-          starImages[j] = false;
-        }
+    const star = this.data.list.star;
+
+    var starImages = [];
+    for (var j = 0; j < 5; j++) {
+      if (j < star) {
+        starImages[j] = true;
+      } else {
+        starImages[j] = false;
       }
-      list[i].starImages = starImages;
     }
+    this.setData({
+      starImages:starImages,
+    })
+
   },
   lookcommentalls: function(e){
     wx.navigateTo({

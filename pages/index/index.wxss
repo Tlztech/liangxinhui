@@ -332,7 +332,7 @@
   text-decoration-line: line-through;
 }
 .bottom .items .right .adverse-line .money{
-  color: #ecec0a;
+  color: #fdd802;
 }
 
 /* 餐企直聘 */
@@ -427,4 +427,171 @@
 }
 .restaurant .items .right .want-line .money{
   color: #f33;
+}
+
+/* 饮食培训 */
+.training {
+  width: 100%;
+  height: 500rpx;
+}
+.training .tab {
+  width: 750rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: #f4f4f4;
+  font-size: 30rpx;
+  color: #000;
+  position: absolute;
+  top: 200rpx;
+  left: 0;
+}
+.training .tab .text{
+  text-indent: 30rpx;
+}
+.training .tab .recruitment{
+  width: 170rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  background: orange;
+  color: #fff;
+  text-align: center;
+  margin-top: 10rpx;
+  margin-right: 30rpx;
+  border-radius: 15rpx;
+}
+.training .items{
+  width: 100%;
+  height: 175rpx;
+  margin-top: 15rpx;
+  border-bottom: 1rpx solid #ccc;
+  display: flex;
+  flex-direction: row;
+}
+.training .items .left{
+  width: 300rpx;
+  height: 160rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.training .items .left .image{
+  width: 280rpx;
+  height: 160rpx;
+}
+.training .items .right{
+  width: 410rpx;
+  height: 100%;
+  color: #ccc;
+}
+
+.list-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.training .items .right .title{
+  font-size: 30rpx;
+  color: #444;
+}
+
+.training .items .right .type-line .money{
+  color: #fdd802;
+}
+.training .items .right .price-line{
+  height: 60rpx;
+  line-height: 40rpx;
+}
+.training .items .right .price-line .price{
+  color: #f33;
+  font-size: 36rpx;
+}
+
+/* 广而告之 */
+.advertising {
+  width: 100%;
+  height: 500rpx;
+}
+.advertising .tab {
+  width: 750rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: #f4f4f4;
+  font-size: 30rpx;
+  color: #000;
+  position: absolute;
+  top: 200rpx;
+  left: 0;
+}
+.advertising .tab .text{
+  text-indent: 30rpx;
+}
+.advertising .tab .recruitment{
+  width: 170rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  background: orange;
+  color: #fff;
+  text-align: center;
+  margin-top: 10rpx;
+  margin-right: 30rpx;
+  border-radius: 15rpx;
+}
+
+.advertising .title{
+  margin: 20rpx 0;
+  font-size: 30rpx;
+  color: #444;
+}
+.advertising .items{
+  width: 100%;
+  height: 200rpx;
+  display: flex;
+  flex-direction: row;
+}
+.advertising .items .left{
+  width: 280rpx;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.advertising .items .left .image{
+  width: 250rpx;
+  height: 100%;
+}
+.advertising .items .right{
+  width: 410rpx;
+  height: 100%;
+  padding-top: 0;
+}
+.list-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.advertising .items .right .user{
+  font-size: 30rpx;
+  color: #444;
+  display: flex;
+  flex-direction: row;
+}
+.advertising .items .right .user .photo{
+  width: 40rpx;
+  height: 40rpx;
+}
+.advertising .items .right .user .name{
+  line-height: 40rpx;
+  text-indent: 15rpx;
+}
+.advertising .items .right .area-line{
+  color: #ccc;
+}
+.advertising .items .right .message{
+  overflow: hidden;
 }

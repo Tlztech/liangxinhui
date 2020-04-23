@@ -1,4 +1,4 @@
-第 {{ id }} 号商品
+<!-- 第 {{ id }} 号商品 -->
 <!--pages/cateringtrainingProductdetails/cateringtrainingProductdetails.wxml-->
 <view class="catin-product-detail-view">
   <!-- 详情 -->
@@ -6,11 +6,9 @@
     <image src="{{ list.pic }}" />
   </view>
   <view class="product-detail-text">
-    <image class="starImages" src="/images/star1.jpg"></image>
-    <image class="starImages" src="/images/star1.jpg"></image>
-    <image class="starImages" src="/images/star1.jpg"></image>
-    <image class="starImages" src="/images/star1.jpg"></image>
-    <image class="starImages" src="/images/star1.jpg"></image>
+    <view class="star">
+      <image wx:for="{{ starImages }}" class="starImages" src="/images/{{ item ? 'star1.jpg' : 'star2.jpg' }}" wx:key="star"></image>
+    </view>
     <view class="product-detail-kong"></view>
     <text class="product-detail-price">¥ {{ list.xprice}}</text>
     <text class="product-detail-z-price">赚 ¥ {{ list.zprice }}</text>
@@ -69,24 +67,24 @@
     <text class="">详情</text>
     <view class="detail-s">
       <view class="detail">
-        <text>品牌</text>
-        <text class="detail-text">{{ list.brand }}</text>
+        <view class="left-text">品牌</view>
+        <view class="detail-text">{{ list.brand }}</view>
       </view>
       <view class="detail">
-        <text>套餐内容</text>
-        <text class="detail-text">{{ list.title }}</text>
+        <view class="left-text">套餐内容</view>
+        <view class="detail-text">{{ list.title }}</view>
       </view>
       <view class="detail">
-        <text>有效期</text>
-        <text class="detail-text">{{ list.expiration_date }}</text>
+        <view class="left-text">有效期</view>
+        <view class="detail-text">{{ list.expiration_date }}</view>
       </view>
       <view class="detail">
-        <text>地址</text>
-        <text class="detail-text">{{ list.area }}</text>
+        <view class="left-text">地址</view>
+        <view class="detail-text">{{ list.area }}</view>
       </view>
       <view class="detail">
-        <text>联系电话</text>
-        <text class="detail-text">{{ list.phone }}</text>
+        <view class="left-text">联系电话</view>
+        <view class="detail-text">{{ list.phone }}</view>
       </view>
       <!-- <view class="detail">
         <text>使用说明</text>

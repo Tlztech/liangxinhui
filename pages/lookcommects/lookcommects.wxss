@@ -1,0 +1,37 @@
+/* 评论 */
+.comment-big-view{
+  width: 100%;
+  /* display: flex; */
+  /* justify-content: flex-start; */
+}
+.comment-big-view text{
+  font-size: 12px;
+}
+.comment-num-view .comment-text-num{
+  margin-left: 20rpx;
+  font-size: 12px;
+}
+.comment-big-view .comment-view-xxx{
+  width: 100%;
+  display: flex;
+  margin-left: 30rpx;
+  margin-top: 20rpx;
+}
+.comment-big-view .comment-view-xxx .comment-view-img image{
+  width: 100rpx;
+  height: 100rpx;
+}
+.comment-big-view .comment-view-xxx .comment-img-text{
+  width: 74%;
+  margin-left: 10rpx;
+}
+.comment-big-view .comment-view-xxx .comment-img-text image{
+  width: 80rpx;
+  height: 32rpx;
+  display: block;
+}
+.comment-big-view .comment-view-xxx .comment-img-text .comment-fgx{
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid #aaa;
+}

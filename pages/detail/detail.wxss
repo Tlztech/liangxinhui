@@ -14,58 +14,75 @@
 }
 .product-detail-text{
   width: 100%;
-  background-color: #ddd;
+  background-color: rgb(251, 75, 8);
   flex-direction: column;
 }
 .product-detail-text text{
   font-size: 13px;
   margin-left: 10rpx;
-  /* display: flex; */
 }
-.product-detail-text .product-detail-name{
+.product-detail-text .starImages{
   display: block;
+  width: 40rpx;
+  height: 40rpx;
+  float: inline-start;
+  margin: 0 auto;
 }
-.product-detail-text .product-detail-fl{
-  font-size: 10px;
-  color: #aaa;
+.product-detail-text .product-detail-price{
+  font-size: 36rpx;
+  color: white;
+  float: left;
 }
-.product-detail-text .product-detail-lev{
-  font-size: 10px;
-  color: #aaa;
-  margin-left: 246rpx;
+.product-detail-text .product-detail-z-price{
+  font-size: 36rpx;
+  color: rgb(255, 208, 10);
+  float: right;
+}
+.product-detail-text .product-detail-y-price{
+  font-size: 22rpx;
+  color: rgb(221, 200, 192);
+  float: left;
+  text-decoration:line-through
+}
+.product-detail-text .product-detail-xl{
+  font-size: 22rpx;
+  color: rgb(221, 200, 192);
+  float: right;
 }
 /* 样式分割 */
 .product-detail-text .product-detail-kong{
-  display: block;
+  clear: both;
 }
-.product-detail-text .product-detail-address{
-  font-size: 10px;
+.detail-name{
+  width: 100%;
+  height: 100rpx;
+}
+.detail-name .product-detail-name{
+  line-height: 100rpx;
+  font-size: 36rpx;
+}
+/* 三合一展示  购买-好评-推广 */
+.three-view-text{
+  width: 100%;
+  display: flex;
+}
+.three-view-text view{
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.three-view-text view text{
+  font-size: 24rpx;
+  flex: 1;
   color: #aaa;
+  text-align: center;
 }
-.product-detail-text .product-detail-time{
-  font-size: 10px;
-  color: #aaa;
-  margin-left: 246rpx;
-}
-.product-detail-text .product-detail-price{
-  font-size: 12px;
-  color: red;
-}
-.product-detail-text .product-detail-y-price{
-  font-size: 10px;
-  color: #aaa;
-  margin-left: 30rpx;
-  text-decoration:line-through;
-}
-.product-detail-text .product-detail-z-price{
-  font-size: 12px;
-  color: orange;
-  margin-left: 196rpx;
-}
+
 /* 课程 */
 .course-view{
   width: 100%;
-  margin: 20rpx;
+  margin-top: 8rpx;
 }
 .course-view text{
   display: block;
@@ -143,6 +160,36 @@
   line-height: 30px;
   justify-content: flex-end;
 }
+
+/* 详情 */
+.details-xq{
+  width: 100%;
+  padding: 20rpx;
+}
+.detail-s{
+  width: 100%;
+  padding: 10rpx;
+}
+.details-xq text{
+  font-size: 26rpx;
+  text-align: left;
+}
+.detail-text{
+  margin-left: 60rpx;
+}
+.detail-s .detail{
+  display: flex;
+  text-align: left;
+  margin-top: 8rpx;
+}
+.detail-s .detail text{
+  color: #aaa;
+}
+.detail-s .detail .detail-text{
+  flex: 1;
+  color: black;
+}
+
 /* 观赏图 */
 .watch-view{
   width: 100%;
@@ -152,3 +199,4 @@
   height: 380rpx;
   display:block;
 }
+

@@ -8,7 +8,8 @@
     "pages/merchant/merchant",
     "pages/self/self",
     "pages/logs/logs",
-    "pages/search/search"
+    "pages/search/search",
+    "pages/lookcommects/lookcommects"
   ],
   "window":{
     "backgroundTextStyle":"light",

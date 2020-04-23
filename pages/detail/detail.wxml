@@ -3,42 +3,50 @@
 <view class="catin-product-detail-view">
   <!-- 详情 -->
   <view class="product-detail-img">
-    <image src="../../images/food/5.jpeg" />
+    <image src="{{ list.pic }}" />
   </view>
   <view class="product-detail-text">
-    <text class="product-detail-name">西式快餐汉堡培训（广东）</text>
-    <text class="product-detail-fl">类别：烧烤</text>
-    <text class="product-detail-lev">级别：中级</text>
-    <text class="product-detail-kong"></text><br/>
-    <text class="product-detail-address">地点：广东</text>
-    <text class="product-detail-time">时间：两小时</text>
-    <text class="product-detail-kong"></text><br/>
-    <text class="product-detail-price">¥ 188</text>
-    <text class="product-detail-y-price">¥ 288</text>
-    <text class="product-detail-z-price">赚 ¥ 30</text>
+    <image class="starImages" src="/images/star1.jpg"></image>
+    <image class="starImages" src="/images/star1.jpg"></image>
+    <image class="starImages" src="/images/star1.jpg"></image>
+    <image class="starImages" src="/images/star1.jpg"></image>
+    <image class="starImages" src="/images/star1.jpg"></image>
+    <view class="product-detail-kong"></view>
+    <text class="product-detail-price">¥ {{ list.xprice}}</text>
+    <text class="product-detail-z-price">赚 ¥ {{ list.zprice }}</text>
+    <view class="product-detail-kong"></view>
+    <text class="product-detail-y-price">¥ {{ list.yprice }}</text>
+    <text class="product-detail-xl">限量：{{ list.limited }}</text>
+    <view class="product-detail-kong"></view>
   </view>
-  <!-- 详情end -->
-  <view class="course-view">
-    <text class="course-jies-text">课程介绍</text>
-    <text class="course-jies">----------------------------------------------------------------------------------------------------------------------------</text>
+  <view class="detail-name">
+    <text class="product-detail-name">{{ list.title }}</text>
   </view>
-  <view class="sign-up-view">
-    <text class="sign-up-text">报名须知</text>
-    <text class="sign-up-xz">----------------------------------------------------------------------------------------------------------------------------</text>
+  <!-- 三合一展示 -->
+  <view class="three-view-text">
+    <view>
+      <text>购买：{{ list.buy }}</text>
+    </view>
+    <view>
+      <text>好评：{{ list.praise }}</text>
+    </view>
+    <view>
+      <text>推广：{{ list.promote }}</text>
+    </view>
   </view>
   <!-- 评论 -->
   <view class="comment-num-view">
-    <text class="comment-text-num">评论（12005）</text>
+    <text class="comment-text-num">评论（{{ commects_num }}）</text>
   </view>
   <!-- 循环体 -->
-  <view class="comment-big-view">
+  <view class="comment-big-view" wx:for="{{ commects }}" wx:key="this">
     <view class="comment-view-xxx">
       <view class="comment-view-img">
-        <image src="../../images/food/3.jpeg"></image>
+        <image src="{{ item.head_pic }}"></image>
       </view>
       <view class="comment-img-text">
-        <image src="../../images/1587454552350.jpg"></image>
-        <text>有话好好说有话好好说有话好好说有话好好说有话好好说有话好好说有话好好说有话好好说有话好好说有话好好说有话好好说有话好好说有话好好说有话好好说有话好好说有话好好说有话好好说有话好好说有话好好说有话好好说有话好好说有话好好说</text>
+        <image src="{{ item.eval_level_img }}"></image>
+        <text>{{ item.connect_text }}</text>
         <!-- 分割线 -->
         <view class="comment-fgx"></view>
         <!-- 分割线end -->
@@ -46,22 +54,8 @@
     </view>
   </view>
   <!-- 循环体end -->
-  <view class="comment-big-view">
-    <view class="comment-view-xxx">
-      <view class="comment-view-img">
-        <image src="../../images/food/6.jpeg"></image>
-      </view>
-      <view class="comment-img-text">
-        <image src="../../images/1587454552350.jpg"></image>
-        <text>有话好好说有话好好说有话好好说有话好好说有话好好说有话好好说有话好好说有话好好说有话好好说有话好好说有话好好说有话好好说有话好好说有话好好说有话好好说有话好好说有话好好说有话好好说有话好好说有话好好说有话好好说有话好好说</text>
-        <!-- 分割线 -->
-        <view class="comment-fgx"></view>
-        <!-- 分割线end -->
-      </view>
-    </view>
-  </view>
   <!-- 评论查看更多 -->
-  <view class="look-alls-view">
+  <view class="look-alls-view" bindtap="lookcommentalls" data-val="{{ id }}">
     <view class="look-all-1">
       <text>查看更多</text>
     </view>
@@ -70,10 +64,49 @@
     </view>
   </view>
   <!-- 评论end -->
+  <!-- 详情介绍 -->
+  <view class="details-xq">
+    <text class="">详情</text>
+    <view class="detail-s">
+      <view class="detail">
+        <text>品牌</text>
+        <text class="detail-text">{{ list.brand }}</text>
+      </view>
+      <view class="detail">
+        <text>套餐内容</text>
+        <text class="detail-text">{{ list.title }}</text>
+      </view>
+      <view class="detail">
+        <text>有效期</text>
+        <text class="detail-text">{{ list.expiration_date }}</text>
+      </view>
+      <view class="detail">
+        <text>地址</text>
+        <text class="detail-text">{{ list.area }}</text>
+      </view>
+      <view class="detail">
+        <text>联系电话</text>
+        <text class="detail-text">{{ list.phone }}</text>
+      </view>
+      <!-- <view class="detail">
+        <text>使用说明</text>
+        <text class="detail-text">{{ list.introduction }}</text>
+      </view> -->
+      <view class="course-view">
+        <text class="course-jies-text">使用介绍</text>
+        <text class="course-jies">{{ list.introduction }}</text>
+      </view>
+    </view>
+    
+  </view>
+  <!-- 详情介绍end -->
+  <!-- 详情end -->
+  
   <!-- 观赏图 -->
   <view class="watch-view">
-    <image src="../../images/food/1.jpeg"></image>
-    <image src="../../images/food/4.jpeg"></image>
-    <image src="../../images/food/2.jpeg"></image>
+    <image src="{{ list.pic1 }}"></image>
+    <image src="{{ list.pic2 }}"></image>
+    <image src="{{ list.pic3 }}"></image>
   </view>
 </view>
+<mp-tabbar style="position:fixed;bottom:0;width:100%;left:0;right:0;" list="{{bottomlist}}" bindchange="tabChange"></mp-tabbar>

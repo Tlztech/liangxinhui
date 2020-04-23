@@ -1,0 +1,21 @@
+<!-- 评论 -->
+  <view class="comment-num-view">
+    <text class="comment-text-num">评论（{{ commects_num }}）</text>
+  </view>
+  <!-- 循环体 -->
+  <view class="comment-big-view" wx:for="{{ commects }}" wx:key="this">
+    <view class="comment-view-xxx">
+      <view class="comment-view-img">
+        <image src="{{ item.head_pic }}"></image>
+      </view>
+      <view class="comment-img-text">
+        <image src="{{ item.eval_level_img }}"></image>
+        <text>{{ item.connect_text }}</text>
+        <!-- 分割线 -->
+        <view class="comment-fgx"></view>
+        <!-- 分割线end -->
+      </view>
+    </view>
+  </view>
+  <!-- 循环体end -->
+  <!-- 评论end -->

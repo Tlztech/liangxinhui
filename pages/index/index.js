@@ -216,5 +216,12 @@ Page({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
-  }
+  },
+
+  //搜索
+  goSearch: function(e){
+    wx.navigateTo({
+      url: '../search/search'
+    })
+  },
 })

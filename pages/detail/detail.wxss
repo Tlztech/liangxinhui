@@ -1,1 +1,154 @@
-
+/* pages/cateringtrainingProductdetails/cateringtrainingProductdetails.wxss */
+/* 详情 */
+.catin-product-detail-view{
+  width: 100%;
+}
+.product-detail-img{
+  width: 100%;
+  height: 480rpx;
+  border:  0px solid #aaa;
+}
+.product-detail-img image{
+  width: 100%;
+  height: 480rpx;
+}
+.product-detail-text{
+  width: 100%;
+  background-color: #ddd;
+  flex-direction: column;
+}
+.product-detail-text text{
+  font-size: 13px;
+  margin-left: 10rpx;
+  /* display: flex; */
+}
+.product-detail-text .product-detail-name{
+  display: block;
+}
+.product-detail-text .product-detail-fl{
+  font-size: 10px;
+  color: #aaa;
+}
+.product-detail-text .product-detail-lev{
+  font-size: 10px;
+  color: #aaa;
+  margin-left: 246rpx;
+}
+/* 样式分割 */
+.product-detail-text .product-detail-kong{
+  display: block;
+}
+.product-detail-text .product-detail-address{
+  font-size: 10px;
+  color: #aaa;
+}
+.product-detail-text .product-detail-time{
+  font-size: 10px;
+  color: #aaa;
+  margin-left: 246rpx;
+}
+.product-detail-text .product-detail-price{
+  font-size: 12px;
+  color: red;
+}
+.product-detail-text .product-detail-y-price{
+  font-size: 10px;
+  color: #aaa;
+  margin-left: 30rpx;
+  text-decoration:line-through;
+}
+.product-detail-text .product-detail-z-price{
+  font-size: 12px;
+  color: orange;
+  margin-left: 196rpx;
+}
+/* 课程 */
+.course-view{
+  width: 100%;
+  margin: 20rpx;
+}
+.course-view text{
+  display: block;
+  font-size: 12px;
+}
+.course-view .course-jies{
+  color: #aaa;
+}
+/* 报名 */
+.sign-up-view{
+  width: 100%;
+  margin: 20rpx;
+}
+.sign-up-view text{
+  display: block;
+  font-size: 12px;
+}
+.sign-up-view .sign-up-xz{
+  color: #aaa;
+}
+/* 评论 */
+.comment-big-view{
+  width: 100%;
+  /* display: flex; */
+  /* justify-content: flex-start; */
+}
+.comment-big-view text{
+  font-size: 12px;
+}
+.comment-num-view .comment-text-num{
+  margin-left: 20rpx;
+  font-size: 12px;
+}
+.comment-big-view .comment-view-xxx{
+  width: 100%;
+  display: flex;
+  margin-left: 30rpx;
+  margin-top: 20rpx;
+}
+.comment-big-view .comment-view-xxx .comment-view-img image{
+  width: 100rpx;
+  height: 100rpx;
+}
+.comment-big-view .comment-view-xxx .comment-img-text{
+  width: 74%;
+  margin-left: 10rpx;
+}
+.comment-big-view .comment-view-xxx .comment-img-text image{
+  width: 80rpx;
+  height: 32rpx;
+  display: block;
+}
+.comment-big-view .comment-view-xxx .comment-img-text .comment-fgx{
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid #aaa;
+}
+/* 评论查看更多 */
+.look-alls-view{
+  width: 100%;
+  height: 30px;
+  display: flex;
+}
+.look-alls-view text{
+  font-size: 12px;
+  color: #aaa;
+}
+.look-alls-view .look-all-1{
+  width: 90%;
+  line-height: 30px;
+  margin-left: 30rpx;
+}
+.look-alls-view .look-all-2{
+  flex: 1;
+  line-height: 30px;
+  justify-content: flex-end;
+}
+/* 观赏图 */
+.watch-view{
+  width: 100%;
+}
+.watch-view image{
+  width: 100%;
+  height: 380rpx;
+  display:block;
+}

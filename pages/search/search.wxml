@@ -1,0 +1,29 @@
+<view>
+     <view>
+        <view class="weui-search-bar">
+            <view class="weui-search-bar__form">
+            <!-- 搜索框 -->
+                <view class="weui-search-bar__box">
+                    <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+                    <input type="text" class="weui-search-bar__input" placeholder="请输入搜索内容" value="{{search_Input}}"/>
+                </view>
+            </view>
+            <!-- 搜索按钮,调用搜索查询方法 -->
+            <view class="weui-search-bar__cancel-btn" bindtap='search'>搜索</view>
+        </view>
+    </view>
+</view>
+<!-- 历史搜索 -->
+<view class="history_view">
+  <view class="history_search">
+    <text class="history_search_s">历史搜索</text>
+    <mp-icon color="#aaa" icon="delete" size="16" bindtap="delete_history"></mp-icon>
+  </view>
+  <view class="history_btn" style="display:{{view_show}}" wx:if="{{!emtpy(history_seas)}}">
+    <view class="history_search_text">
+      <view class="history_search_btn_s" wx:for="{{history_seas}}" wx:key="this" bindtap="setsearchInput" data-val="{{item}}">
+        <text class="history_search_btn">{{item}}</text>
+      </view>
+    </view>
+  </view>
+</view>

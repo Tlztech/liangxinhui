@@ -1,0 +1,71 @@
+.weui-search-bar {
+  position: relative;
+  padding: 8px 10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  box-sizing: border-box;
+  background-color: #EFEFF4;
+  border-top: 1rpx solid #D7D6DC;
+  border-bottom: 1rpx solid #D7D6DC;
+}
+.weui-icon-search_in-box {
+  position: absolute;
+  left: 10px;
+  top:15px;
+}
+.weui-search-bar__form {
+  position: relative;
+  -webkit-box-flex: 1;
+  -webkit-flex: auto;
+          flex: auto;
+  border-radius: 5px;
+  background: #FFFFFF;
+  border: 1rpx solid #E6E6EA;
+}
+.weui-search-bar__box {
+  position: relative;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 1;
+}
+.weui-search-bar__input {
+  height: 28px;
+  line-height: 28px;
+  font-size: 14px;
+}
+.weui-search-bar__cancel-btn {
+  margin-left: 10px;
+  line-height: 28px;
+  color: #09BB07;
+  white-space: nowrap;
+}
+.history_view{
+  padding: 10px;
+}
+.history_search{
+  margin-top: 5px;
+}
+.history_search .history_search_s{
+  font-size: 14px;
+  color: #aaa;
+}
+.history_btn{
+  display: flex;
+}
+.history_search_text{
+  display: flex;
+  flex: 1;
+}
+.history_search_btn_s{
+  width: 50px;
+  background-color: darkgrey;
+  margin-left: 8px;
+}
+.history_search_btn{
+  text-align: center;
+  font-size: 15px;
+  margin-left: 8px;
+}

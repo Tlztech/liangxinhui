@@ -1,1 +1,79 @@
 第 {{ id }} 号商品
+<!--pages/cateringtrainingProductdetails/cateringtrainingProductdetails.wxml-->
+<view class="catin-product-detail-view">
+  <!-- 详情 -->
+  <view class="product-detail-img">
+    <image src="../../images/food/5.jpeg" />
+  </view>
+  <view class="product-detail-text">
+    <text class="product-detail-name">西式快餐汉堡培训（广东）</text>
+    <text class="product-detail-fl">类别：烧烤</text>
+    <text class="product-detail-lev">级别：中级</text>
+    <text class="product-detail-kong"></text><br/>
+    <text class="product-detail-address">地点：广东</text>
+    <text class="product-detail-time">时间：两小时</text>
+    <text class="product-detail-kong"></text><br/>
+    <text class="product-detail-price">¥ 188</text>
+    <text class="product-detail-y-price">¥ 288</text>
+    <text class="product-detail-z-price">赚 ¥ 30</text>
+  </view>
+  <!-- 详情end -->
+  <view class="course-view">
+    <text class="course-jies-text">课程介绍</text>
+    <text class="course-jies">----------------------------------------------------------------------------------------------------------------------------</text>
+  </view>
+  <view class="sign-up-view">
+    <text class="sign-up-text">报名须知</text>
+    <text class="sign-up-xz">----------------------------------------------------------------------------------------------------------------------------</text>
+  </view>
+  <!-- 评论 -->
+  <view class="comment-num-view">
+    <text class="comment-text-num">评论（12005）</text>
+  </view>
+  <!-- 循环体 -->
+  <view class="comment-big-view">
+    <view class="comment-view-xxx">
+      <view class="comment-view-img">
+        <image src="../../images/food/3.jpeg"></image>
+      </view>
+      <view class="comment-img-text">
+        <image src="../../images/1587454552350.jpg"></image>
+        <text>有话好好说有话好好说有话好好说有话好好说有话好好说有话好好说有话好好说有话好好说有话好好说有话好好说有话好好说有话好好说有话好好说有话好好说有话好好说有话好好说有话好好说有话好好说有话好好说有话好好说有话好好说有话好好说</text>
+        <!-- 分割线 -->
+        <view class="comment-fgx"></view>
+        <!-- 分割线end -->
+      </view>
+    </view>
+  </view>
+  <!-- 循环体end -->
+  <view class="comment-big-view">
+    <view class="comment-view-xxx">
+      <view class="comment-view-img">
+        <image src="../../images/food/6.jpeg"></image>
+      </view>
+      <view class="comment-img-text">
+        <image src="../../images/1587454552350.jpg"></image>
+        <text>有话好好说有话好好说有话好好说有话好好说有话好好说有话好好说有话好好说有话好好说有话好好说有话好好说有话好好说有话好好说有话好好说有话好好说有话好好说有话好好说有话好好说有话好好说有话好好说有话好好说有话好好说有话好好说</text>
+        <!-- 分割线 -->
+        <view class="comment-fgx"></view>
+        <!-- 分割线end -->
+      </view>
+    </view>
+  </view>
+  <!-- 评论查看更多 -->
+  <view class="look-alls-view">
+    <view class="look-all-1">
+      <text>查看更多</text>
+    </view>
+    <view class="look-all-2">
+      <text>></text>
+    </view>
+  </view>
+  <!-- 评论end -->
+  <!-- 观赏图 -->
+  <view class="watch-view">
+    <image src="../../images/food/1.jpeg"></image>
+    <image src="../../images/food/4.jpeg"></image>
+    <image src="../../images/food/2.jpeg"></image>
+  </view>
+</view>

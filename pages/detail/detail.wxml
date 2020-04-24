@@ -7,7 +7,7 @@
   </view>
   <view class="product-detail-text">
     <view class="star">
-      <image wx:for="{{ starImages }}" class="starImages" src="/images/{{ item ? 'star1.jpg' : 'star2.jpg' }}" wx:key="star"></image>
+      <image wx:for="{{ starImages }}" class="starImages" src="/images/{{ item ? 'star4.png' : 'star3.png' }}" wx:key="star"></image>
     </view>
     <view class="product-detail-kong"></view>
     <text class="product-detail-price">¥ {{ list.xprice}}</text>

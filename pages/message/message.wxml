@@ -1,1 +1,20 @@
-消息
+<!-- 循环体 -->
+<view class="message-big-view" wx:for="{{ message }}" wx:key="this">
+  <view class="message-view-xxx">
+    <image src="{{ item.head_pic }}" class="message-view-img"></image>
+    <view class="message-text">
+      <view class="message-name">{{ item.name }}</view>
+      <view class="message-time">{{ item.time }}</view>
+    </view>
+    <!-- <view class="message-times">
+      
+    </view> -->
+    <view class="message-connect-text">
+      <view>{{ item.connect_text }}</view>
+    </view>
+  </view>
+  <!-- 分割线 -->
+  <view class="message-fgx"></view>
+  <!-- 分割线end -->
+</view>
+<!-- 循环体end -->

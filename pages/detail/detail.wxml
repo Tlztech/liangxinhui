@@ -45,11 +45,11 @@
       <view class="comment-img-text">
         <image src="{{ item.eval_level_img }}"></image>
         <text>{{ item.connect_text }}</text>
-        <!-- 分割线 -->
-        <view class="comment-fgx"></view>
-        <!-- 分割线end -->
       </view>
     </view>
+    <!-- 分割线 -->
+    <view class="comment-fgx"></view>
+    <!-- 分割线end -->
   </view>
   <!-- 循环体end -->
   <!-- 评论查看更多 -->

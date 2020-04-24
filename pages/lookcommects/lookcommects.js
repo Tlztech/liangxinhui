@@ -19,7 +19,6 @@ Page({
       { 'id': 3, 'head_pic': '/images/food/6.jpeg', 'eval_level_img':'/images/1587454552350.jpg', 'connect_text': '包装满意，味道很香'},
       { 'id': 4, 'head_pic': '/images/food/6.jpeg', 'eval_level_img':'/images/1587454552350.jpg', 'connect_text': '包装满意，味道很香'},
       { 'id': 5, 'head_pic': '/images/food/6.jpeg', 'eval_level_img':'/images/1587454552350.jpg', 'connect_text': '包装满意，味道很香'},
-      
     ],
     commects_num: [ '3000' ],
     canIUse: wx.canIUse('button.open-type.getUserInfo')

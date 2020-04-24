@@ -1,1 +1,37 @@
+.message-big-view{
+  width: 100%;
+  margin: 0 auto;
+  padding: 6rpx;
+}
+.message-view-xxx{
+  display: flex;
+  flex-direction: row;
+}
+.message-view-img{
+  width: 100rpx;
+  height: 100rpx;
+}
+.message-text{
+  display: flex;
+  flex-direction: row;
+}
+.message-name{
+  font-size: 24rpx;
+}
 
+.message-times{
+  display: flex;
+  flex-direction: row;
+}
+.message-time{
+  font-size: 24rpx;
+  justify-content: flex-end;
+}
+
+
+
+.message-fgx{
+  margin-top: 4rpx;
+  width: 100%;
+  border: 1px solid #ddd;
+}

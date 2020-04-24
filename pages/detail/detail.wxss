@@ -142,7 +142,7 @@
   font-size: 20rpx;
   line-height: 40rpx;
 }
-.comment-big-view .comment-view-xxx .comment-img-text .comment-fgx{
+.comment-fgx{
   display: block;
   width: 100%;
   border-bottom: 1px solid #aaa;
@@ -173,10 +173,7 @@
   width: 100%;
   padding: 20rpx;
 }
-.detail-s{
-  width: 100%;
-  padding: 10rpx;
-}
+
 .details-xq text{
   font-size: 26rpx;
   text-align: left;

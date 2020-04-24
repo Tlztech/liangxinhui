@@ -130,12 +130,17 @@
 }
 .comment-big-view .comment-view-xxx .comment-img-text{
   width: 74%;
+  height: 40rpx;
   margin-left: 10rpx;
 }
 .comment-big-view .comment-view-xxx .comment-img-text image{
   width: 80rpx;
   height: 32rpx;
   display: block;
+}
+.comment-big-view .comment-view-xxx .comment-img-text text{
+  font-size: 20rpx;
+  line-height: 40rpx;
 }
 .comment-big-view .comment-view-xxx .comment-img-text .comment-fgx{
   display: block;

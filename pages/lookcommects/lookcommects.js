@@ -14,9 +14,12 @@ Page({
       { 'title':'【增荔】香软丝苗米 10 kg装', 'area':'沈阳和平区', 'time':12347, 'sale': 157, 'pride':12, 'star':18, 'price': 85, 'old':108, 'money': '0.8', 'adverse': 100}
     ],
     commects: [
-      { 'id': 1, 'head_pic': '/images/food/6.jpeg', 'eval_level_img':'/images/1587454552350.jpg', 'connect_text': '1话好好说有话好好说有话好好说有话好好说有话好好说有话好好说有话好好说有话好好说有话好好说有话好好说有话好好说有话'},
-      { 'id': 2, 'head_pic': '/images/food/6.jpeg', 'eval_level_img':'/images/1587454552350.jpg', 'connect_text': '2话好好说有话好好说有话好好说有话好好说有话好好说有话好好说有话好好说有话好好说有话好好说有话好好说有话好好说有话'},
-      { 'id': 3, 'head_pic': '/images/food/6.jpeg', 'eval_level_img':'/images/1587454552350.jpg', 'connect_text': '3话好好说有话好好说有话好好说有话好好说有话好好说有话好好说有话好好说有话好好说有话好好说有话好好说有话好好说有话'},
+      { 'id': 1, 'head_pic': '/images/food/6.jpeg', 'eval_level_img':'/images/1587454552350.jpg', 'connect_text': '包装满意，味道很香'},
+      { 'id': 2, 'head_pic': '/images/food/6.jpeg', 'eval_level_img':'/images/1587454552350.jpg', 'connect_text': '包装满意，味道很香'},
+      { 'id': 3, 'head_pic': '/images/food/6.jpeg', 'eval_level_img':'/images/1587454552350.jpg', 'connect_text': '包装满意，味道很香'},
+      { 'id': 4, 'head_pic': '/images/food/6.jpeg', 'eval_level_img':'/images/1587454552350.jpg', 'connect_text': '包装满意，味道很香'},
+      { 'id': 5, 'head_pic': '/images/food/6.jpeg', 'eval_level_img':'/images/1587454552350.jpg', 'connect_text': '包装满意，味道很香'},
+      
     ],
     commects_num: [ '3000' ],
     canIUse: wx.canIUse('button.open-type.getUserInfo')

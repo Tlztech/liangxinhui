@@ -1,31 +1,35 @@
 .message-big-view{
   width: 100%;
-  margin: 0 auto;
-  padding: 6rpx;
+  font-size: 28rpx;
 }
-.message-view-xxx{
+.flex-row {
   display: flex;
   flex-direction: row;
+}
+.message-border {
+  border-bottom: 4rpx solid #ccc;
+}
+.between {
+  justify-content: space-between;
 }
 .message-view-img{
   width: 100rpx;
   height: 100rpx;
+  margin: 15rpx 20rpx;
 }
 .message-text{
-  display: flex;
-  flex-direction: row;
+  margin-top: 20rpx;
+  width: 590rpx;
 }
 .message-name{
-  font-size: 24rpx;
-}
-
-.message-times{
-  display: flex;
-  flex-direction: row;
+  color: #444;
 }
 .message-time{
-  font-size: 24rpx;
-  justify-content: flex-end;
+  color: #ccc;
+}
+.message-connect-text {
+  margin-top: 10rpx;
+  color: #999;
 }
 
 

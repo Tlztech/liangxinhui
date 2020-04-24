@@ -24,23 +24,33 @@
     "list": [
       {
         "pagePath": "pages/index/index",
-        "text": "首页"
+        "text": "首页",
+        "iconPath": "/images/tabbarpic/index.png",
+        "selectedIconPath": "/images/tabbarpic/index-on.png"
       },
       {
         "pagePath": "pages/message/message",
-        "text": "消息"
+        "text": "消息",
+        "iconPath": "/images/tabbarpic/xiaoxi.png",
+        "selectedIconPath": "/images/tabbarpic/xiaoxi-on.png"
       },
       {
         "pagePath": "pages/talent/talent",
-        "text": "达人中心"
+        "text": "达人中心",
+        "iconPath": "/images/tabbarpic/daren.png",
+        "selectedIconPath": "/images/tabbarpic/daren-on.png"
       },
       {
         "pagePath": "pages/merchant/merchant",
-        "text": "商户中心"
+        "text": "商户中心",
+        "iconPath": "/images/tabbarpic/shanghu.png",
+        "selectedIconPath": "/images/tabbarpic/shanghu-on.png"
       },
       {
         "pagePath": "pages/self/self",
-        "text": "我的"
+        "text": "我的",
+        "iconPath": "/images/tabbarpic/wode.png",
+        "selectedIconPath": "/images/tabbarpic/wode-on.png"
       }
     ]
   }, 

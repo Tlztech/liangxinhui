@@ -16,29 +16,26 @@ Page({
       {
         "text": "首页",
         'id': 1,
-        // "iconPath": "/page/weui/images/tabbar_icon_chat_default.png",
-        // "selectedIconPath": "/page/weui/images/tabbar_icon_chat_active.png",
+        "iconPath": "/images/tabbarpic/index.png",
+        "selectedIconPath": "/images/tabbarpic/index-on.png",
         dot: true
       },
       {
         "text": "收藏",
         'id': 2,
-        // "iconPath": "/page/weui/images/tabbar_icon_setting_default.png",
-        // "selectedIconPath": "/page/weui/images/tabbar_icon_setting_active.png",
-        badge: 'New'
+        "iconPath": "/images/tabbarpic/shoucang.png",
+        "selectedIconPath": "/images/tabbarpic/shoucang-on.png",
       },
       {
         "text": "分享",
         'id': 3,
-        // "iconPath": "/page/weui/images/tabbar_icon_setting_default.png",
-        // "selectedIconPath": "/page/weui/images/tabbar_icon_setting_active.png",
-        badge: 'Go'
+        "iconPath": "/images/tabbarpic/fenxiang.png",
+        "selectedIconPath": "/images/tabbarpic/fenxiang-on.png",
       },
       {
         "text": "购买",
-        // "iconPath": "/page/weui/images/tabbar_icon_setting_default.png",
-        // "selectedIconPath": "/page/weui/images/tabbar_icon_setting_active.png",
-        badge: '¥'
+        "iconPath": "/images/tabbarpic/goumai.png",
+        "selectedIconPath": "/images/tabbarpic/goumai-on.png",
       }
     ]
   },

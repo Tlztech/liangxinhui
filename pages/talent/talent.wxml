@@ -1,1 +1,106 @@
-达人中心
+<view class="view">
+<!-- 非达人 -->
+  <!-- <view class="view" style="height:20rpx;"></view>
+  <view class="flex-row">
+    <image class="img" src="/images/photo1.png"></image>
+    <view class="">
+      <view class="flex-view flex-row between">
+        <view class="size">Butt-file</view>
+        <view class="button size bag-red" bindtap="">成为达人</view>
+      </view>
+      <view class="size color-aaa">邀请码:123456789</view>
+    </view>
+  </view>
+
+  <view class="view bag-blue raduis-view" style="height:400rpx;">
+    <view class="view flex-row between size-alls padding" style="height: 80rpx;">
+      <view>
+        <view>累计收益</view>
+        <view>0.00</view>
+      </view>
+      <view>
+        <view class="flex-row">
+          <view>待到账</view>
+          <image class="small-img" src="/images/whq.jpg"></image>
+        </view>
+        <view>0.00</view>
+      </view>
+      <view>
+        <view class="flex-row">
+          <view>可体现</view>
+          <image class="small-img" src="/images/whq.jpg"></image>
+        </view>
+        <view>0.00</view>
+      </view>
+      <view class="button1 size bag-orange position-re" style="color: white;">立即提现</view>
+    </view>
+    <view class="view border"></view>
+    <view class="view">
+      <view class="color-aaa size">收益明细</view>
+    </view>
+  </view>
+  
+  <view class="bag-hui raduis-view" style="height:400rpx;">
+    <view class="view">
+      <view class="size">我的下级</view>
+    </view>
+  </view> -->
+  <!-- 非达人end -->
+
+  <!-- 达人 -->
+  <view class="view" style="height:20rpx;"></view>
+  <view class="flex-row">
+    <image class="img" src="/images/photo1.png"></image>
+    <view class="">
+      <view class="flex-view flex-row between">
+        <view class="size">Butt-file</view>
+        <view class="button size bag-red" bindtap="">邀请达人</view>
+      </view>
+      <view class="size color-aaa">邀请码:123456789</view>
+    </view>
+  </view>
+
+  <view class="view bag-blue raduis-view">
+    <view class="view flex-row between size-alls padding" style="height: 80rpx;">
+      <view>
+        <view>累计收益</view>
+        <view>0.00</view>
+      </view>
+      <view>
+        <view class="flex-row">
+          <view>待到账</view>
+          <image class="small-img" src="/images/whq.jpg"></image>
+        </view>
+        <view>0.00</view>
+      </view>
+      <view>
+        <view class="flex-row">
+          <view>可体现</view>
+          <image class="small-img" src="/images/whq.jpg"></image>
+        </view>
+        <view>0.00</view>
+      </view>
+      <view class="button1 size bag-orange position-re" style="color: white;">立即提现</view>
+    </view>
+    <view class="view border"></view>
+    <view class="view bag-orange" style="height:48rpx;">
+      <view class=" flex-row between">
+        <view class="color-aaa size line-h">收益明细</view>
+        <view class="all-view-size flex-row line-h text-align position-re">
+          <view class=" bag-white width">全部</view>
+          <view class=" bag-white width">已到账</view>
+          <view class=" bag-white">未到账</view>
+        </view>
+      </view>
+    </view>
+
+  </view>
+  
+  <view class="bag-hui raduis-view">
+    <view class="view">
+      <view class="size">我的下级</view>
+    </view>
+  </view>
+  <!-- 达人end -->
+
+</view>

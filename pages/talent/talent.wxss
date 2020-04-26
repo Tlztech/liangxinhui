@@ -1,1 +1,106 @@
+.view{
+  width: 100%;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+.img{
+  width: 100rpx;
+  height: 100rpx;
+  margin: 15rpx 20rpx;
+  border-radius: 50rpx;
+  /* border: 1px solid blue; */
+}
+.small-img{
+  width: 20rpx;
+  height: 20rpx;
+}
+.bag-red{
+  background-color: red;
+}
+.bag-orange{
+  background-color: rgb(231, 122, 19);
+}
+.bag-blue{
+  background-color: rgb(14, 14, 31);
+}
+.bag-hui{
+  background-color: #ddd;
+}
+.bag-white{
+  background-color: white;
+}
+.color-aaa{
+  color: #aaa;
+}
+.button{
+  color: white;
+  width:160rpx;
+  height:54rpx;
+  line-height: 54rpx;
+  text-align:center;
+  border-radius: 10rpx;
+}
+.button1{
+  width:160rpx;
+  height: 60rpx;
+  line-height:60rpx;
+  text-align:center;
+  border-radius: 40rpx;
+}
+.position-re{
+  position: relative;
+  right: 20rpx;
+  top: 10rpx;
+}
+.raduis-view{
+  border-radius: 20rpx;
+}
+.flex-view{
+  margin-top: 20rpx;
+  width: 590rpx;
+}
+.size{
+  font-size: 24rpx;
+}
+.bold{
+  font-weight: bold;
+}
+.between {
+  justify-content: space-between;
+}
+.center{
+  justify-content: center;
+}
+.margin{
+  margin: 20rpx;
+}
+.margintop{
+  margin-top: 20rpx;
+}
+.padding{
+  padding: 6rpx;
+}
+.border{
+  border: 1px solid #aaa;
+}
+.text-center{
+  text-align: center;
+}
+.all-view-size > view{
+  font-size: 26rpx;
+}
+.size-alls > view{
+  font-size: 26rpx;
+  color: yellow;
+}
 
+
+/* 达人 */
+.line-h{
+  line-height: 48rpx;
+}
+.width{
+  width: 60rpx;
+}

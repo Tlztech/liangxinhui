@@ -83,16 +83,23 @@
       <view class="button1 size bag-orange position-re" style="color: white;">立即提现</view>
     </view>
     <view class="view border"></view>
-    <view class="view bag-orange" style="height:48rpx;">
+    <view class="view" style="height:48rpx;">
       <view class=" flex-row between">
         <view class="color-aaa size line-h">收益明细</view>
-        <view class="all-view-size flex-row line-h text-align position-re">
-          <view class=" bag-white width">全部</view>
-          <view class=" bag-white width">已到账</view>
-          <view class=" bag-white">未到账</view>
+        <view class="all-view-size flex-row between bag-white raduis-view relative" style="height:46rpx;line-height:46rpx;">
+          <view class="buttons">全部</view>
+          <view class="buttons">已到账</view>
+          <view class="buttons">未到账</view>
         </view>
       </view>
     </view>
+
+    <view class="bag-white">
+      <view>
+        img
+      </view>
+    
+    </view> 
 
   </view>
   

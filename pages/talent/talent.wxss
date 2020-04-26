@@ -102,5 +102,15 @@
   line-height: 48rpx;
 }
 .width{
-  width: 60rpx;
+  width: 300rpx;
+}
+.relative{
+  position: relative;
+  right: 10rpx;
+}
+.buttons{
+  width:100rpx;
+  height: 46rpx;
+  line-height:46rpx;
+  text-align:center;
 }

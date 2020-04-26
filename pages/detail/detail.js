@@ -47,7 +47,7 @@ Page({
   onLoad: function (e) {
     if (e && e.id) {
       this.setData({
-        id:e.id,
+        id:e.id ? e.id : e,
       })
     }
     wx.setNavigationBarTitle({

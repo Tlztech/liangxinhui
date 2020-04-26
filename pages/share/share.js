@@ -5,6 +5,14 @@ Page({
    * 页面的初始数据
    */
   data: {
+    list: {
+      'id': 1,
+      'big_img': "/images/food/4.jpeg",
+      'small_img1': "/images/food/5.jpeg",
+      'small_img2': "/images/food/6.jpeg",
+      'title': "[增荔] 苗米，活动优惠，好吃不贵！！！",
+      'connect': "营养健康，绿色食品，无农药，纯绿色天然！"
+    },
     bottomlist: [
       {
         "text": "好友分享",

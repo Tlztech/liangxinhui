@@ -1,17 +1,17 @@
-<view class="view">
+<view class="view" data-val="{{ list.id }}">
   <view>
-    <image src="/images/food/4.jpeg" class="big-img"></image>
+    <image src="{{ list.big_img }}" class="big-img"></image>
   </view>
   <view class="view" style="height:30rpx;"></view>
   <view class="flex-row height">
-    <image src="/images/food/4.jpeg" class="height"></image>
-    <image src="/images/food/4.jpeg" class="height"></image>
+    <image src="{{ list.small_img1 }}" class="height"></image>
+    <image src="{{ list.small_img2 }}" class="height"></image>
   </view>
   <view class="view" style="height:30rpx;"></view>
   <view class="view">
     <view class="view between">
-      <view class="size padding">喵咪</view>
-      <view class="size text-left color-aaa">好吃不贵，优惠价合适好吃不贵，优惠价合适好吃不贵，优惠价合适好吃不贵，优惠价合适好吃不贵，优惠价合适好吃不贵，优惠价合适好吃不贵，优惠价合适</view>
+      <view class="size padding">{{ list.title }}</view>
+      <view class="size text-left color-aaa">{{ list.connect }}</view>
     </view>
   </view>
 </view>

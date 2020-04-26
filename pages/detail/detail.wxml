@@ -107,4 +107,4 @@
     <image src="{{ list.pic3 }}"></image>
   </view>
 </view>
-<mp-tabbar style="position:fixed;bottom:0;width:100%;left:0;right:0;" list="{{bottomlist}}" bindchange="tabChange"></mp-tabbar>
+<mp-tabbar style="position:fixed;bottom:0;width:100%;left:0;right:0;" list="{{bottomlist}}" bindchange="tabChange" data-val="{{ item.id }}"></mp-tabbar>

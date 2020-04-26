@@ -16,6 +16,7 @@ Page({
       {
         "text": "首页",
         'id': 1,
+        'sign': "index",
         "iconPath": "/images/tabbarpic/index.png",
         "selectedIconPath": "/images/tabbarpic/index-on.png",
         dot: true
@@ -23,17 +24,21 @@ Page({
       {
         "text": "收藏",
         'id': 2,
+        'sign': "collect",
         "iconPath": "/images/tabbarpic/shoucang.png",
         "selectedIconPath": "/images/tabbarpic/shoucang-on.png",
       },
       {
         "text": "分享",
         'id': 3,
+        'sign': "share",
         "iconPath": "/images/tabbarpic/fenxiang.png",
         "selectedIconPath": "/images/tabbarpic/fenxiang-on.png",
       },
       {
         "text": "购买",
+        "id": 4,
+        'sign': "buy",
         "iconPath": "/images/tabbarpic/goumai.png",
         "selectedIconPath": "/images/tabbarpic/goumai-on.png",
       }
@@ -42,6 +47,11 @@ Page({
 
   tabChange(e) {
     console.log('tab change', e)
+    if(e.detail.item.sign == "share"){
+      wx.navigateTo({
+        url: '/pages/share/share',
+      })
+    }
   },
     
   onLoad: function (e) {

@@ -1,0 +1,19 @@
+<view class="view">
+  <view>
+    <image src="/images/food/4.jpeg" class="big-img"></image>
+  </view>
+  <view class="view" style="height:30rpx;"></view>
+  <view class="flex-row height">
+    <image src="/images/food/4.jpeg" class="height"></image>
+    <image src="/images/food/4.jpeg" class="height"></image>
+  </view>
+  <view class="view" style="height:30rpx;"></view>
+  <view class="view">
+    <view class="view between">
+      <view class="size padding">喵咪</view>
+      <view class="size text-left color-aaa">好吃不贵，优惠价合适好吃不贵，优惠价合适好吃不贵，优惠价合适好吃不贵，优惠价合适好吃不贵，优惠价合适好吃不贵，优惠价合适好吃不贵，优惠价合适</view>
+    </view>
+  </view>
+</view>
+<!-- 底部tabber -->
+<mp-tabbar style="position:fixed;bottom:0;width:100%;left:0;right:0;" list="{{bottomlist}}" bindchange="tabChange"></mp-tabbar>

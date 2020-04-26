@@ -9,7 +9,8 @@
     "pages/self/self",
     "pages/logs/logs",
     "pages/search/search",
-    "pages/lookcommects/lookcommects"
+    "pages/lookcommects/lookcommects",
+    "pages/share/share"
   ],
   "window":{
     "backgroundTextStyle":"light",

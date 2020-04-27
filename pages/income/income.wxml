@@ -1,0 +1,97 @@
+<!-- 查看收益明细 -->
+<view class="view">
+  <view class="view" style="height:48rpx;">
+    <view class=" flex-row between">
+      <view class="color-aaa size line-h">收益明细</view>
+      <view class="all-view-size flex-row between bag-white raduis-view relative" style="height:46rpx;line-height:46rpx;">
+        <view class="buttons {{detail_val == 3 ? 'bag-orange' : ''}} raduis-view" bindtap="all" data-val="3" style="">全部</view>
+        <view class="buttons {{detail_val == 1 ? 'bag-orange' : ''}} raduis-view" bindtap="all" data-val="1">已到账</view>
+        <view class="buttons {{detail_val == 2 ? 'bag-orange' : ''}} raduis-view" bindtap="all" data-val="2">未到账</view>
+      </view>
+    </view>
+  </view>
+
+  <view class="view" wx:if="{{ detail_val == 3 }}">
+  <!-- 循环体 -->
+  <!-- 全部 -->
+    <view style="width:100%;" class="flex bag-white"wx:for="{{ list }}"  wx:if="{{ detail_val == 3 }}" >
+      <view class="view-center">
+        <image src="{{ item.shop_pic }}" class="z-img"></image>
+      </view>
+      <view style="width:500rpx;" class="margin">
+        <view>{{ item.name }}</view>
+        <view class="flex-row between">
+          <view class="size color-aaa">¥ {{ item.x_price }}</view>
+          <view class="size color-aaa">¥ {{ item.y_price }}</view>
+          <view class="z-size color-aaa">数量{{ item.quantity }}</view>
+          <view class="z-size color-orange">奖 {{ item.prize }}</view>
+        </view>
+        <view class="flex-row">
+          <view class="z-size color-orange" style="width:150rpx;">赚{{ item.z_price}}</view>
+          <view style="flex:1;">
+            <view class="button2 bag-hui color-white z-size">{{ item.status == 1 ? '已到账' : '未到账'}}</view>
+          </view>
+        </view>
+      </view>
+      <view>
+        <image src="{{ item.user_img }}" class="img"></image>
+        <view class="size text-center" style="margin-top:-16rpx;">{{ item.user_name}}</view>
+      </view>
+    </view> 
+
+    <!-- 已到账 -->
+    <view style="width:100%;" class="flex bag-white" wx:for="{{ list }}"  wx:if="{{ detail_val == 1 && item.status == 1 }}" >
+      <view class="view-center">
+        <image src="{{ item.shop_pic }}" class="z-img"></image>
+      </view>
+      <view style="width:500rpx;" class="margin">
+        <view>{{ item.name }}</view>
+        <view class="flex-row between">
+          <view class="size color-aaa">¥ {{ item.x_price }}</view>
+          <view class="size color-aaa">¥ {{ item.y_price }}</view>
+          <view class="z-size color-aaa">数量{{ item.quantity }}</view>
+          <view class="z-size color-orange">奖 {{ item.prize }}</view>
+        </view>
+        <view class="flex-row">
+          <view class="z-size color-orange" style="width:150rpx;">赚{{ item.z_price}}</view>
+          <view style="flex:1;">
+            <view class="button2 bag-hui color-white z-size">已到账</view>
+          </view>
+        </view>
+      </view>
+      <view>
+        <image src="{{ item.user_img }}" class="img"></image>
+        <view class="size text-center" style="margin-top:-16rpx;">{{ item.user_name}}</view>
+      </view>
+    </view> 
+
+    <!-- 未到账 -->
+    <view style="width:100%;" class="flex bag-white" wx:for="{{ list }}"  wx:if="{{ detail_val == 2 && item.status == 2}}" >
+      <view class="view-center">
+        <image src="{{ item.shop_pic }}" class="z-img"></image>
+      </view>
+      <view style="width:500rpx;" class="margin">
+        <view>{{ item.name }}</view>
+        <view class="flex-row between">
+          <view class="size color-aaa">¥ {{ item.x_price }}</view>
+          <view class="size color-aaa">¥ {{ item.y_price }}</view>
+          <view class="z-size color-aaa">数量{{ item.quantity }}</view>
+          <view class="z-size color-orange">奖 {{ item.prize }}</view>
+        </view>
+        <view class="flex-row">
+          <view class="z-size color-orange" style="width:150rpx;">赚{{ item.z_price}}</view>
+          <view style="flex:1;">
+            <view class="button2 bag-hui color-white z-size">未到账</view>
+          </view>
+        </view>
+      </view>
+      <view>
+        <image src="{{ item.user_img }}" class="img"></image>
+        <view class="size text-center" style="margin-top:-16rpx;">{{ item.user_name}}</view>
+      </view>
+    </view> 
+    <!-- 循环体 -->
+    <view class="view border"></view>
+    <view class="" style="height:4rpx;"></view>
+  </view>
+</view>

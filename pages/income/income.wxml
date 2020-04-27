@@ -2,7 +2,7 @@
 <view class="view">
   <view class="view" style="height:48rpx;">
     <view class=" flex-row between">
-      <view class="color-aaa size line-h">收益明细</view>
+      <view class="color-aaa size line-h"></view>
       <view class="all-view-size flex-row between bag-white raduis-view relative" style="height:46rpx;line-height:46rpx;">
         <view class="buttons {{detail_val == 3 ? 'bag-orange' : ''}} raduis-view" bindtap="all" data-val="3" style="">全部</view>
         <view class="buttons {{detail_val == 1 ? 'bag-orange' : ''}} raduis-view" bindtap="all" data-val="1">已到账</view>

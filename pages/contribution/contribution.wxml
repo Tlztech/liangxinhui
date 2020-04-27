@@ -1,6 +1,6 @@
 <view class="bag-hui raduis-view">
   <view class="view">
-    <view class="size margin">下线贡献</view>
+    <view class="size margin"></view>
     <!-- 循环体 -->
     <view class="flex-row bag-white borderbottom" wx:for="{{ contribution }}">
       <view>

@@ -221,6 +221,11 @@ Page({
       url: '/pages/resume/resume',
     })
   },
+  recruit: function (e) {
+    wx.navigateTo({
+      url: '/pages/recruit/recruit',
+    })
+  },
   restaurant: function (e) {
     const id = e.currentTarget.id;
     wx.navigateTo({

@@ -1,5 +1,6 @@
 {
   "pages":[
+    "pages/recruit/recruit",
     "pages/index/index",
     "pages/adverse/adverse",
     "pages/detail/detail",

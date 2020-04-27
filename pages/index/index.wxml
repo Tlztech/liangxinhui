@@ -168,7 +168,7 @@
     <view class="tab">
       <view class="text">全部 ></view>
 
-      <view class="recruitment" bindtap="resume">我要招聘</view>
+      <view class="recruitment" bindtap="recruit">我要招聘</view>
 
     </view>
     <view style="width:100%;height:60rpx;"></view>

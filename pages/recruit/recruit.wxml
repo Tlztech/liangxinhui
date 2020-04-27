@@ -1,0 +1,51 @@
+<!--resume.wxml-->
+<view class="contain">
+  <view class="row list">
+    <view class="name">企业全称</view>
+    <view class="content" style="width:500rpx;">
+      <input id="resume" bindinput="setValue" bindblur="trimValue" value="{{ user ? user.title : '' }}"></input>
+    </view>
+  </view>
+  <view class="row list">
+    <view class="left">
+      <view class="row">
+        <view class="name">姓名</view>
+        <view class="content" style="width:460rpx;">
+          <input id="name" bindinput="setValue" bindblur="trimValue" value="{{ user ? user.name : '' }}"></input>
+        </view>
+      </view>
+      <view class="row">
+        <view class="name">年龄</view>
+        <view class="content" style="width:460rpx">
+          <input id="age" bindinput="setValue" bindblur="trimValue" value="{{ user ? user.age : '' }}"></input>
+        </view>
+      </view>
+    </view>
+    <view class="user">
+      <image class="photo" src="/images/er.jpg"></image>
+    </view>
+  </view>
+  <view class="row list">
+    <view class="name">经验</view>
+    <view class="content" style="width:460rpx">
+      <input id="experience" bindinput="setValue" bindblur="trimValue" value="{{ user ? user.experience : '' }}"></input>
+    </view>
+  </view>
+  <view class="row images" style="flex-wrap:wrap;">
+    <view id="{{ index }}" wx:if="{{ user && user.images }}" wx:for="{{ user.images }}" wx:key="images" class="item" bindtap="imageChange">
+      <image src="{{ item }}" class="plus"></image>
+    </view>
+    <view id="pass1" class="item2" bindtap="imageUpload">
+      <view class="plus2">＋</view>
+    </view>
+    <view id="pass1" class="item2" bindtap="imageUpload">
+      <view class="plus2">＋</view>
+    </view>
+  </view>
+  <view class="textline">内容</view>
+  <view class="text">
+    <textarea id="jineng" bindinput="setValue" bindblur="trimValue" class="textarea" placeholder="点此输入职业技能" value="{{ user ? user.jineng : '' }}"></textarea>
+  </view>
+  
+  <view class="button" bindtap="submit">提交</view>
+</view>

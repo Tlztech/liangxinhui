@@ -7,7 +7,7 @@
       <view class="">
         <view class="flex-view flex-row between">
           <view class="size">Butt-file</view>
-          <view class="button size bag-red" bindtap="">成为达人</view>
+          <view class="button3 size bag-red" bindtap="">成为达人</view>
         </view>
         <view class="size color-aaa">邀请码:123456789</view>
       </view>
@@ -57,7 +57,7 @@
       <view class="">
         <view class="flex-view flex-row between">
           <view class="size">{{ talent_obj.user_name }}</view>
-          <view class="button size bag-red" bindtap="">邀请达人</view>
+          <view class="button3 size bag-red" bindtap="">邀请达人</view>
         </view>
         <view class="size color-aaa">邀请码:123456789</view>
       </view>

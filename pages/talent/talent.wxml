@@ -95,8 +95,25 @@
     </view>
 
     <view class="bag-white">
-      <view>
-        img
+      <view class="flex-row">
+        <image class="shopimg" src="/images/food/4.jpeg"></image>
+        <view class="all-view-size">
+          <view class="">name</view>
+          <view class="flex-row between">
+            <view>¥200.9</view>
+            <view>¥900</view>
+            <view>数量</view>
+            <view>奖10</view>
+          </view>
+          <view class="flex-row">
+            <view>赚 ¥5.6</view>
+            <view>未到账</view>
+          </view>
+        </view>
+        <view class="flex between text-center">
+          <image class="img" src="/images/photo2.png"></image>
+          <view class="size">Butt-file</view>
+        </view>
       </view>
     
     </view> 

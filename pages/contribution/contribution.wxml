@@ -1,0 +1,19 @@
+<view class="bag-hui raduis-view">
+  <view class="view">
+    <view class="size margin">下线贡献</view>
+    <!-- 循环体 -->
+    <view class="flex-row bag-white borderbottom" wx:for="{{ contribution }}">
+      <view>
+        <image class="img" src="{{ item.user_img }}"></image>
+      </view>
+      <view class="view margin bag-white">
+        <view class="flex-row between">
+          <view class="d-size">{{ item.user_name }}</view>
+          <view class="d-size color-orange">赚：{{ item.z_price }}</view>
+        </view>
+        <view class="size color-aaa">达龄：{{ item.talent_age }}</view>
+      </view>
+    </view>
+    <!-- 循环体end         -->
+  </view>
+</view>

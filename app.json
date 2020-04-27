@@ -4,13 +4,15 @@
     "pages/adverse/adverse",
     "pages/detail/detail",
     "pages/message/message",
-    "pages/talent/talent",
     "pages/merchant/merchant",
     "pages/self/self",
     "pages/logs/logs",
     "pages/search/search",
     "pages/lookcommects/lookcommects",
-    "pages/share/share"
+    "pages/share/share",
+    "pages/talent/talent",
+    "pages/income/income",
+    "pages/contribution/contribution"
   ],
   "window":{
     "backgroundTextStyle":"light",

@@ -11,7 +11,7 @@
     </view>
   </view>
 
-  <view class="view" wx:if="{{ detail_val == 3 }}">
+  <view class="view">
   <!-- 循环体 -->
   <!-- 全部 -->
     <view style="width:100%;" class="flex bag-white"wx:for="{{ list }}"  wx:if="{{ detail_val == 3 }}" >

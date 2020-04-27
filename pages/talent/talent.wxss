@@ -61,7 +61,7 @@
 .color-white{
   color: white;
 }
-.button{
+.button3{
   color: white;
   width:160rpx;
   height:54rpx;

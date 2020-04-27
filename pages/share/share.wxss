@@ -1,0 +1,36 @@
+/* pages/share/share.wxss */
+.view{
+  width: 100%;
+}
+.padding{
+  padding: 10rpx;
+}
+.height{
+  height: 340rpx;
+}
+.border{
+  border: 1px solid blue;
+}
+.big-img{
+  width: 100%;
+  height: 400rpx;
+}
+.small-img{
+  height: 180rpx;
+}
+.flex-row{
+  display: flex;
+  flex-direction: row;
+}
+.size{
+  font-size: 24rpx;
+}
+.between{
+  justify-content: space-between;
+}
+.text-left{
+  text-align: left;
+}
+.color-aaa{
+  color: #aaa;
+}

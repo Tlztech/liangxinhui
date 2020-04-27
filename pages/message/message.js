@@ -12,5 +12,10 @@ Page({
     wx.setNavigationBarTitle({
       title: '消息',
     })
+  },
+  godetail: function (e) {
+    wx.navigateTo({
+      url: '/pages/detail/detail',
+    })
   }
 })

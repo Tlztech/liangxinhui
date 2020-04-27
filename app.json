@@ -11,7 +11,8 @@
     "pages/self/self",
     "pages/logs/logs",
     "pages/search/search",
-    "pages/lookcommects/lookcommects"
+    "pages/lookcommects/lookcommects",
+    "pages/share/share"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -57,5 +58,9 @@
     ]
   }, 
   "style": "v2",
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "mp-tabbar": "/weui-miniprogram/tabbar/tabbar",
+    "mp-icon": "/weui-miniprogram/icon/icon"
+  }
 }

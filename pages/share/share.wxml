@@ -1,0 +1,19 @@
+<view class="view" data-val="{{ list.id }}">
+  <view>
+    <image src="{{ list.big_img }}" class="big-img"></image>
+  </view>
+  <view class="view" style="height:30rpx;"></view>
+  <view class="flex-row height">
+    <image src="{{ list.small_img1 }}" class="height"></image>
+    <image src="{{ list.small_img2 }}" class="height"></image>
+  </view>
+  <view class="view" style="height:30rpx;"></view>
+  <view class="view">
+    <view class="view between">
+      <view class="size padding">{{ list.title }}</view>
+      <view class="size text-left color-aaa">{{ list.connect }}</view>
+    </view>
+  </view>
+</view>
+<!-- 底部tabber -->
+<mp-tabbar style="position:fixed;bottom:0;width:100%;left:0;right:0;" list="{{bottomlist}}" bindchange="tabChange"></mp-tabbar>

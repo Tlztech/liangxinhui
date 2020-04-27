@@ -24,7 +24,7 @@ Page({
   onLoad: function (e) {
 
     wx.setNavigationBarTitle({
-      title: '达人中心',
+      title: '下线贡献',
     })
   },
 
@@ -32,18 +32,11 @@ Page({
     this.setData({
       detail_val: e.currentTarget.dataset.val,
     })
-    console.log(this.data.detail_val)
-    console.log(e.currentTarget.dataset.val)
   },
 
   goincomealls: function(e){
-    wx.navigateTo({
-      url: '/pages/income/income',
-    })
-  },
-  gocontribution: function(e){
-    wx.navigateTo({
-      url: '/pages/contribution/contribution',
+    this.setData({
+      incomealls: true,
     })
   }
 

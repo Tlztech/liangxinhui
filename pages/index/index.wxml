@@ -23,7 +23,7 @@
     <view id="4" class="{{ showNavi[4] ? 'items-show' : 'items' }}" bindtap="showNavi">广而告之</view>
   </view>
 
-  <!-- 餐企直聘&&美食推广 -->
+  <!-- 限时抢购&&美食推广 -->
   <view class="promote" wx:if="{{ showNavi[0] || showNavi[1] }}">
     <swiper class="swiper" indicator-color="#fff" indicator-dots="true" interval="4000" autoplay="true">
       <block wx:for="{{showNavi[0] ? swipers0 : swipers1}}" wx:key="*this">
@@ -168,11 +168,12 @@
     <view class="tab">
       <view class="text">全部 ></view>
 
-      <view class="recruitment">我要招聘</view>
+      <view class="recruitment" bindtap="resume">我要招聘</view>
 
     </view>
     <view style="width:100%;height:60rpx;"></view>
     <block wx:for="{{ restaurants }}" wx:key="restaurants">
+    <view id="{{ index }}" bindtap="restaurant">
       <view class="position">{{ item.position }}</view>
       <view class="long">{{ item.long }} | {{ item.school }}</view>
       <view class="items">
@@ -190,6 +191,7 @@
           </view>
         </view>
       </view>
+    </view>
     </block>
     <view class="items" style="height:150rpx;"></view>
   </view>

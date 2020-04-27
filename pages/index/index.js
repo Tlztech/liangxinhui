@@ -35,23 +35,23 @@ Page({
     //招聘列表
     restaurants: [
       { 'title': '广州大酒家', 'area': '和平区', 'city': '沈阳', 'want': 5, 'message': '本科以上学历，踏实肯干，有进取精神，有相关工作经验者优先。', 'image': 'test1.jpg', 'adverse': 320, 'position': '服务员', 'school': '高中', 'long': '经验不限', 'money': '3-5K' },
-      { 'title': '番禺酒店', 'area': '沈河区', 'city': '沈阳', 'want': 5, 'message': '本科以上学历，踏实肯干，有进取精神，有相关工作经验者优先。', 'image': 'test2.jpg', 'adverse': 320, 'position': '经理', 'school': '本科', 'long': '3到5年', 'money': '10-20K' },
-      { 'title': '广州大酒家', 'area': '和平区', 'city': '沈阳', 'want': 5, 'message': '本科以上学历，踏实肯干，有进取精神，有相关工作经验者优先。', 'image': 'test3.jpg', 'adverse': 320, 'position': '面点师', 'school': '高中', 'long': '1到2年', 'money': '5K以上' },
+      { 'title': '番禺酒店', 'area': '沈河区', 'city': '沈阳', 'want': 5, 'message': '本科以上学历，踏实肯干，有进取精神，有相关工作经验者优先。', 'image': 'test1.jpg', 'adverse': 320, 'position': '经理', 'school': '本科', 'long': '3到5年', 'money': '10-20K' },
+      { 'title': '广州大酒家', 'area': '和平区', 'city': '沈阳', 'want': 5, 'message': '本科以上学历，踏实肯干，有进取精神，有相关工作经验者优先。', 'image': 'test1.jpg', 'adverse': 320, 'position': '面点师', 'school': '高中', 'long': '1到2年', 'money': '5K以上' },
     ],
     //商品列表
     trainings: [
       { 'title': '西式快餐汉堡培训', 'city': '沈阳', 'type': '面点', 'price': 85, 'old': 108, 'money': '30', 'level': '中级', 'image': 'trainning1.png' },
-      { 'title': '正宗川味水煮鱼培训', 'city': '成都', 'type': '川菜', 'price': 888, 'old': 998, 'money': '60', 'level': '高级', 'image': 'trainning2.png' },
-      { 'title': '中华小吃地方风味培训', 'city': '天津', 'type': '小吃', 'price': 85, 'old': 108, 'money': '30', 'level': '中级', 'image': 'trainning3.png' },
-      { 'title': '正宗烤全羊培训', 'city': '蒙古', 'type': '烧烤', 'price': 3888, 'old': 5888, 'money': '300', 'level': '特级', 'image': 'trainning4.png' },
-      { 'title': '食尚香专业厨师培训', 'city': '广州', 'type': '粤菜', 'price': 480, 'old': 608, 'money': '30', 'level': '中级', 'image': 'trainning5.png' },
+      { 'title': '正宗川味水煮鱼培训', 'city': '成都', 'type': '川菜', 'price': 888, 'old': 998, 'money': '60', 'level': '高级', 'image': 'trainning1.png' },
+      { 'title': '中华小吃地方风味培训', 'city': '天津', 'type': '小吃', 'price': 85, 'old': 108, 'money': '30', 'level': '中级', 'image': 'trainning1.png' },
+      { 'title': '正宗烤全羊培训', 'city': '蒙古', 'type': '烧烤', 'price': 3888, 'old': 5888, 'money': '300', 'level': '特级', 'image': 'trainning1.png' },
+      { 'title': '食尚香专业厨师培训', 'city': '广州', 'type': '粤菜', 'price': 480, 'old': 608, 'money': '30', 'level': '中级', 'image': 'trainning1.png' },
     ],
     //广而告之
     advertisings: [
       { 'title': '人气韩式烧烤店转让', 'city': '沈阳', 'heart': 85, 'name': '奔跑的老牛', 'photo': 'photo1.png', 'image': 'advertising1.png', 'message': '现有300瓶闹事韩式烧烤店铺急转，附带内部所有设备，有愿者电话联系，详情面议，价格面议' },
-      { 'title': '饭店全套厨具转让', 'city': '广州', 'heart': 120, 'name': '飞翔小鸟', 'photo': 'photo2.png', 'image': 'advertising2.png', 'message': '八成新饭店厨具，原价8万现半价转让，有意者请联系。' },
-      { 'title': '求购二手烤箱10台', 'city': '成都', 'heart': 185, 'name': '樱桃小丸子', 'photo': 'photo3.png', 'image': 'advertising3.png', 'message': '因饭店规模扩大，求购二手烤箱10台，要九成新，价格好说。有意者请联系。' },
-      { 'title': '门面求租', 'city': '天津', 'heart': 35, 'name': '二月花开', 'photo': 'photo2.png', 'image': 'advertising2.png', 'message': '现有高桥路门面出租，面积500平，地处闹市，价格便宜。有意者联系。' },
+      { 'title': '饭店全套厨具转让', 'city': '广州', 'heart': 120, 'name': '飞翔小鸟', 'photo': 'photo2.png', 'image': 'advertising1.png', 'message': '八成新饭店厨具，原价8万现半价转让，有意者请联系。' },
+      { 'title': '求购二手烤箱10台', 'city': '成都', 'heart': 185, 'name': '樱桃小丸子', 'photo': 'photo3.png', 'image': 'advertising1.png', 'message': '因饭店规模扩大，求购二手烤箱10台，要九成新，价格好说。有意者请联系。' },
+      { 'title': '门面求租', 'city': '天津', 'heart': 35, 'name': '二月花开', 'photo': 'photo2.png', 'image': 'advertising1.png', 'message': '现有高桥路门面出租，面积500平，地处闹市，价格便宜。有意者联系。' },
     ],
     canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
@@ -214,6 +214,17 @@ Page({
     const id = e.currentTarget.id;
     wx.navigateTo({
       url: '/pages/detail/detail?id=' + id,
+    })
+  },
+  resume: function (e) {
+    wx.navigateTo({
+      url: '/pages/resume/resume',
+    })
+  },
+  restaurant: function (e) {
+    const id = e.currentTarget.id;
+    wx.navigateTo({
+      url: '/pages/restaurant/restaurant?id='+id,
     })
   },
   //转发

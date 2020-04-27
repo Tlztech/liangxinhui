@@ -9,3 +9,57 @@
   padding: 200rpx 0;
   box-sizing: border-box;
 } 
+
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.between {
+  justify-content: space-between;
+}
+.around {
+  justify-content: space-around;
+}
+
+.button {
+  width: 680rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  margin: 30rpx auto;
+  text-align: center;
+  font-size: 35rpx;
+  color: #000;
+  background: #3c0;
+  border-radius: 15rpx;
+}
+
+.line40 {
+  height: 40rpx;
+  line-height: 40rpx;
+}
+.line60 {
+  height: 60rpx;
+  line-height: 60rpx;
+}
+.line80 {
+  height: 80rpx;
+  line-height: 80rpx;
+}
+.line100 {
+  height: 100rpx;
+  line-height: 100rpx;
+}
+.line120 {
+  height: 120rpx;
+  line-height: 120rpx;
+}
+.line150 {
+  height: 150rpx;
+  line-height: 150rpx;
+}

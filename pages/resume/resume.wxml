@@ -1,0 +1,101 @@
+<!--resume.wxml-->
+<view class="contain">
+  <view class="row list">
+    <view class="name">简历名称</view>
+    <view class="content" style="width:500rpx;">
+      <input id="resume" bindinput="setValue" bindblur="trimValue" value="{{ user ? user.resume : '' }}"></input>
+    </view>
+  </view>
+  <view class="row list">
+    <view class="left">
+      <view class="row">
+        <view class="name">姓名</view>
+        <view class="content" style="width:280rpx">
+          <input id="name" bindinput="setValue" bindblur="trimValue" value="{{ user ? user.name : '' }}"></input>
+        </view>
+        <view class="name">性别</view>
+        <view class="content" style="width:80rpx">
+          <input id="sex" bindinput="setValue" bindblur="trimValue" value="{{ user ? user.sex : '' }}"></input>
+        </view>
+      </view>
+      <view class="row">
+        <view class="name">年龄</view>
+        <view class="content" style="width:280rpx">
+          <input id="age" bindinput="setValue" bindblur="trimValue" value="{{ user ? user.age : '' }}"></input>
+        </view>
+        <view class="name">学历</view>
+        <view class="content" style="width:80rpx">
+          <input id="education" bindinput="setValue" bindblur="trimValue" value="{{ user ? user.education : '' }}"></input>
+        </view>
+      </view>
+    </view>
+    <view class="user">
+      <image class="photo" src="/images/er.jpg"></image>
+    </view>
+  </view>
+  <view class="row list">
+    <view class="name">经验</view>
+    <view class="content" style="width:280rpx">
+      <input id="experience" bindinput="setValue" bindblur="trimValue" value="{{ user ? user.experience : '' }}"></input>
+    </view>
+    <view class="name">电话</view>
+    <view class="content" style="width:240rpx">
+      <input id="phone" bindinput="setValue" bindblur="trimValue" value="{{ user ? user.phone : '' }}"></input>
+    </view>
+  </view>
+  <view class="row middle">
+    <view class="name">住址</view>
+    <view class="content">
+      <input id="adress" bindinput="setValue" bindblur="trimValue" value="{{ user ? user.adress : '' }}"></input>
+    </view>
+  </view>
+  <view class="row middle">
+    <view class="name">籍贯</view>
+    <view class="content">
+      <input id="position" bindinput="setValue" bindblur="trimValue" value="{{ user ? user.position : '' }}"></input>
+    </view>
+  </view>
+  <view class="row around images">
+    <view id="pass1" wx:if="{{ user && user.pass1 }}" class="item" bindtap="imageUpload">
+      <image src="{{ user.pass1 }}" class="plus"></image>
+      <view class="title">免冠照片</view>
+    </view>
+    <view id="pass1" wx:else class="item2" bindtap="imageUpload">
+      <view class="plus2">＋</view>
+      <view class="title">免冠照片</view>
+    </view>
+    <view id="pass2" wx:if="{{ user && user.pass2 }}" class="item" bindtap="imageUpload">
+      <image src="{{ user.pass2 }}" class="plus"></image>
+      <view class="title">身份证正</view>
+    </view>
+    <view id="pass2" wx:else class="item2" bindtap="imageUpload">
+      <view class="plus2">＋</view>
+      <view class="title">身份证正</view>
+    </view>
+    <view id="pass3" wx:if="{{ user && user.pass3 }}" class="item" bindtap="imageUpload">
+      <image src="{{ user.pass3 }}" class="plus"></image>
+      <view class="title">身份证反</view>
+    </view>
+    <view id="pass3" wx:else class="item2" bindtap="imageUpload">
+      <view class="plus2">＋</view>
+      <view class="title">身份证反</view>
+    </view>
+  </view>
+  <view class="textline">职业技能</view>
+  <view class="text">
+    <textarea id="jineng" bindinput="setValue" bindblur="trimValue" class="textarea" placeholder="点此输入职业技能" value="{{ user ? user.jineng : '' }}"></textarea>
+  </view>
+  <view class="textline">工作经历</view>
+  <view class="text">
+    <textarea id="gongzuo" bindinput="setValue" bindblur="trimValue" class="textarea" placeholder="点此输入工作经历" value="{{ user ? user.gongzuo : '' }}"></textarea>
+  </view>
+  <view class="textline">教育经历</view>
+  <view class="text">
+    <textarea id="jiaoyu" bindinput="setValue" bindblur="trimValue" class="textarea" placeholder="点此输入教育经历" value="{{ user ? user.jiaoyu : '' }}"></textarea>
+  </view>
+  <view class="textline">自我介绍</view>
+  <view class="text">
+    <textarea id="jieshao" bindinput="setValue" bindblur="trimValue" class="textarea" placeholder="点此输入自我介绍" value="{{ user ? user.jieshao : '' }}"></textarea>
+  </view>
+  <view class="button" bindtap="submit">提交</view>
+</view>

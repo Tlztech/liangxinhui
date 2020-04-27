@@ -1,0 +1,61 @@
+<!--restaurant.wxml-->
+<view class="contain">
+  <view class="head">
+    <view class="row between margin line60">
+      <view class="title">{{ restaurant ? restaurant.title : '' }}</view>
+      <view class="date">{{ restaurant ? restaurant.date : '' }}</view>
+    </view>
+    <view class="row between margin line40">
+      <view class="salary">薪资：{{ restaurant ? restaurant.salary : '' }}</view>
+    </view>
+    <view class="row between margin between line80" style="border-bottom:4rpx solid #ccc;">
+      <view class="row tab line40">
+        <image class="icon" src="/images/person.png"></image>
+        <view class="text">招{{ restaurant ? restaurant.person : '' }}</view>
+      </view>
+      <view class="row tab line40">
+        <image class="icon" src="/images/school.png"></image>
+        <view class="text">{{ restaurant ? restaurant.school : '' }}</view>
+      </view>
+      <view class="row tab line40">
+        <image class="icon" src="/images/year.png"></image>
+        <view class="text">{{ restaurant ? restaurant.year : '' }}</view>
+      </view>
+    </view>
+    <view class="row margin line120">
+      <image class="icon" src="/images/position.png" style="margin-top:40rpx;"></image>
+      <view class="position">{{ restaurant ? restaurant.position : '' }}</view>
+      <view class="goto">></view>
+    </view>
+  </view>
+  <view class="row" style="width:100%;">
+    <view class="others" wx:if="{{ restaurant && restaurant.others && restaurant.others.length > 0 }}" wx:for="{{ restaurant.others }}" wx:key="others">{{ item }}</view>
+  </view>
+  <view class="name">职位描述</view>
+  <view class="margin">
+    <view class="content line40" wx:if="{{ restaurant && restaurant.points && restaurant.points.length > 0 }}" wx:for="{{ restaurant.points }}" wx:key="points">· {{ item }}</view>
+  </view>
+  <view class="name">任职要求</view>
+  <view class="margin">
+    <view class="content line40" wx:if="{{ restaurant && restaurant.wants && restaurant.wants.length > 0 }}" wx:for="{{ restaurant.wants }}" wx:key="wants">· {{ item }}</view>
+  </view>
+  <view class="row message">
+    <image class="left" src="/images/test1.jpg"></image>
+    <view class="right">
+      <view class="title">{{ restaurant ? restaurant.message.title : '' }}</view>
+      <view class="item">{{ restaurant ? restaurant.message.jingying : '' }}</view>
+      <view class="item">{{ restaurant ? restaurant.message.guimo : '' }}</view>
+      <view class="item">{{ restaurant ? restaurant.message.xingzhi : '' }}</view>
+    </view>
+  </view>
+  <view class="namebot">公司介绍</view>
+  <view>
+    <view class="contentbot line40" wx:if="{{ restaurant && restaurant.wants && restaurant.wants.length > 0 }}" wx:for="{{ restaurant.wants }}" wx:key="wants">{{ item }}</view>
+  </view>
+  <view class="namebot">工商信息</view>
+  <view>
+    <view class="contentbot line40" wx:if="{{ restaurant && restaurant.gongshang && restaurant.gongshang.length > 0 }}" wx:for="{{ restaurant.gongshang }}" wx:key="gongshang">{{ item }}</view>
+  </view>
+<mp-tabbar style="position:fixed;bottom:0;width:100%;left:0;right:0;" list="{{bottomlist}}" bindchange="tabChange"></mp-tabbar>
+<view style="width:100%;height:150rpx;"></view>
+</view>

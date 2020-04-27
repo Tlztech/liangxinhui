@@ -1,0 +1,108 @@
+.contain {
+  width: 750rpx;
+  font-size: 30rpx;
+  color: #999;
+}
+.margin {
+  width: 700rpx;
+  margin: 0 auto;
+}
+
+.head {
+  background: #f4f4f4;
+}
+
+
+.head .title {
+  height: 100%;
+  font-size: 36rpx;
+  color: #444;
+}
+.head .date {
+  height: 100%;
+  font-size: 26rpx;
+}
+.head .salary {
+  height: 100%;
+  color: #f60;
+}
+.head .tab {
+  width: 200rpx;
+  margin-top: 20rpx;
+}
+.head .icon {
+  width: 40rpx;
+  height: 40rpx;
+}
+.head .text {
+  padding-left: 15rpx;
+  font-size: 28rpx;
+}
+.head .position {
+  width: 615rpx;
+  margin-left: 10rpx;
+  font-size: 28rpx;
+}
+.head .goto {
+  font-size: 40rpx;
+}
+
+.others {
+  width: 150rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  border-radius: 10rpx;
+  color: #444;
+  margin-left: 20rpx;
+  margin-top: 30rpx;
+  background: #ccc;
+}
+
+.name {
+  font-size: 32rpx;
+  margin-top: 30rpx;
+  padding-left: 20rpx;
+}
+.namebot {
+  margin-top: 30rpx;
+  padding-left: 20rpx;
+  font-size: 28rpx;
+}
+.content {
+  width: 100%;
+  font-size: 28rpx;
+}
+.contentbot {
+  width: 100%;
+  font-size: 28rpx;
+  padding-left: 20rpx;
+}
+
+.message {
+  width: 100%;
+  height: 300rpx;
+  background: #f9f9f9;
+  margin-top: 30rpx;
+}
+.message .left {
+  width: 240rpx;
+  height: 240rpx;
+  margin-left: 30rpx;
+  margin-top: 30rpx;
+}
+.message .right {
+  width: 400rpx;
+  height: 240rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 30rpx;
+  margin-top: 30rpx;
+}
+.message .right .item{
+}
+.message .right .title{
+  font-size: 36rpx;
+  color: #444;
+}

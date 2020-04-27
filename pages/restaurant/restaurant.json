@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "职位详情",
+  "usingComponents": {
+    "mp-tabbar": "/weui-miniprogram/tabbar/tabbar"
+  }
+}

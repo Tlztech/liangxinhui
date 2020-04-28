@@ -1,7 +1,7 @@
-<!--resume.wxml-->
+<!--adverseadd.wxml-->
 <view class="contain">
   <view class="row list">
-    <view class="name">企业全称</view>
+    <view class="name">消息标题</view>
     <view class="content" style="width:500rpx;">
       <input id="resume" bindinput="setValue" bindblur="trimValue" value="{{ user ? user.title : '' }}"></input>
     </view>

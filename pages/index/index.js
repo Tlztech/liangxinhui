@@ -242,7 +242,6 @@ Page({
   },
 
   getUserInfo: function(e) {
-    console.log(e)
     app.globalData.userInfo = e.detail.userInfo
     this.setData({
       userInfo: e.detail.userInfo,
@@ -254,6 +253,18 @@ Page({
   goSearch: function(e){
     wx.navigateTo({
       url: '../search/search'
+    })
+  },
+  //发布广告
+  adverseadd: function (e) {
+    wx.navigateTo({
+      url: '../adverseadd/adverseadd'
+    })
+  },
+  adversedetail: function (e) {
+    const id = e.currentTarget.id;
+    wx.navigateTo({
+      url: '/pages/adversedetail/adversedetail?id=' + id,
     })
   },
 })

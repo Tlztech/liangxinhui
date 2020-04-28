@@ -2,6 +2,8 @@
   "pages":[
     "pages/index/index",
     "pages/adverse/adverse",
+    "pages/adverseadd/adverseadd",
+    "pages/adversedetail/adversedetail",
     "pages/detail/detail",
     "pages/message/message",
     "pages/merchant/merchant",

@@ -53,28 +53,7 @@ input {
 /* 图片上传 */
 .images {
   width: 100%;
-  border-top: 4rpx solid #eee;
-  border-bottom: 4rpx solid #eee;
-  color: #ccc;
-}
-.images .item{
-  width: 150rpx;
-  margin-top: 35rpx;
-  margin-bottom: 35rpx;
-  height: 150rpx;
-}
-.images .item2{
-  width: 80rpx;
-  height: 80rpx;
-  line-height: 80rpx;
-  text-align: center;
-  font-size: 60rpx;
-  border: 4rpx solid #ccc;
-  margin:  60rpx 0 60rpx 40rpx;
-}
-.images .title{
-  width: 100%;
-  text-align: center;
+  height: 400rpx;
 }
 
 /* 详情 */

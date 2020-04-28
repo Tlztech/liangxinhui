@@ -1,9 +1,9 @@
 <!--resume.wxml-->
 <view class="contain">
   <view class="row list">
-    <view class="name">企业全称</view>
+    <view class="name">消息标题</view>
     <view class="content" style="width:500rpx;">
-      <input id="resume" bindinput="setValue" bindblur="trimValue" value="{{ user ? user.title : '' }}"></input>
+      {{ user ? user.title : '' }}
     </view>
   </view>
   <view class="row list">
@@ -11,35 +11,29 @@
       <view class="row">
         <view class="name">价格</view>
         <view class="content" style="width:460rpx;">
-          <input id="name" bindinput="setValue" bindblur="trimValue" value="{{ user ? user.price : '' }}元"></input>
+          {{ user ? user.price : '' }}元
         </view>
       </view>
       <view class="row">
         <view class="name">电话</view>
         <view class="content" style="width:460rpx">
-          <input id="age" bindinput="setValue" bindblur="trimValue" value="{{ user ? user.phone : '' }}"></input>
+          {{ user ? user.phone : '' }}
         </view>
       </view>
     </view>
     <view class="user">
-      <image class="photo" src="/images/er.jpg"></image>
+      <image class="photo" src="/images/photo1.png"></image>
     </view>
   </view>
   <view class="row list">
     <view class="name">地址</view>
-    <view class="content" style="width:460rpx">
-      <input id="experience" bindinput="setValue" bindblur="trimValue" value="{{ user ? user.adress : '' }}"></input>
+    <view class="content" style="width:560rpx">
+      {{ user ? user.adress : '' }}
     </view>
   </view>
-  <view class="row images" style="flex-wrap:wrap;">
-    <image id="{{ index }}" wx:if="{{ user && user.images }}" wx:for="{{ user.images }}" wx:key="images" class="item" src="{{ item }}" bindtap="imageChange" style="{{ index % 4 > 0 ? 'margin-left:40rpx;' : '' }}">
-    </image>
-    <view wx:if="{{ user && user.images && user.images.length < 8 }}" class="item2" bindtap="imageUpload">＋</view>
-  </view>
+  <image class="images" src="/images/advertising1.png"></image>
   <view class="textline">内容</view>
   <view class="text">
-    <textarea id="jineng" bindinput="setValue" bindblur="trimValue" class="textarea" placeholder="点此输入职业技能" value="{{ user ? user.content : '' }}"></textarea>
+    {{ user ? user.content : '' }}
   </view>
-  
-  <view class="button" bindtap="submit">提交</view>
 </view>

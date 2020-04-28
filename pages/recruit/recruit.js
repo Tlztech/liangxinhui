@@ -3,7 +3,7 @@ const util = require('../../utils/util.js')
 
 Page({
   data: {
-    user: { 'title': '广州大酒店股份有限公司', 'name': '张三', 'phone': '024-37865095', 'price': '28.4', 'adress': '辽宁省沈阳市和平区三好街28-2号1-3-1', 'content': '有良好工作态度，能和睦的同他人相处。可以积极做到服从上级安排，比较喜欢创新和学习新鲜事物，希望能有机会和各大团体机构学习。', 'images': [], },
+    user: { 'title': '广州大酒店股份有限公司', 'name': '张三', 'phone': '024-37865095', 'price': '28.4', 'adress': '辽宁省沈阳市和平区三好街28-2号1-3-1', 'content': '有良好工作态度，能和睦的同他人相处。可以积极做到服从上级安排，比较喜欢创新和学习新鲜事物，希望能有机会和各大团体机构学习。', 'images': ['/images/advertising1.png', '/images/er.jpg', '/images/test1.jpg', '/images/trainning1.png', '/images/food/1.jpeg'], },
     canSub: true,
     
   },
@@ -81,7 +81,7 @@ Page({
 
     wx.showModal({
       title: '温馨提示',
-      content: '招聘信息发布成功！',
+      content: '消息发布成功！',
       showCancel: false,
       success: function(){
         wx.navigateBack();

@@ -207,7 +207,7 @@
       <view class="text">全部 ></view>
     </view>
     <view style="width:100%;height:75rpx;"></view>
-      <view wx:for="{{ trainings }}" wx:key="trainings" class="items">
+      <view wx:for="{{ trainings }}" wx:key="trainings" bindtap="gocateringtrainingProductdetails" data-val="{{ item.id }}" class="items">
         <view class="left">
           <image class="image" src="/images/{{ item.image }}"></image>
         </view>

@@ -34,11 +34,11 @@ Page({
     ],
     //商品列表
     trainings: [
-      { 'title': '西式快餐汉堡培训', 'city': '沈阳', 'type': '面点', 'price': 85, 'old': 108, 'money': '30', 'level': '中级', 'image': 'trainning1.png' },
-      { 'title': '正宗川味水煮鱼培训', 'city': '成都', 'type': '川菜', 'price': 888, 'old': 998, 'money': '60', 'level': '高级', 'image': 'trainning1.png' },
-      { 'title': '中华小吃地方风味培训', 'city': '天津', 'type': '小吃', 'price': 85, 'old': 108, 'money': '30', 'level': '中级', 'image': 'trainning1.png' },
-      { 'title': '正宗烤全羊培训', 'city': '蒙古', 'type': '烧烤', 'price': 3888, 'old': 5888, 'money': '300', 'level': '特级', 'image': 'trainning1.png' },
-      { 'title': '食尚香专业厨师培训', 'city': '广州', 'type': '粤菜', 'price': 480, 'old': 608, 'money': '30', 'level': '中级', 'image': 'trainning1.png' },
+      { 'id': 1, 'title': '西式快餐汉堡培训', 'city': '沈阳', 'type': '面点', 'price': 85, 'old': 108, 'money': '30', 'level': '中级', 'image': 'trainning1.png' },
+      { 'id': 2, 'title': '正宗川味水煮鱼培训', 'city': '成都', 'type': '川菜', 'price': 888, 'old': 998, 'money': '60', 'level': '高级', 'image': 'trainning1.png' },
+      { 'id': 3, 'title': '中华小吃地方风味培训', 'city': '天津', 'type': '小吃', 'price': 85, 'old': 108, 'money': '30', 'level': '中级', 'image': 'trainning1.png' },
+      { 'id': 4, 'title': '正宗烤全羊培训', 'city': '蒙古', 'type': '烧烤', 'price': 3888, 'old': 5888, 'money': '300', 'level': '特级', 'image': 'trainning1.png' },
+      { 'id': 5, 'title': '食尚香专业厨师培训', 'city': '广州', 'type': '粤菜', 'price': 480, 'old': 608, 'money': '30', 'level': '中级', 'image': 'trainning1.png' },
     ],
     //广而告之
     advertisings: [
@@ -262,4 +262,11 @@ Page({
       url: '/pages/adversedetail/adversedetail?id=' + id,
     })
   },
+  //培训详情
+  gocateringtrainingProductdetails: function(e){
+    const id = e.currentTarget.dataset.val
+    wx.navigateTo({
+      url: '/pages/cateringtrainingProductdetails/cateringtrainingProductdetails?id=' + id,
+    })
+  }
 })

@@ -47,6 +47,11 @@ Page({
 
   tabChange(e) {
     console.log('tab change', e)
+    if(e.detail.item.sign == "index"){
+      wx.navigateBack({
+        url: '/pages/index/index',
+      })
+    }
     if(e.detail.item.sign == "share"){
       wx.navigateTo({
         url: '/pages/share/share',

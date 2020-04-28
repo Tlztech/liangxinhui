@@ -1,12 +1,12 @@
 {
   "pages":[
-    "pages/recruit/recruit",
     "pages/index/index",
     "pages/adverse/adverse",
     "pages/detail/detail",
     "pages/message/message",
     "pages/merchant/merchant",
     "pages/restaurant/restaurant",
+    "pages/recruit/recruit",
     "pages/self/self",
     "pages/logs/logs",
     "pages/search/search",

@@ -17,7 +17,8 @@
     "pages/talent/talent",
     "pages/resume/resume",
     "pages/income/income",
-    "pages/contribution/contribution"
+    "pages/contribution/contribution",
+    "pages/cateringtrainingProductdetails/cateringtrainingProductdetails"
   ],
   "window":{
     "backgroundTextStyle":"light",

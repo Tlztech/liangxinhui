@@ -16,13 +16,7 @@ Page({
     //下拉框
     select: false,
     area:0,
-    areas:[
-      { 'id': 1, 'name': '和平区' },
-      { 'id': 2, 'name': '沈河区' },
-      { 'id': 3, 'name': '皇姑区' },
-      { 'id': 4, 'name': '大东区' },
-      { 'id': 5, 'name': '铁西区' },
-    ],
+    region: ['辽宁省', '沈阳市', '铁西区'],
     //底部菜单
     showList: [true, false, false, false, false],
     fields: ['time','adverse','pride','money','star'],
@@ -156,9 +150,10 @@ Page({
   },
 
   // 下拉框
-  bindShowMsg() {
+  bindShowMsg(e) {
+    console.log('picker发送选择改变，携带值为', e.detail.value)
     this.setData({
-      select: !this.data.select
+      region: e.detail.value
     })
   },
   mySelect(e) {

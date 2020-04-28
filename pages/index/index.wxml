@@ -1,4 +1,5 @@
 <!--index.wxml-->
+
 <view class="index-contain">
   <view class="weui-search-bar" style="background:#fff;">
     <view class="weui-search-bar__form form-border height6">
@@ -116,14 +117,19 @@
         <view class="where" wx:if="{{ showNavi[1] }}">
           <view class='list-msg'>
             <!--下拉框  -->
-            <view class='list-msg2' bindtap='bindShowMsg'>
-              <text>{{areas[area].name}}</text>
-              <image style='height:20rpx;width:20rpx;' src='/images/down.jpg'></image>
+            <view class="section">
+              <picker mode="region" bindchange="bindShowMsg" value="{{region}}">
+                <view class='list-msg2'>
+                  <text>{{region[2]}}</text>
+                  <image style='height:20rpx;width:20rpx;' src='/images/down.jpg'></image>
+                </view>
+              </picker>
             </view>
+            
             <!-- 下拉需要显示的列表 -->
-            <view class="select_box" wx:if="{{select}}">
+            <!-- <view class="select_box" wx:if="{{select}}">
               <view id="{{index}}" wx:for="{{ areas }}" class="select_one" bindtap="mySelect" wx:key="select">{{ item.name }}</view>
-            </view>
+            </view> -->
           </view>
         </view>
 

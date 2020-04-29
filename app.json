@@ -68,5 +68,10 @@
   "usingComponents": {
     "mp-tabbar": "/weui-miniprogram/tabbar/tabbar",
     "mp-icon": "/weui-miniprogram/icon/icon"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
   }
 }

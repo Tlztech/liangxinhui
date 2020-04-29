@@ -1,16 +1,68 @@
 <view>
      <view>
         <view class="weui-search-bar">
-            <view class="weui-search-bar__form">
-            <!-- 搜索框 -->
-                <view class="weui-search-bar__box">
-                    <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
-                    <input type="text" class="weui-search-bar__input" placeholder="请输入搜索内容" value="{{search_Input}}"/>
-                </view>
+          <image src="/images/tabbarpic/houtui.png"  class="back ht-img" wx:if="{{ showsearch }}" bindtap="backshow"></image>
+          <view class="weui-search-bar__form">
+          <!-- 搜索框 -->
+            <view class="weui-search-bar__box" bindtap="showsearch">
+                <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+                <input type="text" class="weui-search-bar__input" placeholder="请输入搜索内容" bindinput="checksearch" value="{{ search_Input }}"/>
             </view>
-            <!-- 搜索按钮,调用搜索查询方法 -->
-            <view class="weui-search-bar__cancel-btn" bindtap='search'>搜索</view>
+          </view>
+          <!-- 搜索按钮,调用搜索查询方法 -->
+          <view class="weui-search-bar__cancel-btn" bindtap='search'>搜索</view>
         </view>
+
+        <!-- 搜索结果 -->
+        <view class="fixed bg-white" wx:if="{{ showsearch }}" style="z-index:50;">
+          <view class="view flex-row center-ju" style="height:45rpx;line-height:45rpx;">
+            <view class="" style="width:40rpx;margin-top:6rpx;">
+              <icon class="" type="search" size="12"></icon>
+            </view>
+            <view class="width:10rpx;"></view>
+            <view class="view flex-row between" style="width:700rpx;">
+              <view class="">
+                <view class="size">{{ search_Input }}</view>
+              </view>
+              <view class="">
+                <view class="size">约{{ total ? total : 0 }}个结果</view>
+              </view>
+            </view>
+          </view>
+          <view class="between flex-row">
+            <view class="padding" style="width:40rpx">
+              <!-- <icon class="" type="search" size="14"></icon> -->
+            </view>
+            <view class="width:10rpx;"></view>
+            <view class="border-bottom" style="width:700rpx;text-align:right;"></view>
+          </view>
+        <!-- 循环体 -->
+          <view class="view bg-white" bindtap="gotodetails" wx:for="{{ search_data }}" wx:key="this" data-val="{{ item.id }}" wx:if="{{ show_searchdata && item.checked }}">
+            <view class="view flex-row center-ju" style="height:78rpx;line:height:78rpx;" >
+              <view class="padding" style="width:40rpx">
+                <!-- <icon class="" type="search" size="14"></icon> -->
+              </view>
+              <view class="width:10rpx;"></view>
+              <view class="view flex-row between" style="width:700rpx;">
+                <view class="">
+                  <view class="z-size">{{ item.name }}</view>
+                  <view class="size color-aaa">{{ item.connect }}</view>
+                </view>
+                <view>
+                  <view class="z-size" wx:if="{{ item.x_price }}">¥ {{ item.x_price }}</view>
+                  <view class="small-size color-aaa hx" wx:if="{{ item.y_price }}">¥ {{ item.y_price }}</view>
+                </view>
+              </view>
+            </view>
+            <view class="between flex-row" wx:if="{{ show_searchdata && item.checked }}">
+              <view class="padding" style="width:40rpx"></view>
+              <view class="width:10rpx;"></view>
+              <view class="border-bottom" style="width:700rpx;text-align:right;"></view>
+            </view>
+          </view>
+          <!-- 循环体end -->
+        </view>
+        <!-- 搜索结果 -->
     </view>
 </view>
 <!-- 历史搜索 -->
@@ -19,7 +71,7 @@
     <text class="history_search_s">历史搜索</text>
     <mp-icon color="#aaa" icon="delete" size="16" bindtap="delete_history"></mp-icon>
   </view>
-  <view class="history_btn" style="display:{{view_show}}" wx:if="{{!emtpy(history_seas)}}">
+  <view class="history_btn" style="display:{{view_show}} text-align:center;" wx:if="{{!emtpy(history_seas)}}">
     <view class="history_search_text">
       <view class="history_search_btn_s" wx:for="{{history_seas}}" wx:key="this" bindtap="setsearchInput" data-val="{{item}}">
         <text class="history_search_btn">{{item}}</text>

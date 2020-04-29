@@ -1,6 +1,7 @@
 {
   "pages":[
     "pages/index/index",
+    "pages/search/search",
     "pages/adverse/adverse",
     "pages/adverseadd/adverseadd",
     "pages/adversedetail/adversedetail",
@@ -11,7 +12,6 @@
     "pages/recruit/recruit",
     "pages/self/self",
     "pages/logs/logs",
-    "pages/search/search",
     "pages/lookcommects/lookcommects",
     "pages/share/share",
     "pages/talent/talent",

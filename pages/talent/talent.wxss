@@ -5,6 +5,13 @@
   display: flex;
   flex-direction: row;
 }
+.flex-col{
+  display: flex;
+  flex-direction: column;
+}
+.bag-img{
+  background-image: url("/images/huangjinbg.png");
+}
 .justify-center{
   justify-content: center;
 }
@@ -52,6 +59,9 @@
 .bag-white{
   background-color: white;
 }
+.bag-green{
+  background-color: rgb(92, 197, 92);
+}
 .color-aaa{
   color: #aaa;
 }
@@ -60,6 +70,9 @@
 }
 .color-white{
   color: white;
+}
+.color-red{
+  color:red;
 }
 .button3{
   color: white;
@@ -76,12 +89,27 @@
   text-align:center;
   border-radius: 40rpx;
 }
+
 .button2{
   width: 100rpx;
   height:40rpx;
   line-height: 40rpx;
   text-align: center;
   border-radius: 24rpx;
+}
+.button4{
+  width:200rpx;
+  height: 60rpx;
+  line-height:60rpx;
+  text-align:center;
+  border-radius: 40rpx;
+}
+.button5{
+  width:400rpx;
+  height: 60rpx;
+  line-height:60rpx;
+  text-align:center;
+  border-radius: 40rpx;
 }
 .position-re{
   position: relative;
@@ -92,6 +120,17 @@
   position: relative;
   left: 20rpx;
   top: 6rpx;
+}
+.fixed{
+  position: fixed;
+  top: 170rpx;
+}
+.fixed-80top{
+  position: fixed;
+  top: 80rpx;
+}
+.ab{
+  position: absolute;
 }
 .raduis-view{
   border-radius: 20rpx;
@@ -108,6 +147,9 @@
 }
 .d-size{
   font-size: 28rpx;
+}
+.big-size{
+  font-size: 40rpx;
 }
 .bold{
   font-weight: bold;

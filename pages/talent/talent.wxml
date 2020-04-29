@@ -1,15 +1,15 @@
 <view class="view" wx:if="{{ !incomealls }}">
 <!-- 非达人 -->
-  <view wx:if="{{ talent == 0 }}">
+  <view wx:if="{{ talent_obj.talent == 0 }}">
     <view class="view" style="height:20rpx;"></view>
-    <view class="flex-row" wx:if="{{ talent ==  0 }}">
+    <view class="flex-row" wx:if="{{ talent_obj.talent ==  0 }}">
       <image class="img" src="/images/photo1.png"></image>
       <view class="">
         <view class="flex-view flex-row between">
           <view class="size">Butt-file</view>
-          <view class="button3 size bag-red" bindtap="">成为达人</view>
+          <view class="button3 size bag-red" bindtap="becometalent">成为达人</view>
         </view>
-        <view class="size color-aaa">邀请码:123456789</view>
+        <view class="size color-aaa">邀请码:{{ talent_obj.code }}</view>
       </view>
     </view>
 
@@ -51,15 +51,15 @@
 
   <!-- 达人 -->
   <!-- <view class="view" style="height:20rpx;"></view> -->
-  <view wx:if="{{ talent == 1 }}">
+  <view wx:if="{{ talent_obj.talent == 1 }}">
     <view class="flex-row">
       <image class="img" src="{{ talent_obj.user_img }}"></image>
       <view class="">
         <view class="flex-view flex-row between">
           <view class="size">{{ talent_obj.user_name }}</view>
-          <view class="button3 size bag-red" bindtap="">邀请达人</view>
+          <view class="button3 size bag-red" bindtap="invitetalent">邀请达人</view>
         </view>
-        <view class="size color-aaa">邀请码:123456789</view>
+        <view class="size color-aaa">邀请码:{{ talent_obj.code }}</view>
       </view>
     </view>
 
@@ -83,7 +83,7 @@
           </view>
           <view>{{ income.kt_price }}</view>
         </view>
-        <view class="button1 size bag-orange position-re" style="color: white;">立即提现</view>
+        <view class="button1 size bag-orange position-re" style="color: white;" bindtap="withdrawalert">立即提现</view>
       </view>
       <view class="view border"></view>
       <view class="view" style="height:48rpx;">
@@ -206,7 +206,7 @@
       <view class="view">
         <view class="size margin">下线贡献</view>
         <!-- 循环体 -->
-        <view class="flex-row bag-white borderbottom" wx:for="{{ contribution }}">
+        <view class="flex-row bag-white borderbottom" wx:for="{{ contribution }}" wx:key="this">
           <view>
             <image class="img" src="{{ item.user_img }}"></image>
           </view>
@@ -231,3 +231,162 @@
   <!-- 达人end -->
 </view>
 
+<!-- 成为达人 -->
+<!-- 第一步 -->
+<view class="fixed view" wx:if="{{ become == 1 }}">
+  <view class="bag-hui raduis-view paddings"  style="width:650rpx;height:400rpx;z-index:10;margin-left:30rpx;">
+    <view class="flex-col between" style="margin-top:26rpx;">
+      <view class="text-center big-size bold color-red">加入达人 赚也轻松</view>
+      <view class="paddings">
+        <view class="text-center d-size">成为达人后，您不仅可以获得商家返现，还可以分享好友轻松赚钱，您现在要成为达人么？</view>
+      </view>
+      <view class="view-center">
+        <image src="/images/icon12.png" style="width:40rpx;height:40rpx;"></image>
+        <view class="z-size color-white">什么是达人?</view>
+      </view>
+      <view class="view-center paddings">
+        <view class="button4 bag-green color-white" bindtap="nextgo">确认</view>
+        <view style="width:30rpx;"></view>
+        <view class="button4 bag-orange color-white" bindtap="backs">取消</view>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- 第二步 -->
+<view class="fixed view" wx:if="{{ become == 2 }}">
+  <view class="bag-hui raduis-view paddings"  style="width:650rpx;height:400rpx;z-index:10;margin-left:30rpx;">
+    <view class="flex-col between" style="margin-top:26rpx;">
+      <view class="text-center big-size bold color-red">输入邀请码</view>
+      <view style="width:400rpx;margin-left:105rpx;" class="paddings text-center bag-white raduis-view" >
+        <input type="number" auto-focus focus='{{focus}}' value="{{value}}" title="" bindinput="handleInput" bindblur="validate" maxlength="8" placeholder="请输入邀请码"></input>
+      </view>
+      <view class="view-center">
+        <view class="z-size">邀请码可以找您的达人好友索要</view>
+      </view>
+      <view class="view-center">
+        <image src="/images/icon12.png" style="width:40rpx;height:40rpx;"></image>
+        <view class="z-size color-white">什么是达人?</view>
+      </view>
+      <view class="view-center" wx:if="{{ code_if && code_if != ''}}">
+        <view class="z-size color-red">{{ code_if }}</view>
+      </view>
+      <view class="view-center paddings">
+        <view class="button4 bag-green color-white" bindtap="nextgo">确认</view>
+        <view style="width:30rpx;"></view>
+        <view class="button4 bag-orange color-white" bindtap="backs">取消</view>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- 第三步 -->
+<view class="fixed view" wx:if="{{ become == 3 }}">
+  <view class="bag-hui raduis-view paddings"  style="width:650rpx;height:400rpx;z-index:10;margin-left:30rpx;">
+    <view class="flex-col between" style="margin-top:26rpx;">
+      <view class="text-center big-size bold color-red">设置您的提现密码</view>
+      <view class="flex-col between paddings">
+        <view class="flex-row paddings">
+          <view class="z-size">输入密码</view>
+          <view style="width:20rpx;"></view>
+          <input class="bag-white" type="password" auto-focus title="" minlength="6" maxlength="6" placeholder="六位数字"></input>
+        </view>
+        <view class="flex-row paddings">
+          <view class="z-size">确认密码</view>
+          <view style="width:20rpx;"></view>
+          <input class="bag-white" type="password" auto-focus  minlength="6" maxlength="6" placeholder="六位数字"></input>
+        </view>
+        <view class="view-center" wx:if="{{ pass_if && pass_if != ''}}">
+          <view class="z-size color-red">{{ pass_if }}</view>
+        </view>
+      </view>
+      <view class="view-center paddings">
+        <view class="button4 bag-green color-white" bindtap="nextgo">确认</view>
+        <view style="width:30rpx;"></view>
+        <view class="button4 bag-orange color-white" bindtap="backs">取消</view>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- 恭喜成为达人 -->
+<view class="fixed view" wx:if="{{ become == 4 }}">
+  <view class="bag-hui raduis-view paddings"  style="width:650rpx;height:400rpx;z-index:10;margin-left:30rpx;">
+    <view class="flex-col between" style="margin-top:26rpx;">
+      <view class="text-center big-size bold color-red">恭喜！</view>
+      <view class="paddings">
+        <view class="text-center d-size">祝贺您成为达人，您的每笔订单都会有奖金赠送，而且通过分享，还能赚取更多奖金呦！</view>
+      </view>
+      <view class="view-center paddings">
+        <view class="button5 bag-green color-white" bindtap="nextgo">好的</view>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- 邀请达人 -->
+<view class="fixed view" wx:if="{{ invite == 1 }}">
+  <view class="bag-hui raduis-view paddings"  style="width:650rpx;height:500rpx;z-index:10;margin-left:30rpx;">
+    <view class="flex-col between" style="margin-top:26rpx;">
+      <view class="text-center big-size bold color-red">我的邀请码</view>
+      <view style="height:10rpx;"></view>
+      <view style="width:400rpx;margin-left:105rpx;" class="paddings text-center bag-white raduis-view flex-row between" >
+        <view class="big-size">{{ talent_obj.code }}</view>
+        <view class="big-size color-red" bindtap="copy_code" data-val="{{ talent_obj.code }}">复制</view>
+      </view>
+      <!-- 二维码 -->
+      <view class="paddings view-center">
+        <image src="/images/code.jpg" style="width:180rpx;height:180rpx"></image>
+      </view>
+      <view class="view-center paddings">
+        <view class="button4 bag-green color-white" bindtap="goinvite">立即邀请</view>
+        <view style="width:30rpx;"></view>
+        <view class="button4 bag-orange color-white" bindtap="backs">取消</view>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- 立即邀请 -->
+<view class="fixed-80top view" wx:if="{{ invite == 2 }}">
+  <view class="bag-hui raduis-view paddings"  style="width:650rpx;height:950rpx;z-index:10;margin-left:30rpx;">
+    <view class="flex-col between" style="margin-top:26rpx;">
+      <view class="flex-col beteen" style="">
+        <image src="/images/test1.jpg" style="width:650rpx;height:300rpx;"></image>
+        <image src="/images/test2.jpg" style="width:650rpx;height:300rpx;"></image>
+      </view>
+      <view class="flex-col between borderbottom">
+        <view class="size">加入“粮芯汇”，好吃又好赚</view>
+        <view class="size">邀请码：{{ talent_obj.code }}</view>
+      </view>
+      <view class="flex-row between borderbottom">
+        <view class="big-size">微信好友</view>
+        <view class="big-size color-aaa">推广 》</view>
+      </view>
+      <view class="flex-row between borderbottom">
+        <view class="big-size">朋友圈</view>
+        <view class="big-size color-aaa">推广 》</view>
+      </view>
+      <view class="view-center paddings">
+        <view class="button5 bag-orange color-white" bindtap="backs">取消</view>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- 立即提现 -->
+<view class="fixed view" wx:if="{{ withdraw == 1 }}">
+  <view class="bag-hui raduis-view paddings"  style="width:650rpx;height:400rpx;z-index:10;margin-left:30rpx;">
+    <view class="flex-col between" style="margin-top:26rpx;">
+      <view class="text-center big-size bold color-red">可提现</view>
+      <view class="text-center big-size bold color-red">¥ {{ income.kt_price ? income.kt_price : 0 }}</view>
+      <view style="width:400rpx;margin-left:105rpx;" class="paddings text-center bag-white raduis-view flex-row between" >
+        <view class="flex-row" style="height:50rpx;line-height:50rpx;">
+          <image src="/images/tabbarpic/wxshare.png" style="width:50rpx;height:40rpx;"></image>
+          <view style="width:4rpx;"></view>
+          <view class="d-size">微信钱包</view>
+        </view>
+        <view class="big-size" style="height:50rpx;line-height:50rpx;">></view>
+      </view>
+      <view class="view-center paddings">
+        <view class="button4 bag-green color-white" bindtap="gowithdraw" data-val="{{ income.kt_price ? income.kt_price : 0 }}">立即提现</view>
+        <view style="width:30rpx;"></view>
+        <view class="button4 bag-orange color-white" bindtap="backs">取消</view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -121,8 +121,6 @@ Page({
       this.showsearch()
     }
     let value = e.detail.value != undefined ? e.detail.value.trim() : search_Input;
-    console.log(search_Input)
-    console.log(value)
     let length = this.data.search_data.length;
     let datas = this.data.search_data;
     if(value && value != ''){
@@ -167,6 +165,8 @@ Page({
   },
   //前往商品页面
   gotodetails: function(e){
-
+    wx.navigateTo({
+      url: '/pages/detail/detail',
+    })
   }
 })

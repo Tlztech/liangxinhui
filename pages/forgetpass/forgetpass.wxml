@@ -1,4 +1,4 @@
-<view class="view">
+<view class="view" wx:if="{{ foegetpass == 0 }}">
   <view class="bag-white" style="height:200rpx;">
     <view class="flex-row jus-center ">
       <view class="padding small-size">我们已经发送验证码到您的手机号</view>
@@ -26,5 +26,33 @@
       <view class="color-aaa small-size">({{ renew }})</view>
     </view>
   </view>
+</view>
 
+<view class="view"  wx:if="{{ foegetpass == 1 }}">
+  <view class="bag-white" style="height:200rpx;">
+    <view class="flex-row jus-center ">
+      <view class="padding small-size">我们已经发送验证码到您的手机号</view>
+    </view>
+    <view class="flex-row jus-center ">
+      <view class="size">{{ newphone }}</view>
+    </view>
+  </view>
+  <view class="bag-hui" style="height:{{ height }}">
+    <view class="flex-col jus-center margin20 padding">
+      <view class="flex-row  jus-center padding">
+        <view class="small-size">输入新密码</view>
+        <view style="width:14rpx;"></view>
+        <input type="number" maxlength="6" minlength="6" class="bag-white" style="width:400rpx" placeholder="六位数字"></input>
+      </view>
+      <view class="flex-row  jus-center padding">
+        <view class="small-size">确认新密码</view>
+        <view style="width:14rpx;"></view>
+        <input type="number" maxlength="6" minlength="6" class="bag-white" style="width:400rpx" placeholder="六位数字"></input>
+      </view>
+      <view class="flex-row  jus-center padding">
+        <view class="small-size button5 bag-green" bindtap="">好的</view>
+      </view>
+    </view>
+    
+  </view>
 </view>

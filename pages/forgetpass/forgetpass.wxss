@@ -46,6 +46,9 @@
 .bag-white{
   background-color: white;
 }
+.bag-green{
+  background-color: rgb(92, 197, 92);
+}
 .color-aaa{
   color: #aaa;
 }
@@ -57,4 +60,11 @@
 }
 .border-bottom{
   border-bottom: 1px solid #aaa;
+}
+.button5{
+  width:600rpx;
+  height: 60rpx;
+  line-height:60rpx;
+  text-align:center;
+  border-radius: 40rpx;
 }

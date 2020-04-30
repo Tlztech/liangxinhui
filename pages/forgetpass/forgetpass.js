@@ -5,6 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+    "foegetpass": 0,
     "renew": '重发短信',
     "height": '0rpx',
     "hidden": false,
@@ -104,6 +105,9 @@ Page({
           hidden: false
         })
       }
+      this.setData({
+        foegetpass: 1,
+      })
     }, 1000);
     
   },

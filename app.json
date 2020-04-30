@@ -10,6 +10,7 @@
     "pages/merchant/merchant",
     "pages/restaurant/restaurant",
     "pages/recruit/recruit",
+    "pages/order/order",
     "pages/self/self",
     "pages/logs/logs",
     "pages/lookcommects/lookcommects",

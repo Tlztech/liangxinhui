@@ -1,0 +1,104 @@
+.contain {
+  width: 750rpx;
+  font-size: 30rpx;
+  color: #999;
+  background: #f4f4f4;
+}
+
+.head {
+  width: 100%;
+  height: 120rpx;
+  border-bottom: 2rpx solid #eee;
+  background: #f9f9f9;
+}
+
+.head .left {
+  width: 40rpx;
+  height: 50rpx;
+  margin: 40rpx 25rpx;
+}
+.head .mid {
+  width: 580rpx;
+  height: 100rpx;
+  padding-top: 20rpx;
+}
+
+.head .mid .address {
+  width: 100%;
+  overflow: hidden;
+}
+.head .right {
+  width: 50rpx;
+  height: 100%;
+  line-height: 120rpx;
+  font-size: 50rpx;
+  font-weight: bold;
+  text-align: center;
+}
+
+.space {
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  background: #fff;
+}
+.space .name {
+  text-indent: 20rpx;
+}
+.space .num {
+  width: 180rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  text-align: center;
+  margin-top: 20rpx;
+  margin-right: 20rpx;
+}
+.space .num .item {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.message {
+  width: 100%;
+  height: 200rpx;
+}
+
+.message .left{
+  width: 220rpx;
+  height: 160rpx;
+  margin: 20rpx 25rpx;
+}
+.message .right{
+  width: 450rpx;
+  height: 160rpx;
+  margin-top: 20rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.bottom {
+  position: fixed;
+  bottom: 0;
+  height: 120rpx;
+  line-height: 120rpx;
+  background: #fff;
+}
+.bottom .left {
+  width: 550rpx;
+  height: 100%;
+  text-indent: 300rpx;
+}
+.bottom .left .text {
+  color: #FF1E49;
+}
+
+.bottom .right {
+  width: 200rpx;
+  height: 100%;
+  background: #FF3D00;
+  color: #fff;
+  text-align: center;
+}
+
+

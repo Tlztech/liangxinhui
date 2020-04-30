@@ -57,6 +57,11 @@ Page({
         url: '/pages/share/share',
       })
     }
+    if (e.detail.item.sign == "buy") {
+      wx.navigateTo({
+        url: '/pages/order/order',
+      })
+    }
   },
     
   onLoad: function (e) {

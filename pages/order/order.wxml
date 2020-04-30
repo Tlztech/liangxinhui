@@ -1,0 +1,38 @@
+<!--order.wxml-->
+<view class="contain" style="min-height: {{ height }}px">
+  <picker bindchange="binAddressChange" value="{{index}}" range="{{address}}">
+    <view class="head row">
+      <image class="left" src="/images/dd.png"></image>
+      <view class="mid">
+        <view class="address">{{ address[index] }}</view>
+        <view class="nikname">{{ nikname }}</view>
+      </view>
+      <view class="right">></view>
+    </view>
+  </picker>
+  <view class="space">
+    <view class="name">{{ shop }}</view>
+  </view>
+  <view class="message row">
+    <image class="left" src="/images/trainning1.png"></image>
+    <view class="right">
+      <view>{{ commodity }}</view>
+      <view>￥{{ price }}/{{ unit }}</view>
+    </view>
+  </view>
+  <view class="space row between">
+    <view class="name">购买数量</view>
+    <view class="num row between">
+      <image class="item" src="/images/minus.png" bindtap="minus"></image>
+      <view class="item">{{ num }}</view>
+      <image class="item" src="/images/plus.png" bindtap="plus"></image>
+    </view>
+  </view>
+  <view style="width:100%;height:120rpx;"></view>
+  <view class="bottom row">
+    <view class="left">实付款：
+      <text class="text">￥{{ total }}</text>
+    </view>
+    <view class="right" bindtap="submit">立即支付</view>
+  </view>
+</view>

@@ -1,0 +1,30 @@
+<view class="view">
+  <view class="bag-white" style="height:200rpx;">
+    <view class="flex-row jus-center ">
+      <view class="padding small-size">我们已经发送验证码到您的手机号</view>
+    </view>
+    <view class="flex-row jus-center ">
+      <view class="size">{{ newphone }}</view>
+    </view>
+  </view>
+  <view class="bag-hui" style="height:{{ height }}">
+    <view class="flex-row jus-center margin20 padding">
+      <input class="border-bottom small-view"></input>
+      <view style='width:20rpx;'></view>
+      <input class="border-bottom small-view"></input>
+      <view style='width:20rpx;'></view>
+      <input class="border-bottom small-view"></input>
+      <view style='width:20rpx;'></view>
+      <input class="border-bottom small-view"></input>
+    </view>
+    <!-- 重新发送 -->
+    <view class="flex-row jus-center padding" wx:if="{{ !hidden }}">
+      <view class="color-rgb-blue small-size" bindtap="restart" data-val="{{ phone }}">{{ renew }}</view>
+    </view>
+    <!-- 倒计时60秒 -->
+    <view class="flex-row jus-center padding" wx:if="{{ hidden }}">
+      <view class="color-aaa small-size">({{ renew }})</view>
+    </view>
+  </view>
+
+</view>

@@ -1,7 +1,5 @@
 {
   "pages":[
-    "pages/forgetpass/forgetpass",
-
     "pages/index/index",
     "pages/search/search",
     "pages/adverse/adverse",
@@ -20,7 +18,10 @@
     "pages/resume/resume",
     "pages/income/income",
     "pages/contribution/contribution",
-    "pages/cateringtrainingProductdetails/cateringtrainingProductdetails"
+    "pages/cateringtrainingProductdetails/cateringtrainingProductdetails",
+
+    "pages/forgetpass/forgetpass"
+
   ],
   "window":{
     "backgroundTextStyle":"light",

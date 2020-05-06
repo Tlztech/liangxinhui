@@ -58,7 +58,7 @@
   height: 70rpx;
 }
 .bag-red{
-  background-color: red;
+  background-color: #FF3333;
 }
 .bag-white{
   background-color: white;

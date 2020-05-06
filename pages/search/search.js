@@ -110,7 +110,6 @@ Page({
    * show search
    */
   showsearch: function (e) {
-    
     this.setData({
       showsearch: true
     })
@@ -120,8 +119,9 @@ Page({
    */
   checksearch: function (e,val) {
     var val = this.data.search_Input
-    if(e.detail.value == undefined && val){
+    if(e.detail.value == undefined && val == undefined){
       this.showsearch()
+      return
     }
     let value = e.detail.value != undefined ? e.detail.value.trim() : val;
     this.setData({
@@ -134,7 +134,6 @@ Page({
         if(datas[i].connect.indexOf(value) != -1){
           datas[i].checked = true;
           this.data.total = this.data.total + 1
-          console.log(this.data.total)
           this.setData({
             total: this.data.total,
             search_data: datas

@@ -1,14 +1,99 @@
+<view class="view bag-hui">
+  <!-- 头像用户名授权仪式 -->
+  <view class="view bag-red" style="height:30rpx;"></view>
+  <view class="view">
+    <view class="flex-row bag-red padding20" style="height:200rpx;">
+      <image src="/images/food/3.jpeg" class="head-img"></image>
+      <view class="flex-col" style="margin-top:30rpx;margin-left:26rpx">
+        <view class="flex-row between">
+          <!-- <view class="color-white" style="width:450rpx;" bindtap="">请授权</view> -->
+          <view class="color-white" style="width:450rpx;">老牛吃嫩草</view>
+          <image class="img" src="/images/food/1.jpeg"></image>  <!-- 设置-->
+        </view>
+        <view class="size color-white small-button" bindtap="">绑定手机号</view>
+      </view>
+    </view>
+  </view>
+
+  <view class="view bag-red padding0-20 buttomradius" style="height:60rpx;">
+    <view class="flex-row between padding30 bag-white radius40" style="width:650rpx;">
+      <view class="text-center">
+        <view class="color-aaa">我的余额</view>
+        <view>3.34</view>
+      </view>
+      <view class="text-center">
+        <view class="color-aaa">当前积分</view>
+        <view>2000</view>
+      </view>
+      <view class="text-center">
+        <view class="color-aaa">优惠券</view>
+        <view>1</view>
+      </view>
+    </view>
+  </view>
+
+  <view class="view" style="height:84rpx;"></view>
+  <!-- 我的订单 -->
+  <view class="view padding20">
+    <view class="padding30 bag-white border-bottom" style="width:650rpx;">
+      <view class="text-center flex-row between">
+        <view>我的订单</view>
+        <view class="color-aaa">全部订单 ></view>
+      </view>
+    </view>
+
+    <view class="flex-row between padding30 bag-white" style="width:650rpx;">
+      <view class="text-center">
+        <image class="img" src="/images/food/4.jpeg"></image>
+        <view>待付款</view>
+      </view>
+      <view class="text-center">
+        <image class="img" src="/images/food/4.jpeg"></image>
+        <view>待发货</view>
+      </view>
+      <view class="text-center">
+        <image class="img" src="/images/food/4.jpeg"></image>
+        <view>待收获</view>
+      </view>
+      <view class="text-center">
+        <image class="img" src="/images/food/4.jpeg"></image>
+        <view>待评价</view>
+      </view>
+      <view class="text-center">
+        <image class="img" src="/images/food/4.jpeg"></image>
+        <view>售后/退款</view>
+      </view>
+    </view>
+  </view>
+  <!-- 我的服务 -->
+  <view class="view padding20">
+    <view class="padding30 bag-white border-bottom" style="width:650rpx;">
+      <view class="text-center flex-row between">
+        <view>我的订单</view>
+      </view>
+    </view>
+
+    <view class="flex-row between padding30 bag-white" style="width:650rpx;">
+      <view class="text-center">
+        <image class="img" src="/images/food/4.jpeg"></image>
+        <view>联系客服</view>
+      </view>
+    </view>
+  </view>
+</view>
+
+
 <!-- 获取头像等信息 -->
-<view class="container">
+<!-- <view class="container">
   <view class="userinfo">
     <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
     <block wx:else>
       <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
       <text class="userinfo-nickname">{{userInfo.nickName}}</text>
     </block>
-  </view>
+  </view> -->
   <!-- 暂存在这 -->
   <!-- <view class="usermotto">
     <input bindfocus="openMap" value='{{address}}' placeholder="点击选择详细地址"></input>
   </view> -->
-</view>
+<!-- </view> -->

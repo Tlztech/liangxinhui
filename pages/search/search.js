@@ -103,12 +103,14 @@ Page({
     this.setData({
       search_Input:e.currentTarget.dataset.val
     })
-    this.checksearch(e,this.data.search_Input)
+    var val = this.data.search_Input
+    this.checksearch(e,val)
   },
   /**
    * show search
    */
   showsearch: function (e) {
+    
     this.setData({
       showsearch: true
     })
@@ -116,11 +118,15 @@ Page({
   /**
    * 搜索商品
    */
-  checksearch: function (e,search_Input = '') {
-    if(e.detail.value == undefined && search_Input){
+  checksearch: function (e,val) {
+    var val = this.data.search_Input
+    if(e.detail.value == undefined && val){
       this.showsearch()
     }
-    let value = e.detail.value != undefined ? e.detail.value.trim() : search_Input;
+    let value = e.detail.value != undefined ? e.detail.value.trim() : val;
+    this.setData({
+      search_Input: value
+    })
     let length = this.data.search_data.length;
     let datas = this.data.search_data;
     if(value && value != ''){
@@ -128,6 +134,7 @@ Page({
         if(datas[i].connect.indexOf(value) != -1){
           datas[i].checked = true;
           this.data.total = this.data.total + 1
+          console.log(this.data.total)
           this.setData({
             total: this.data.total,
             search_data: datas

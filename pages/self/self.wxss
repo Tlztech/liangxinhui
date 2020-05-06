@@ -1,1 +1,97 @@
-
+.view{
+  width: 100%;
+}
+.margin20{
+  margin: 20rpx;
+}
+.padding20{
+  padding:20rpx;
+}
+.padding0-20{
+  padding:0 20rpx 30rpx 20rpx;
+}
+.padding30{
+  padding:30rpx;
+}
+.padding50{
+  padding:50rpx;
+}
+.flex{
+  display: flex;
+}
+.flex-row{
+  display: flex;
+  flex-direction: row;
+}
+.flex-col{
+  display: flex;
+  flex-direction: column;
+}
+.flex-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.between{
+  justify-content: space-between;
+}
+.color-aaa{
+  color: #aaa;
+}
+.color-white{
+  color: white;
+}
+.size{
+  font-size: 26rpx;
+}
+.big-size{
+  font-size: 32rpx;
+}
+.head-img{
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 160rpx;
+  border: 2px solid white;
+}
+.img{
+  width: 80rpx;
+  height: 70rpx;
+}
+.bag-red{
+  background-color: red;
+}
+.bag-white{
+  background-color: white;
+}
+.bag-aaa{
+  background-color: #aaa;
+}
+.bag-hui{
+  background-color: rgba(221, 221, 221, 0.548);
+}
+.text-center{
+  text-align: center;
+}
+.radius40{
+  border-radius: 40rpx;
+}
+.radius20{
+  border-radius: 20rpx;
+}
+.buttomradius{
+  border-radius: 0 0 50% 50%;
+}
+.small-button{
+  width: 200rpx;
+  height:50rpx;
+  text-align: center;
+  line-height: 50rpx;
+  border-radius: 60rpx;
+  background-color: rgba(163, 42, 42, 0.527);
+}
+.dashed{
+  border: 1px dashed black;
+}
+.border-bottom{
+  border-bottom: 1px dashed #ddd;
+}

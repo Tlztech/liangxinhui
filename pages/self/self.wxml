@@ -1,7 +1,7 @@
-<view class="view bag-hui">
+<view class="bag-hui">
   <!-- 头像用户名授权仪式 -->
-  <view class="view bag-red" style="height:30rpx;"></view>
-  <view class="view">
+  <view class="bag-red" style="height:30rpx;"></view>
+  <view class="">
     <view class="flex-row bag-red padding20" style="height:200rpx;">
       <image src="/images/food/3.jpeg" class="head-img"></image>
       <view class="flex-col" style="margin-top:30rpx;margin-left:26rpx">
@@ -15,7 +15,7 @@
     </view>
   </view>
 
-  <view class="view bag-red padding0-20 buttomradius" style="height:60rpx;">
+  <view class="bag-red padding0-20 buttomradius" style="height:60rpx;width:711rpx;">
     <view class="flex-row between padding30 bag-white radius40" style="width:650rpx;">
       <view class="text-center">
         <view class="color-aaa">我的余额</view>
@@ -32,9 +32,9 @@
     </view>
   </view>
 
-  <view class="view" style="height:84rpx;"></view>
+  <view class="" style="height:84rpx;"></view>
   <!-- 我的订单 -->
-  <view class="view padding20">
+  <view class="padding20">
     <view class="padding30 bag-white border-bottom" style="width:650rpx;">
       <view class="text-center flex-row between">
         <view>我的订单</view>
@@ -66,7 +66,7 @@
     </view>
   </view>
   <!-- 我的服务 -->
-  <view class="view padding20">
+  <view class="padding20">
     <view class="padding30 bag-white border-bottom" style="width:650rpx;">
       <view class="text-center flex-row between">
         <view>我的服务</view>

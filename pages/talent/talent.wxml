@@ -1,7 +1,7 @@
-<view class="view" wx:if="{{ !incomealls }}">
+<view class="" wx:if="{{ !incomealls }}">
 <!-- 非达人 -->
   <view wx:if="{{ talent_obj.talent == 0 }}">
-    <view class="view" style="height:20rpx;"></view>
+    <view class="" style="height:20rpx;"></view>
     <view class="flex-row" wx:if="{{ talent_obj.talent ==  0 }}">
       <image class="img" src="/images/photo1.png"></image>
       <view class="">
@@ -13,8 +13,8 @@
       </view>
     </view>
 
-    <view class="view bag-blue raduis-view" style="height:400rpx;">
-      <view class="view flex-row between size-alls padding" style="height: 80rpx;">
+    <view class="bag-blue raduis-view" style="height:400rpx;">
+      <view class="flex-row between size-alls padding" style="height: 80rpx;">
         <view>
           <view>累计收益</view>
           <view>0.00</view>
@@ -36,13 +36,13 @@
         <view class="button1 size bag-orange position-re" style="color: white;">立即提现</view>
       </view>
       <view class="view border"></view>
-      <view class="view">
+      <view class="">
         <view class="color-aaa size">收益明细</view>
       </view>
     </view>
     
     <view class="bag-hui raduis-view" style="height:400rpx;">
-      <view class="view">
+      <view class="">
         <view class="size">我的下级</view>
       </view>
     </view>
@@ -63,8 +63,8 @@
       </view>
     </view>
 
-    <view class="view bag-blue raduis-view">
-      <view class="view flex-row between size-alls padding" style="height: 80rpx;">
+    <view class="bag-blue raduis-view">
+      <view class="flex-row between size-alls padding" style="height: 80rpx;">
         <view>
           <view>累计收益</view>
           <view>{{ income.adds }}</view>
@@ -86,8 +86,8 @@
         <view class="button1 size bag-orange position-re" style="color: white;" bindtap="withdrawalert">立即提现</view>
       </view>
       <view class="view border"></view>
-      <view class="view" style="height:48rpx;">
-        <view class=" flex-row between">
+      <view class="" style="height:48rpx;">
+        <view class="flex-row between">
           <view class="color-aaa size line-h">收益明细</view>
           <view class="all-view-size flex-row between bag-white raduis-view relative" style="height:46rpx;line-height:46rpx;">
             <view class="buttons {{detail_val == 3 ? 'bag-orange' : ''}} raduis-view" bindtap="all" data-val="3" style="">全部</view>
@@ -97,7 +97,7 @@
         </view>
       </view>
 
-      <view class="view">
+      <view class="">
       <!-- 循环体 -->
       <!-- 全部 -->
         <view style="width:100%;" class="flex bag-white"wx:for="{{ list }}"  wx:if="{{ detail_val == 3 }}" >
@@ -126,7 +126,7 @@
         </view> 
 
         <!-- 已到账 -->
-        <view style="width:100%;" class="flex bag-white"wx:for="{{ list }}"  wx:if="{{ detail_val == 1 && item.status == 1 }}" >
+        <view class="flex bag-white"wx:for="{{ list }}"  wx:if="{{ detail_val == 1 && item.status == 1 }}" >
           <view class="view-center">
             <image src="{{ item.shop_pic }}" class="z-img"></image>
           </view>
@@ -152,7 +152,7 @@
         </view> 
 
         <!-- 未到账 -->
-        <view style="width:100%;" class="flex bag-white"wx:for="{{ list }}"  wx:if="{{ detail_val == 2 && item.status == 2}}" >
+        <view class="flex bag-white"wx:for="{{ list }}"  wx:if="{{ detail_val == 2 && item.status == 2}}" >
           <view class="view-center">
             <image src="{{ item.shop_pic }}" class="z-img"></image>
           </view>
@@ -187,13 +187,13 @@
     </view>
     
     <view class="bag-hui raduis-view">
-      <view class="view">
+      <view class="">
         <view class="size margin">自领奖金</view>
         <view class="flex-row bag-white">
           <view>
             <image class="img" src="{{ talent_obj.user_img }}"></image>
           </view>
-          <view class="view margin bag-white">
+          <view class="margin bag-white">
             <view class="flex-row between">
               <view class="d-size">{{ talent_obj.user_name }}</view>
               <view class="d-size color-orange">赚：{{ talent_obj.z_price }}</view>
@@ -203,14 +203,14 @@
         </view>
       </view>
 
-      <view class="view">
+      <view class="">
         <view class="size margin">下线贡献</view>
         <!-- 循环体 -->
         <view class="flex-row bag-white borderbottom" wx:for="{{ contribution }}" wx:key="this">
           <view>
             <image class="img" src="{{ item.user_img }}"></image>
           </view>
-          <view class="view margin bag-white">
+          <view class="margin bag-white">
             <view class="flex-row between">
               <view class="d-size">{{ item.user_name }}</view>
               <view class="d-size color-orange">赚：{{ item.z_price }}</view>
@@ -233,7 +233,7 @@
 
 <!-- 成为达人 -->
 <!-- 第一步 -->
-<view class="fixed view" wx:if="{{ become == 1 }}">
+<view class="fixed" wx:if="{{ become == 1 }}">
   <view class="bag-hui raduis-view paddings"  style="width:650rpx;height:400rpx;z-index:10;margin-left:30rpx;">
     <view class="flex-col between" style="margin-top:26rpx;">
       <view class="text-center big-size bold color-red">加入达人 赚也轻松</view>
@@ -253,7 +253,7 @@
   </view>
 </view>
 <!-- 第二步 -->
-<view class="fixed view" wx:if="{{ become == 2 }}">
+<view class="fixed" wx:if="{{ become == 2 }}">
   <view class="bag-hui raduis-view paddings"  style="width:650rpx;height:400rpx;z-index:10;margin-left:30rpx;">
     <view class="flex-col between" style="margin-top:26rpx;">
       <view class="text-center big-size bold color-red">输入邀请码</view>
@@ -279,7 +279,7 @@
   </view>
 </view>
 <!-- 第三步 -->
-<view class="fixed view" wx:if="{{ become == 3 }}">
+<view class="fixed" wx:if="{{ become == 3 }}">
   <view class="bag-hui raduis-view paddings"  style="width:650rpx;height:400rpx;z-index:10;margin-left:30rpx;">
     <view class="flex-col between" style="margin-top:26rpx;">
       <view class="text-center big-size bold color-red">设置您的提现密码</view>
@@ -307,7 +307,7 @@
   </view>
 </view>
 <!-- 恭喜成为达人 -->
-<view class="fixed view" wx:if="{{ become == 4 }}">
+<view class="fixed" wx:if="{{ become == 4 }}">
   <view class="bag-hui raduis-view paddings"  style="width:650rpx;height:400rpx;z-index:10;margin-left:30rpx;">
     <view class="flex-col between" style="margin-top:26rpx;">
       <view class="text-center big-size bold color-red">恭喜！</view>
@@ -321,7 +321,7 @@
   </view>
 </view>
 <!-- 邀请达人 -->
-<view class="fixed view" wx:if="{{ invite == 1 }}">
+<view class="fixed" wx:if="{{ invite == 1 }}">
   <view class="bag-hui raduis-view paddings"  style="width:650rpx;height:500rpx;z-index:10;margin-left:30rpx;">
     <view class="flex-col between" style="margin-top:26rpx;">
       <view class="text-center big-size bold color-red">我的邀请码</view>
@@ -343,7 +343,7 @@
   </view>
 </view>
 <!-- 立即邀请 -->
-<view class="fixed-80top view" wx:if="{{ invite == 2 }}">
+<view class="fixed-80top" wx:if="{{ invite == 2 }}">
   <view class="bag-hui raduis-view paddings"  style="width:650rpx;height:950rpx;z-index:10;margin-left:30rpx;">
     <view class="flex-col between" style="margin-top:26rpx;">
       <view class="flex-col beteen" style="">
@@ -369,7 +369,7 @@
   </view>
 </view>
 <!-- 立即提现 -->
-<view class="fixed view" wx:if="{{ withdraw == 1 }}">
+<view class="fixed" wx:if="{{ withdraw == 1 }}">
   <view class="bag-hui raduis-view paddings"  style="width:650rpx;height:400rpx;z-index:10;margin-left:30rpx;">
     <view class="flex-col between" style="margin-top:26rpx;">
       <view class="text-center big-size bold color-red">可提现</view>

@@ -53,9 +53,13 @@
   border-radius: 160rpx;
   border: 2px solid white;
 }
+.small-img{
+  width: 40rpx;
+  height: 40rpx;
+}
 .img{
-  width: 80rpx;
-  height: 70rpx;
+  width: 65rpx;
+  height: 55rpx;
 }
 .bag-red{
   background-color: #FF3333;

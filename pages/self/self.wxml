@@ -8,7 +8,7 @@
         <view class="flex-row between">
           <!-- <view class="color-white" style="width:450rpx;" bindtap="">请授权</view> -->
           <view class="color-white" style="width:450rpx;">老牛吃嫩草</view>
-          <image class="img" src="/images/food/1.jpeg"></image>  <!-- 设置-->
+          <image class="small-img" src="/images/tabbarpic/shezhi.png"></image>  <!-- 设置-->
         </view>
         <view class="size color-white small-button" bindtap="">绑定手机号</view>
       </view>
@@ -44,23 +44,23 @@
 
     <view class="flex-row between padding30 bag-white" style="width:650rpx;">
       <view class="text-center">
-        <image class="img" src="/images/food/4.jpeg"></image>
+        <image class="img" src="/images/tabbarpic/daifukuan.png"></image>
         <view>待付款</view>
       </view>
       <view class="text-center">
-        <image class="img" src="/images/food/4.jpeg"></image>
+        <image class="img" src="/images/tabbarpic/daifahuo.png"></image>
         <view>待发货</view>
       </view>
       <view class="text-center">
-        <image class="img" src="/images/food/4.jpeg"></image>
-        <view>待收获</view>
+        <image class="img" src="/images/tabbarpic/icon-test.png"></image>
+        <view>待收货</view>
       </view>
       <view class="text-center">
-        <image class="img" src="/images/food/4.jpeg"></image>
+        <image class="img" src="/images/tabbarpic/daipingjia.png"></image>
         <view>待评价</view>
       </view>
       <view class="text-center">
-        <image class="img" src="/images/food/4.jpeg"></image>
+        <image class="img" src="/images/tabbarpic/shouhoutuikuan.png"></image>
         <view>售后/退款</view>
       </view>
     </view>
@@ -75,7 +75,7 @@
 
     <view class="flex-row between padding30 bag-white" style="width:650rpx;">
       <view class="text-center">
-        <image class="img" src="/images/food/4.jpeg"></image>
+        <image class="img" src="/images/tabbarpic/wodelianxikefu.png"></image>
         <view>联系客服</view>
       </view>
     </view>

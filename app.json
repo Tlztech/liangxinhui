@@ -1,5 +1,6 @@
 {
   "pages":[
+    "pages/merchant/merchant",
     "pages/index/index",
     "pages/search/search",
     "pages/adverse/adverse",
@@ -7,7 +8,6 @@
     "pages/adversedetail/adversedetail",
     "pages/detail/detail",
     "pages/message/message",
-    "pages/merchant/merchant",
     "pages/restaurant/restaurant",
     "pages/recruit/recruit",
     "pages/order/order",
@@ -22,7 +22,6 @@
     "pages/cateringtrainingProductdetails/cateringtrainingProductdetails",
 
     "pages/forgetpass/forgetpass"
-
   ],
   "window":{
     "backgroundTextStyle":"light",

@@ -1,1 +1,69 @@
-
+.view{
+  width: 100%;
+}
+.flex-view{
+  margin-top: 20rpx;
+  width: 590rpx;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+.flex-col{
+  display: flex;
+  flex-direction: column;
+}
+.between {
+  justify-content: space-between;
+}
+.img{
+  width: 100rpx;
+  height: 100rpx;
+  margin: 15rpx 20rpx;
+  border-radius: 50rpx;
+  /* border: 1px solid blue; */
+}
+.size{
+  font-size: 24rpx;
+}
+.big-size{
+  font-size: 40rpx;
+}
+.small-size{
+  font-size: 20rpx;
+}
+.color-aaa{
+  color: #aaa;
+}
+.radius{
+  border-radius: 20rpx;
+}
+.radius10{
+  border-radius: 10rpx;
+}
+.padding20{
+  padding: 20rpx;
+}
+.padding40{
+  padding: 40rpx;
+}
+.padding40s{
+  padding: 40rpx 0 0 40rpx;
+}
+.text-center{
+  text-align: center;
+}
+.bg-white{
+  background-color: white;
+}
+.border{
+  border: 1px solid black;
+}
+.addres-icon{
+  position: relative;
+  left: 30rpx;
+  top: 15rpx;
+}
+.margin-top{
+  margin-top: 20rpx;
+}

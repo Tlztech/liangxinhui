@@ -1,1 +1,57 @@
-商户中心
+<view class="view">
+  <!-- 商户公共头部 -->
+  <view class="" style="height:20rpx;"></view>
+  <view class="flex-row">
+    <image class="img" src="/images/photo1.png"></image>
+    <view class="">
+      <view class="flex-view flex-row between">
+        <view class="size">Butt-file</view>
+      </view>
+      <view class="size color-aaa">商户ID:123</view>
+    </view>
+  </view>
+  <!-- 商户入驻申请 -->
+  <view class="radius" style="width:710rpx;background-color:#FFC400;margin:20rpx;height:{{ height }}">
+    <view class="text-center big-size" style="margin-top:30rpx;">商户入驻申请</view>
+    <view style="height:10rpx;"></view>
+    <view class="flex-col between">
+      <view class="flex-row padding40s" >
+        <view class="bg-white text-center" style="width:130rpx;height:80rpx;line-height:80rpx;">名称</view>
+        <input class="bg-white" name="name" style="width:500rpx;height:80rpx;" placeholder="请输入店铺名称"></input>
+      </view>
+    </view>
+    <view class="flex-col between">
+      <view class="flex-row padding40s" >
+        <view class="bg-white text-center" style="width:130rpx;height:80rpx;line-height:80rpx;">地址</view>
+        <input class="bg-white" name="adress" style="width:400rpx;height:80rpx;" placeholder="请输入店铺地址"></input>
+        <view class="bg-white" style="width:100rpx;height:80rpx;">
+          <image class="addres-icon" style="width:50rpx;height:50rpx;" src="/images/zb.png" bindtap="dwaddress"></image>
+        </view>
+      </view>
+    </view>
+    <view class="flex-col between">
+      <view class="flex-row padding40s" >
+        <view class="bg-white text-center" style="width:130rpx;height:80rpx;line-height:80rpx;">姓名</view>
+        <input class="bg-white" name="username" style="width:500rpx;height:80rpx;" placeholder="请输入店主姓名"></input>
+      </view>
+    </view>
+    <view class="flex-col between">
+      <view class="flex-row padding40s" >
+        <view class="bg-white text-center" style="width:130rpx;height:80rpx;line-height:80rpx;">电话</view>
+        <input class="bg-white" name="phone" style="width:500rpx;height:80rpx;" placeholder="请输入联系电话"></input>
+      </view>
+    </view>
+    <view class="flex-row padding20 margin-top">
+      <view style="width:150rpx;"></view>
+      <image src="/images/duihao2.png" style="width:30rpx;height:30rpx;"></image>
+      <view class="size color-white">我已阅读并同意粮芯辉商户协议</view>
+    </view>
+    <view class=" flex-row">
+      <view style="width:200rpx;"></view>
+      <view class="bg-white radius10" style="width:300rpx;height:60rpx;">
+        <view class="text-center size" style="line-height:60rpx;">立即提交</view>
+      </view>
+    </view>
+    <view style="width:100%;color:white;margin-top:15rpx;" class="text-center small-size">提交申请后，我们会在三个工作日中联系您，请勿重复提交！</view>
+  </view>
+</view>

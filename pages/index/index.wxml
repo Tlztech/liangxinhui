@@ -44,7 +44,7 @@
       <scroll-view style="width:100%;" scroll-x="true">
         <view id="0" bindtap="goDetail" class="scroll-view">
           <view class="image-border">
-            <image class="image" src="/images/1.jpg"></image>
+            <image class="image" src="/images/mi4.jpg"></image>
           </view>
           <view class="content">
             <view class="pad title" style="height:88rpx;">【增荔】香软丝苗米 10 kg装</view>
@@ -61,7 +61,7 @@
         </view>
         <view id="1" bindtap="goDetail" class="scroll-view" style="margin-left:20rpx;">
           <view class="image-border">
-            <image class="image" src="/images/1.jpg"></image>
+            <image class="image" src="/images/mi5.jpg"></image>
           </view>
           <view class="content">
             <view class="pad title" style="height:88rpx;">【增荔】香软丝苗米 10 kg装</view>
@@ -78,7 +78,7 @@
         </view>
         <view id="2" bindtap="goDetail" class="scroll-view" style="margin-left:20rpx;">
           <view class="image-border">
-            <image class="image" src="/images/1.jpg"></image>
+            <image class="image" src="/images/mi6.jpg"></image>
           </view>
           <view class="content">
             <view class="pad title" style="height:88rpx;">【增荔】香软丝苗米 10 kg装</view>
@@ -95,7 +95,7 @@
         </view>
         <view id="3" bindtap="goDetail" class="scroll-view" style="margin-left:20rpx;">
           <view class="image-border">
-            <image class="image" src="/images/1.jpg"></image>
+            <image class="image" src="/images/mi1.jpg"></image>
           </view>
           <view class="content">
             <view class="pad title" style="height:88rpx;">【增荔】香软丝苗米 10 kg装</view>
@@ -144,7 +144,7 @@
       </view>
       <view id="{{ index }}" bindtap="goDetail" class="items" wx:for="{{ list }}" wx:key="list">
         <view class="left">
-          <image class="image" src="/images/1.jpg"></image>
+          <image class="image" src="{{ item.img }}"></image>
         </view>
         <view class="right">
           <view class="star">

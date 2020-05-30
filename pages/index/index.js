@@ -22,9 +22,9 @@ Page({
     fields: ['time','adverse','pride','money','star'],
     //商品列表
     list:[
-      { 'title': '【增荔】香软丝苗米 2 kg装', 'area': '沈阳和平区', 'time': 12345, 'sale': 28, 'pride': 5, 'star': 4, 'price': 85, 'old': 108, 'money': '1.2', 'adverse': 320},
-      { 'title': '【增荔】香软丝苗米 5 kg装', 'area': '沈阳和平区', 'time': 12346, 'sale': 107, 'pride': 12, 'star': 3, 'price': 85, 'old': 108, 'money': '2.3', 'adverse': 120 },
-      { 'title':'【增荔】香软丝苗米 10 kg装', 'area':'沈阳和平区', 'time':12347, 'sale': 157, 'pride':12, 'star':18, 'price': 85, 'old':108, 'money': '0.8', 'adverse': 100}
+      { 'title': '【增荔】香软丝苗米 2 kg装', 'area': '沈阳和平区', 'time': 12345, 'sale': 28, 'pride': 5, 'star': 4, 'price': 85, 'old': 108, 'money': '1.2', 'adverse': 320,'img': '/images/mi1.jpg'},
+      { 'title': '【增荔】香软丝苗米 5 kg装', 'area': '沈阳和平区', 'time': 12346, 'sale': 107, 'pride': 12, 'star': 3, 'price': 85, 'old': 108, 'money': '2.3', 'adverse': 120 ,'img': '/images/mi2.jpg'},
+      { 'title':'【增荔】香软丝苗米 10 kg装', 'area':'沈阳和平区', 'time':12347, 'sale': 157, 'pride':12, 'star':18, 'price': 85, 'old':108, 'money': '0.8', 'adverse': 100,'img': '/images/mi3.jpg'}
     ],
     //招聘列表
     restaurants: [

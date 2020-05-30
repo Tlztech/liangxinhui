@@ -3,11 +3,11 @@
   <view class="bag-red" style="height:30rpx;"></view>
   <view class="">
     <view class="flex-row bag-red padding20" style="height:200rpx;">
-      <image src="/images/food/3.jpeg" class="head-img"></image>
+      <image src="/images/photo1.png" class="head-img"></image>
       <view class="flex-col" style="margin-top:30rpx;margin-left:26rpx">
         <view class="flex-row between">
           <!-- <view class="color-white" style="width:450rpx;" bindtap="">请授权</view> -->
-          <view class="color-white" style="width:450rpx;">老牛吃嫩草</view>
+          <view class="color-white" style="width:450rpx;">Butt-file</view>
           <image class="small-img" src="/images/tabbarpic/shezhi.png"></image>  <!-- 设置-->
         </view>
         <view class="size color-white small-button" bindtap="">绑定手机号</view>
@@ -26,7 +26,7 @@
         <view>2000</view>
       </view>
       <view class="text-center">
-        <view class="color-aaa">优惠券</view>
+        <view class="color-aaa">达人</view>
         <view>1</view>
       </view>
     </view>

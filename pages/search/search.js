@@ -118,10 +118,12 @@ Page({
    * 搜索商品
    */
   checksearch: function (e,val) {
+    console.log(e.detail.value)
+    console.log(val)
     var val = this.data.search_Input
-    if(e.detail.value == undefined && val == undefined){
+    if(e.detail.value == undefined || val == undefined){
       this.showsearch()
-      return
+      // return
     }
     let value = e.detail.value != undefined ? e.detail.value.trim() : val;
     this.setData({

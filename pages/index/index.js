@@ -12,7 +12,7 @@ Page({
     showNavi: [true, false, false, false, false],
     // showNavi: [false, false, false, false, true],
     swipers0: ['1.jpg', '2.jpg', '3.jpg'],
-    swipers1: ['4.jpg', '5.jpg', '6.jpg'],
+    swipers1: ['2.jpg', '3.jpg', '1.jpg'],
     //下拉框
     select: false,
     area:0,

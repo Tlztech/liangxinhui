@@ -1,0 +1,59 @@
+<!--logs.wxml-->
+<view class="all">
+  <view class="list">
+    <view class="head">
+      <view class="left">订单信息</view>
+      <view>美食推广</view>
+    </view>
+    <view class="body">
+      <view class="item">订单编号：1234567891234567</view>
+      <view class="item">下单时间：2020/5/3 12:28:36</view>
+      <view class="item">支付方式：微信</view>
+      <view class="item">订单状态：已核销</view>
+    </view>
+  </view>
+  <view class="list" style="margin-top:30rpx;">
+    <view class="head">
+      <view class="left">商品信息</view>
+    </view>
+    <view class="body">
+      <view class="item">商品名称：狭义串异国串吧-六人套餐</view>
+      <view class="item">
+        <view class="name">单价：394.6</view>
+        <view class="name">原价：86.4</view>
+        <view class="name">返利：28</view>
+      </view>
+      <view class="item">
+        <view class="name">数量：1</view>
+        <view class="name">总价：394.6</view>
+      </view>
+    </view>
+  </view>
+  <view class="list" style="margin-top:30rpx;">
+    <view class="head">
+      <view class="left">收货信息</view>
+    </view>
+    <view class="body">
+      <view class="item">收货人：二丫</view>
+      <view class="item">手机号码：185-88885555</view>
+      <view class="item">收货地址：XXXXXXXXXXXXXXX</view>
+      <view class="item">订单状态：已签收</view>
+    </view>
+  </view>
+  <view class="list" style="margin-top:30rpx;">
+    <view class="head">
+      <view class="left">发货信息</view>
+      <view class="right">
+        <view class="bott">发货</view>
+      </view>
+    </view>
+    <view class="body">
+      <view class="item">收货人：三胖</view>
+      <view class="item">手机号码：185-66666666</view>
+      <view class="item">物流公司：XXXXXXXXXX</view>
+      <view class="item">物流单号：123456789123456789</view>
+      <view class="item">发货时间：2020/5/3 12:28:36</view>
+    </view>
+  </view>
+  <view style="width:750rpx;height:150rpx;"></view>
+</view>

@@ -1,0 +1,67 @@
+.all{
+  width: 750rpx;
+  font-size: 30rpx;
+  color: #999;
+}
+
+/* itemborder */
+.list{
+  width: 690rpx;
+  margin-left: 30rpx;
+  border: 2rpx solid #ccc;
+  border-radius: 20rpx;
+}
+.list .head{
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+  border-bottom: 2rpx solid #ccc;
+  display: flex;
+  flex-direction: row;
+}
+.list .head .left{
+  width: 540rpx;
+  height: 100%;
+  text-indent: 30rpx;
+}
+.list .head .right{
+  width: 150rpx;
+  height: 100%;
+}
+.list .head .right .bott{
+  width: 120rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  margin-top: 10rpx;
+  background: orange;
+  text-align: center;
+  color: #000;
+  border-radius: 10rpx;
+}
+.list .body{
+  padding: 30rpx 15rpx;
+}
+.list .body .item{
+  width: 100%;
+  height: 50rpx;
+  margin-top: 20rpx;
+  text-indent: 25rpx;
+  display: flex;
+  flex-direction: row;
+}
+.list .body .item .name{
+  width: 210rpx;
+  height: 100%;
+}
+.list .bot{
+  width: 330rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  font-size: 32rpx;
+  color: #fff;
+  background: orangered;
+  border-radius: 10rpx;
+  margin-top: 40rpx;
+  margin-left: 180rpx;
+}

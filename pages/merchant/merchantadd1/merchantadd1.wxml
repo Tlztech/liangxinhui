@@ -1,0 +1,46 @@
+<view class="all">
+  <view class="list flex-row" style="border-top: 6rpx solid #ccc;">
+    <view class="item2"><input class="input" placeholder="品牌"></input></view>
+    <view class="item2 border"><input class="input" placeholder="名称"></input></view>
+  </view>
+  <view class="list flex-row">
+    <view class="item3"><input class="input" placeholder="原价"></input></view>
+    <view class="item3 border"><input class="input" placeholder="活动价"></input></view>
+    <view class="item3 border"><input class="input" placeholder="返利"></input></view>
+  </view>
+  
+  <view class="list">
+    <view class="item"><input class="input" placeholder="原产地"></input></view>
+  </view>
+  <view class="list">
+    <view class="item"><input class="input" placeholder="省份"></input></view>
+  </view>
+  <view class="list">
+    <view class="item"><input class="input" placeholder="城市"></input></view>
+  </view>
+  <view class="list">
+    <view class="item"><input class="input" placeholder="规格"></input></view>
+  </view>
+  <view class="list">
+    <view class="item"><input class="input" placeholder="保存方式"></input></view>
+  </view>
+  <view class="list">
+    <view class="item"><input class="input" placeholder="包装方式"></input></view>
+  </view>
+  
+  <view class="textlist">
+    <view class="top">商品说明</view>
+    <view class="bottom l4"><textarea class="input"></textarea></view>
+  </view>
+  <view class="textlist">
+    <view class="top">买家须知</view>
+    <view class="bottom l4"><textarea class="input"></textarea></view>
+  </view>
+  <view class="textlist">
+    <view class="top">上传图片（最多4张）</view>
+    <view class="bottom l3">
+      <view class="itemplus">＋</view>
+    </view>
+  </view>
+  <view class="addbot" bindtap="submit">提交商品</view>
+</view>

@@ -1,1 +1,115 @@
+.body{
+  width: 750rpx;
+  color: #444;
+  font-size: 30rpx;
+}
 
+
+.message{
+  height: 90rpx;
+  display: flex;
+  flex-direction: row;
+  margin-left: 20rpx;
+}
+
+.message .imgbor{
+  width: 90rpx;
+  height: 90rpx;
+}
+
+.img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.message .content{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-indent: 15rpx;
+  font-size: 32rpx;
+}
+
+.message .content .name{
+  margin-top: 8rpx;
+}
+
+.message .content .merchantID{
+  font-size: 28rpx;
+  color: #999;
+}
+
+
+.main{
+  width: 710rpx;
+  height: 980rpx;
+  margin-left: 20rpx;
+  background: orange;
+  margin-top: 10rpx;
+  border-radius: 15rpx;
+}
+
+.main .title{
+  width: 100%;
+  height: 120rpx;
+  line-height: 120rpx;
+  text-align: center;
+  font-size: 38rpx;
+  color: #000;
+}
+
+.main .input{
+  width: 680rpx;
+  height: 70rpx;
+  display: flex;
+  flex-direction: row;
+  background: #fff;
+  margin-left: 15rpx;
+  margin-top: 20rpx;
+}
+
+.main .input .left{
+  width: 150rpx;
+  height: 100%;
+  line-height: 70rpx;
+  text-indent: 30rpx;
+}
+
+.main .input .mid{
+  width: 460rpx;
+  height: 100%;
+}
+
+.main .input .mid .text{
+  width: 100%;
+  height: 100%;
+}
+
+.main .input .right{
+  height: 100%;
+}
+
+.main .input .right .mark{
+  width: 50rpx;
+  height: 50rpx;
+  margin-top: 10rpx;
+}
+
+
+.foot{
+  width: 100%;
+  text-align: center;
+  font-size: 28rpx;
+}
+
+
+.but{
+  width: 550rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  margin: 20rpx auto;
+  background: #fff;
+  border-radius: 10rpx;
+}

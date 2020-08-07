@@ -1,0 +1,18 @@
+<!--logs.wxml-->
+<view class="all">
+  <view class="list">
+    <view class="head">核销美食</view>
+    <view class="body">
+      <view class="itemborder">
+        <view class="left">狭义串异国套餐-六人套餐</view>
+        <view class="right"><image style="width:30rpx;height:30rpx;margin-top:20rpx;" src="/images/down.jpg"></image></view>
+      </view>
+      <view class="itemnom" style="border-radius:0;">
+        <input style="width:100%;height:100%;" placeholder="请输入核销码"></input>
+      </view>
+      <view class="item">核销人：当前微信用户</view>
+      <view class="item">核销时间：当前时间</view>
+      <view class="bot" bindtap="che">确认</view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,32 @@
+<!--logs.wxml-->
+<view class="all">
+  <view class="list">
+    <view id="0" class="{{list[0] ? 'sel' : 'nom'}}" catchtap="check">全部订单</view>
+    <view id="1" class="{{list[1] ? 'sel' : 'nom'}}" catchtap="check">本月订单</view>
+    <view id="2" class="{{list[2] ? 'sel' : 'nom'}}" catchtap="check">本日订单</view>
+  </view>
+  <view class="bar">
+    <view class="item w1">商品名称</view>
+    <view class="item w2">数量</view>
+    <view class="item w1" style="margin-left:30rpx;">联系电话</view>
+    <view class="item w3" style="margin-left:30rpx;">支付金额</view>
+  </view>
+  <view class="merchant">
+    <view class="items" bindtap="dingdetail">
+      <view class="item w1">狭义异国串-六人餐</view>
+      <view class="item w2" style="padding-top:35rpx;">1</view>
+      <view class="item w4"><text>一只猫\n15588888888</text></view>
+      <view class="item w3"><text style="color:orange;font-weight:bold;">￥369.1\n</text>已核销</view>
+      <view class="item w4"><text>2020/5/3\n19:27:34</text></view>
+      <!-- <view class="item w1">狭义串异国串2-四人套...</view> -->
+    </view>
+    <view class="items" bindtap="dingdetail">
+      <view class="item w1">狭义异国串22-四...</view>
+      <view class="item w2" style="padding-top:35rpx;">1</view>
+      <view class="item w4"><text>一只猫\n15588888888</text></view>
+      <view class="item w3"><text style="color:orange;font-weight:bold;">￥369.1\n</text>已发货</view>
+      <view class="item w4"><text>2020/5/3\n19:27:34</text></view>
+      <!-- <view class="item w1">狭义串异国串2-四人套...</view> -->
+    </view>
+  </view>
+</view>

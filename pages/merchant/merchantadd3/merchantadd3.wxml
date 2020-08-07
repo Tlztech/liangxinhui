@@ -1,0 +1,63 @@
+<view class="all">
+  <view class="list flex-row" style="border-top: 6rpx solid #ccc;">
+    <view class="item3"><input class="input" placeholder="招聘职位"></input></view>
+    <view class="item3 border"><input class="input" placeholder="招聘人数"></input></view>
+    <view class="item3 border"><input class="input" placeholder="薪资"></input></view>
+  </view>
+  <view class="list flex-row">
+    <view class="item2"><input class="input" placeholder="学历要求"></input></view>
+    <view class="item2 border"><input class="input" placeholder="经验要求"></input></view>
+  </view>
+  <view class="list">
+    <view class="item"><input class="input" placeholder="公司名称"></input></view>
+  </view>
+  <view class="list">
+    <view class="item"><input class="input" placeholder="工作地址"></input></view>
+  </view>
+  <view class="list flex-row">
+    <view class="item2"><input class="input" placeholder="法人代表"></input></view>
+    <view class="item2 border"><input class="input" placeholder="注册资本"></input></view>
+  </view>
+  <view class="timelist flex-row">
+    <view class="name">成立时间</view>
+    <picker mode="date" value="{{date}}" bindchange="bindDateChange">
+      <view class="time">{{date}}</view>
+    </picker>
+    <view class="name">上传图片（一张）</view>
+    <view class="plus">+</view>
+  </view>
+  <view class="inclist flex-row">
+    <view class="left">待遇</view>
+    <view class="right flex-row">
+      <view class="part flex-row">
+        <checkbox checked="true"></checkbox>
+        <view class="mark">周末双休</view>
+      </view>
+      <view class="part flex-row" style="margin-left:20rpx;">
+        <checkbox checked="true"></checkbox>
+        <view class="mark">带薪休假</view>
+      </view>
+      <view class="part flex-row" style="margin-left:20rpx;">
+        <checkbox checked="true"></checkbox>
+        <view class="mark">五险一金</view>
+      </view>
+      <view class="part flex-row">
+        <checkbox checked="true"></checkbox>
+        <view class="mark">绩效奖金</view>
+      </view>
+    </view>
+  </view>
+  <view class="textlist">
+    <view class="top">职位描述</view>
+    <view class="bottom l4"><textarea class="input"></textarea></view>
+  </view>
+  <view class="textlist">
+    <view class="top">任职要求</view>
+    <view class="bottom l3"><textarea class="input"></textarea></view>
+  </view>
+  <view class="textlist">
+    <view class="top">公司介绍</view>
+    <view class="bottom l3"><textarea class="input"></textarea></view>
+  </view>
+  <view class="addbot" bindtap="submit">提交招聘信息</view>
+</view>

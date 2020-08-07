@@ -1,0 +1,683 @@
+/**index.wxss**/
+.index-contain {
+  width: 710rpx;
+  font-size: 28rpx;
+  color: #999;
+  margin: 0 auto;
+}
+.message{
+  height: 90rpx;
+  display: flex;
+  flex-direction: row;
+  margin-left: 20rpx;
+  margin-bottom: 20rpx;
+}
+
+.message .imgbor{
+  width: 90rpx;
+  height: 90rpx;
+}
+
+.img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.message .content{
+  width: 320rpx;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-indent: 15rpx;
+  font-size: 32rpx;
+}
+
+.message .content .name{
+  margin-top: 8rpx;
+}
+
+.message .content .merchantID{
+  font-size: 28rpx;
+  color: #999;
+}
+.message .right{
+  display: flex;
+  flex-direction: row;
+}
+.message .right .item{
+  width: 120rpx;
+  margin-left: 10rpx;
+  height: 100%;
+  font-size: 28rpx;
+  color: #999;
+}
+.message .right .item .up{
+  width: 100%;
+  height: 60rpx;
+}
+.message .right .item .up .image{
+  width: 40rpx;
+  height: 40rpx;
+  margin-top: 10rpx;
+  margin-left: 40rpx;
+}
+
+.message .right .item .down{
+  width: 100%;
+  height: 30rpx;
+  text-align: center;
+}
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+.form-border {
+  background:#f4f4f4;
+  border-radius:30rpx;
+}
+.height6 {
+  height:60rpx;
+}
+
+/* 导航部分 */
+.navi {
+  width: 100%;
+  height: 50rpx;
+  line-height: 50rpx;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20rpx;
+}
+
+.navi .items {
+  width: 120rpx;
+  height: 100%;
+}
+
+.navi .items-show {
+  width: 120rpx;
+  height: 100%;
+  font-size: 30rpx;
+  color: orange;
+  border-bottom: 6rpx solid orange;
+}
+
+/* 限时抢购 && 美食推广 */
+.swiper {
+  width: 100%;
+  height: 350rpx;
+}
+.swiper .image{
+  width: 100%;
+  height: 100%;
+}
+
+.promote .tab {
+  width: 100%;
+  height: 60rpx;
+  line-height: 60rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 20rpx 0;
+}
+
+.promote .item {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.promote .tab .item .hand {
+  width: 40rpx;
+  height: 40rpx;
+  margin-top: 10rpx;
+}
+.promote .tab .item .content {
+  color: #000;
+  font-size: 30rpx;
+  text-indent: 20rpx;
+  font-weight: bold;
+}
+
+.promote .tab .all {
+  width: 120rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  text-align: center;
+  border: 1rpx solid #999;
+  border-radius: 30rpx;
+  margin-top: 8rpx;
+}
+
+.today {
+  width: 670rpx;
+  height: 460rpx;
+  border-radius: 20rpx;
+  background: orange;
+  border: 20rpx solid orange;
+  display: flex;
+  flex-direction: row;
+  white-space: nowrap;
+}
+
+.scroll-view{
+  display: inline-block;
+  width: 280rpx;
+}
+
+.scroll-view .image-border{
+  width: 100%;
+  height: 240rpx;
+  background: #fff;
+  border-top-left-radius: 20rpx;
+  border-top-right-radius: 20rpx;
+}
+.scroll-view .image-border .image{
+  width: 240rpx;
+  height: 170rpx;
+  margin-top: 45rpx;
+  margin-left: 20rpx;
+}
+.scroll-view .content{
+  width: 100%;
+  height: 220rpx;
+  background: #fff;
+  border-bottom-left-radius: 20rpx;
+  border-bottom-right-radius: 20rpx;
+}
+.scroll-view .content .pad{
+  width: 240rpx;
+  height: 40rpx;
+  margin-left: 20rpx;
+}
+.scroll-view .content .title{
+  font-size: 30rpx;
+  white-space: pre-wrap;
+  color: #444;
+}
+.scroll-view .content .money{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.scroll-view .content .money .price{
+  color: orange;
+}
+.scroll-view .content .money .get{
+  width: 120rpx;
+  font-size: 28rpx;
+  color: #fff;
+  background: orange;
+  border-radius: 20rpx;
+  text-align: center;
+}
+.scroll-view .content .money .old{
+  text-decoration-line: line-through;
+}
+
+.jump {
+  width:30rpx;
+  height: 440rpx;
+  background:#fff;
+  border-radius: 20rpx;
+}
+.more {
+  width: 100%;
+  height:400rpx;
+  white-space: pre-wrap;
+  padding: 0 20rpx;
+}
+::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+    color: transparent;
+}
+
+
+
+/* 下拉选择框 */
+.list-msg {
+    padding: 0 20rpx;
+    background-color: #fff;
+    position: relative;
+}
+ 
+.list-msg1 {
+    height: 60rpx;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+ 
+.list-msg .list-msg2 {
+    min-width: 160rpx;
+    height: 60rpx;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    padding: 0 10rpx;
+}
+ 
+.select_box {
+    background-color: #eee;
+    padding: 0 10rpx;
+    min-width: 162rpx;
+    position: absolute;
+    top: 70rpx;
+    z-index: 1;
+    overflow: hidden;
+    animation: myfirst 0.2s;
+}
+ 
+@keyframes myfirst {
+    from {
+        height: 0rpx;
+    }
+ 
+    to {
+        height: 210rpx;
+    }
+}
+ 
+.select_one {
+    height: 60rpx;
+    line-height: 60rpx;
+    border-bottom: 1px solid #ccc;
+}
+
+/* 导航部分 */
+.navi-list {
+  height: 50rpx;
+  line-height: 50rpx;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.navi-list .navis {
+  width: 70rpx;
+  height: 100%;
+}
+
+.navi-list .navis-show {
+  width: 70rpx;
+  height: 100%;
+  font-size: 30rpx;
+  color: orange;
+  border-bottom: 6rpx solid orange;
+}
+
+/* 底部商品列表 */
+.bottom {
+  width: 100%;
+  height: 500rpx;
+}
+
+.bottom .items{
+  width: 100%;
+  height: 260rpx;
+  margin-top: 30rpx;
+  display: flex;
+  flex-direction: row;
+}
+.bottom .items .left{
+  width: 280rpx;
+  height: 260rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.bottom .items .left .image{
+  width: 240rpx;
+  height: 170rpx;
+  margin-top: 45rpx;
+  margin-left: 20rpx;
+}
+.bottom .items .right{
+  width: 410rpx;
+  height: 260rpx;
+  border-bottom: 2rpx solid #ccc;
+}
+
+.bottom .items .right .star{
+  height: 50rpx;
+  padding-top: 10rpx;
+  display: flex;
+  flex-direction: row;
+}
+.bottom .items .right .star .starImages{
+  width: 40rpx;
+  height: 40rpx;
+}
+.list-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.bottom .items .right .title{
+  height: 90rpx;
+  font-size: 30rpx;
+  overflow: hidden;
+  color: #444;
+}
+.bottom .items .right .area-line{
+  height: 35rpx;
+  line-height: 35rpx;
+}
+.bottom .items .right .area-line .price{
+  font-size: 35rpx;
+  overflow: hidden;
+  color: orange;
+}
+.bottom .items .right .old-line .old{
+  text-decoration-line: line-through;
+}
+.bottom .items .right .adverse-line .money{
+  color: #fdd802;
+}
+
+/* 餐企直聘 */
+.restaurant {
+  width: 100%;
+  height: 500rpx;
+}
+.restaurant .tab {
+  width: 750rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: #f4f4f4;
+  font-size: 30rpx;
+  color: #000;
+  position: absolute;
+  top: 200rpx;
+  left: 0;
+}
+.restaurant .tab .text{
+  text-indent: 30rpx;
+}
+.restaurant .tab .recruitment{
+  width: 170rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  background: orange;
+  color: #fff;
+  text-align: center;
+  margin-top: 10rpx;
+  margin-right: 30rpx;
+  border-radius: 15rpx;
+}
+
+.restaurant .position{
+  margin-top: 30rpx;
+  font-size: 30rpx;
+  color: #444;
+}
+.restaurant .long{
+  margin-bottom: 10rpx;
+  color: #ccc;
+}
+.restaurant .items{
+  width: 100%;
+  height: 250rpx;
+  display: flex;
+  flex-direction: row;
+}
+.restaurant .items .left{
+  width: 280rpx;
+  height: 250rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.restaurant .items .left .image{
+  width: 250rpx;
+  height: 100%;
+}
+.restaurant .items .right{
+  width: 410rpx;
+  height: 250rpx;
+}
+
+.restaurant .items .right .star{
+  height: 50rpx;
+  padding-top: 10rpx;
+  display: flex;
+  flex-direction: row;
+}
+.list-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.restaurant .items .right .title{
+  font-size: 30rpx;
+  color: #444;
+}
+.restaurant .items .right .area-line{
+  color: #ccc;
+}
+.restaurant .items .right .message{
+  height: 90rpx;
+  overflow: hidden;
+}
+.restaurant .items .right .want-line{
+  font-size: 30rpx;
+}
+.restaurant .items .right .want-line .money{
+  color: #f33;
+}
+
+/* 饮食培训 */
+.training {
+  width: 100%;
+  height: 500rpx;
+}
+.training .tab {
+  width: 750rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: #f4f4f4;
+  font-size: 30rpx;
+  color: #000;
+  position: absolute;
+  top: 200rpx;
+  left: 0;
+}
+.training .tab .text{
+  text-indent: 30rpx;
+}
+.training .tab .recruitment{
+  width: 170rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  background: orange;
+  color: #fff;
+  text-align: center;
+  margin-top: 10rpx;
+  margin-right: 30rpx;
+  border-radius: 15rpx;
+}
+.training .items{
+  width: 100%;
+  height: 175rpx;
+  margin-top: 15rpx;
+  border-bottom: 1rpx solid #ccc;
+  display: flex;
+  flex-direction: row;
+}
+.training .items .left{
+  width: 300rpx;
+  height: 160rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.training .items .left .image{
+  width: 280rpx;
+  height: 160rpx;
+}
+.training .items .right{
+  width: 410rpx;
+  height: 100%;
+  color: #ccc;
+}
+
+.list-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.training .items .right .title{
+  font-size: 30rpx;
+  color: #444;
+}
+
+.training .items .right .type-line .money{
+  color: #fdd802;
+}
+.training .items .right .price-line{
+  height: 60rpx;
+  line-height: 40rpx;
+}
+.training .items .right .price-line .price{
+  color: #f33;
+  font-size: 36rpx;
+}
+
+/* 广而告之 */
+.advertising {
+  width: 100%;
+  height: 500rpx;
+}
+.advertising .tab {
+  width: 750rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: #f4f4f4;
+  font-size: 30rpx;
+  color: #000;
+  position: absolute;
+  top: 200rpx;
+  left: 0;
+}
+.advertising .tab .text{
+  text-indent: 30rpx;
+}
+.advertising .tab .recruitment{
+  width: 170rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  background: orange;
+  color: #fff;
+  text-align: center;
+  margin-top: 10rpx;
+  margin-right: 30rpx;
+  border-radius: 15rpx;
+}
+
+.advertising .title{
+  margin: 20rpx 0;
+  font-size: 30rpx;
+  color: #444;
+}
+.advertising .items{
+  width: 100%;
+  height: 200rpx;
+  display: flex;
+  flex-direction: row;
+}
+.advertising .items .left{
+  width: 280rpx;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.advertising .items .left .image{
+  width: 250rpx;
+  height: 100%;
+}
+.advertising .items .right{
+  width: 410rpx;
+  height: 100%;
+  padding-top: 0;
+}
+.list-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.advertising .items .right .user{
+  font-size: 30rpx;
+  color: #444;
+  display: flex;
+  flex-direction: row;
+}
+.advertising .items .right .user .photo{
+  width: 40rpx;
+  height: 40rpx;
+}
+.advertising .items .right .user .name{
+  line-height: 40rpx;
+  text-indent: 15rpx;
+}
+.advertising .items .right .area-line{
+  color: #ccc;
+}
+.advertising .items .right .message{
+  overflow: hidden;
+}
+
+.bots{
+  width: 750rpx;
+  height: 140rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-top: 2rpx solid #ccc;
+  position: fixed;
+  bottom: 0;
+}
+
+.bots .bot{
+  width: 340rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 35rpx;
+  text-align: center;
+  color: #fff;
+  background: orange;
+  border-radius: 15rpx;
+  margin-top: 20rpx;
+}

@@ -1,0 +1,177 @@
+.all{
+  width: 750rpx;
+  font-size: 30rpx;
+  color: #444;
+  background: #f4f4f4;
+  padding-bottom: 30rpx;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+.border {
+  border-left: 1rpx solid #ccc;
+}
+.between {
+  justify-content: space-between;
+}
+.input{
+  width: 100%;
+  height: 100%;
+}
+.list{
+  width: 730rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  border-bottom: 6rpx solid #ccc;
+  margin-left: 10rpx;
+  background: #fff;
+}
+.item3{
+  width: 250rpx;
+  height: 100%;
+  text-indent: 8rpx;
+}
+.item2{
+  width: 375rpx;
+  height: 100%;
+  text-indent: 8rpx;
+}
+.item{
+  width: 100%;
+  height: 100%;
+  text-indent: 8rpx;
+}
+
+.timelist{
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  margin: 30rpx 0;
+  font-size: 32rpx;
+  /* border: 1rpx solid red; */
+}
+.timelist .name{
+  margin-left: 10rpx;
+  height: 100%;
+}
+.timelist .time{
+  width: 240rpx;
+  height: 50rpx;
+  margin: 15rpx 10rpx;
+  border: 2rpx solid #ccc;
+  line-height: 50rpx;
+}
+
+.timelist .plus{
+  width: 80rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  font-size: 60rpx;
+  border: 4rpx solid #ccc;
+  color: #999;
+}
+
+.inclist{
+  width: 100%;
+  height: 200rpx;
+}
+
+.inclist .left{
+  width: 90rpx;
+  height: 100%;
+  padding-top: 10rpx;
+  font-size: 32rpx;
+  text-align: center;
+}
+.inclist .right{
+  width: 660rpx;
+  height: 100%;
+  flex-wrap: wrap;
+}
+.inclist .right .part{
+  width: 200rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+}
+.inclist .right .part .mark{
+  width: 150rpx;
+  height: 100%;
+  text-align: center;
+  background: #ccc;
+  font-size: 28rpx;
+  border-radius: 10rpx;
+}
+
+.textlist{
+  width: 100%;
+}
+.textlist .top{
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-indent: 10rpx;
+}
+.textlist .bottom{
+  width: 100%;
+  background: #fff;
+}
+
+.l3{
+  height: 150rpx;
+}
+.l4{
+  height: 200rpx;
+}
+.l5{
+  height: 250rpx;
+}
+
+.addbot{
+  width: 680rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+  text-align: center;
+  color: #fff;
+  font-size: 32rpx;
+  background: orange;
+  border-radius: 10rpx;
+  margin: 30rpx auto 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+checkbox {
+  width: 50rpx;
+  height: 50rpx;
+}
+/*checkbox 选项框大小  */
+checkbox .wx-checkbox-input {
+  width: 40rpx;
+  height: 40rpx;
+}
+/*checkbox选中后样式  */
+checkbox .wx-checkbox-input.wx-checkbox-input-checked {
+  background: #00f;
+}
+/*checkbox选中后图标样式  */
+checkbox .wx-checkbox-input.wx-checkbox-input-checked::before {
+  width: 28rpx;
+  height: 28rpx;
+  line-height: 28rpx;
+  text-align: center;
+  font-size: 32rpx;
+  color: #fff;
+  background: transparent;
+  transform: translate(-50%, -50%) scale(1);
+  -webkit-transform: translate(-50%, -50%) scale(1);
+}
